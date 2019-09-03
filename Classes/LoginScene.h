@@ -25,6 +25,7 @@
 #ifndef __LOGIN_SCENE_H__
 #define __LOGIN_SCENE_H__
 
+#include "ui/CocosGUI.h"
 #include "cocos2d.h"
 
 class LoginScene : public cocos2d::Scene
@@ -39,6 +40,9 @@ public:
     
     // implement the "static create()" method manually
     CREATE_FUNC(LoginScene);
+private:
+    static Scene * instance;
+    cocos2d::ui::TextField * usernameTextField;
 };
 
 #endif // __LOGIN_SCENE_H__

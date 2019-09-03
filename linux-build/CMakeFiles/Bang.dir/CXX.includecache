@@ -3279,10 +3279,36 @@ LoginScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
 SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+MainMenuScene.h
+/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+User.h
+/home/edge/BangDesktop/project/Bang/Classes/User.h
 
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
+/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+MainMenuScene.h
+/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+SimpleAudioEngine.h
+/home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+
+/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
+/home/edge/BangDesktop/project/Bang/Classes/User.cpp
+User.h
+/home/edge/BangDesktop/project/Bang/Classes/User.h
+
+/home/edge/BangDesktop/project/Bang/Classes/User.h
+string
+-
 
 /home/edge/BangDesktop/project/Bang/proj.linux/main.cpp
 ../Classes/AppDelegate.h

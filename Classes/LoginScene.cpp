@@ -25,12 +25,20 @@
 #include "ui/CocosGUI.h"
 #include "LoginScene.h"
 #include "SimpleAudioEngine.h"
+#include "MainMenuScene.h"
+#include "User.h"
 
 USING_NS_CC;
 
+Scene * LoginScene::instance = nullptr;
+
 Scene* LoginScene::createScene()
 {
-    return LoginScene::create();
+    if(instance == nullptr)
+    {
+        instance = LoginScene::create();
+    }
+    return instance;
 }
 
 // on "init" you need to initialize your instance
@@ -47,8 +55,11 @@ bool LoginScene::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
     log("origin=(%f, %f)", origin.x, origin.y);
 
+    // 2. cover background image
+    auto backgroundImage = Sprite::create("background.png");
+    this->addChild(backgroundImage);
 
-    // 2. add a button item
+    // 3. add login button item
     auto loginButton = MenuItemFont::create(
                                            "Login",
                                            CC_CALLBACK_1(LoginScene::menuLoginCallback, this));
@@ -68,8 +79,8 @@ bool LoginScene::init()
     menu->setPosition(Vec2::ZERO);
     this->addChild(menu, 1);
 
-    // 3. add a textField item
-    auto usernameTextField = ui::TextField::create("Username", "fonts/arial.ttf", 40);
+    // 4. add a textField item
+    usernameTextField = ui::TextField::create("Username", "fonts/arial.ttf", 40);
 
     if (usernameTextField == nullptr)
     {
@@ -92,13 +103,8 @@ bool LoginScene::init()
 
 void LoginScene::menuLoginCallback(Ref* pSender)
 {
-    //Close the cocos2d-x game scene and quit the application
-    Director::getInstance()->end();
-
-    /*To navigate back to native iOS screen(if present) without quitting the application  ,do not use Director::getInstance()->end() as given above,instead trigger a custom event created in RootViewController.mm as below*/
-
-    //EventCustom customEndEvent("game_scene_close_event");
-    //_eventDispatcher->dispatchEvent(&customEndEvent);
-
+    User::getInstance()->setName(usernameTextField->getString());
+    log("Username=%s", User::getInstance()->getName().c_str());
+    Director::getInstance()->replaceScene(MainMenuScene::createScene());
 
 }

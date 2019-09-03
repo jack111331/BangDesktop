@@ -105,9 +105,57 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o.provides: CMakeFiles/Bang.dir/Class
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
 
 
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp
+
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp > CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.i
+
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp -o CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s
+
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.requires:
+
+.PHONY : CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.requires
+
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.provides: CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.provides.build
+.PHONY : CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.provides
+
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
+
+
+CMakeFiles/Bang.dir/Classes/User.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/User.cpp.o: ../Classes/User.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Bang.dir/Classes/User.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/User.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/User.cpp
+
+CMakeFiles/Bang.dir/Classes/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/User.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/User.cpp > CMakeFiles/Bang.dir/Classes/User.cpp.i
+
+CMakeFiles/Bang.dir/Classes/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/User.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/User.cpp -o CMakeFiles/Bang.dir/Classes/User.cpp.s
+
+CMakeFiles/Bang.dir/Classes/User.cpp.o.requires:
+
+.PHONY : CMakeFiles/Bang.dir/Classes/User.cpp.o.requires
+
+CMakeFiles/Bang.dir/Classes/User.cpp.o.provides: CMakeFiles/Bang.dir/Classes/User.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.o.provides.build
+.PHONY : CMakeFiles/Bang.dir/Classes/User.cpp.o.provides
+
+CMakeFiles/Bang.dir/Classes/User.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/User.cpp.o
+
+
 CMakeFiles/Bang.dir/proj.linux/main.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/proj.linux/main.cpp.o: ../proj.linux/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/proj.linux/main.cpp.o -c /home/edge/BangDesktop/project/Bang/proj.linux/main.cpp
 
 CMakeFiles/Bang.dir/proj.linux/main.cpp.i: cmake_force
@@ -133,6 +181,8 @@ CMakeFiles/Bang.dir/proj.linux/main.cpp.o.provides.build: CMakeFiles/Bang.dir/pr
 Bang_OBJECTS = \
 "CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/User.cpp.o" \
 "CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
 
 # External object files for target Bang
@@ -140,6 +190,8 @@ Bang_EXTERNAL_OBJECTS =
 
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/User.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/proj.linux/main.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/build.make
 bin/Bang/Bang: lib/libcocos2d.a
@@ -182,20 +234,150 @@ bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libGLU.so
 bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libcurl.so
 bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libsqlite3.so
 bin/Bang/Bang: CMakeFiles/Bang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/Bang/Bang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable bin/Bang/Bang"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bang.dir/link.txt --verbose=$(VERBOSE)
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ ButtonS1.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ButtonS1.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ButtonS1.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ ButtonS2.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ButtonS2.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ButtonS2.png
 	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ CloseNormal.png\ ...
 	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/CloseNormal.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/CloseNormal.png
 	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ CloseSelected.png\ ...
 	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/CloseSelected.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/CloseSelected.png
-	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ HelloWorld.png\ ...
-	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/HelloWorld.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/HelloWorld.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ FriendBackground.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/FriendBackground.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/FriendBackground.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ accept-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/accept-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/accept-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ accept-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/accept-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/accept-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ add-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/add-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/add-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ add-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/add-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/add-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ back-icon-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/back-icon-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/back-icon-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ back-icon.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/back-icon.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/back-icon.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ background.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/background.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/background.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ bang-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/bang-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/bang-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ bgm-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/bgm-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/bgm-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ brown-dot.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/brown-dot.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/brown-dot.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ cap-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/cap-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/cap-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-blue-dark.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-blue-dark.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-blue-dark.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-blue-icon.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-blue-icon.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-blue-icon.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-blue.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-blue.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-blue.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-character.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-character.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-character.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-orange-dark.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-orange-dark.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-orange-dark.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-orange-icon.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-orange-icon.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-orange-icon.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ card-orange.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/card-orange.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/card-orange.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ choose-bg-orange-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/choose-bg-orange-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/choose-bg-orange-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ choose-bg-orange.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/choose-bg-orange.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/choose-bg-orange.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ choose-bg-purple-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/choose-bg-purple-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/choose-bg-purple-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ choose-bg-purple.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/choose-bg-purple.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/choose-bg-purple.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ click-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/click-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/click-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ decline-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/decline-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/decline-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ donothing-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/donothing-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/donothing-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ donothing-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/donothing-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/donothing-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ emptyImage.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/emptyImage.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/emptyImage.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ fb-login-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/fb-login-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/fb-login-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ fb-login.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/fb-login.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/fb-login.png
 	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ fonts/Marker\ Felt.ttf\ ...
 	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/fonts/Marker\ Felt.ttf /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/fonts/Marker\ Felt.ttf
 	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ fonts/arial.ttf\ ...
 	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/fonts/arial.ttf /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/fonts/arial.ttf
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ friend-bg.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/friend-bg.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/friend-bg.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ friend-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/friend-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/friend-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ game-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/game-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/game-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ game-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/game-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/game-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ gray-dot.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/gray-dot.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/gray-dot.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ green-dot.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/green-dot.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/green-dot.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ hp-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/hp-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/hp-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ lobby-btn-fullwidth.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/lobby-btn-fullwidth.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/lobby-btn-fullwidth.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ lobby-btn-fullwidth2.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/lobby-btn-fullwidth2.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/lobby-btn-fullwidth2.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ lobby-btn-halfwidth.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/lobby-btn-halfwidth.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/lobby-btn-halfwidth.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ lobby-room-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/lobby-room-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/lobby-room-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ login-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/login-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/login-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ login-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/login-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/login-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ mute-bg.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/mute-bg.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/mute-bg.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ mute-icon.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/mute-icon.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/mute-icon.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ mute-progress.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/mute-progress.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/mute-progress.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ mute-thumb.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/mute-thumb.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/mute-thumb.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ notification-bg.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/notification-bg.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/notification-bg.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ notification-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/notification-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/notification-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ notification-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/notification-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/notification-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ ok-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ok-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ok-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ ok-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ok-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ok-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ rank-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/rank-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/rank-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ ready-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ready-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ready-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ ready-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ready-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ready-btn.png
 	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ res/.gitkeep\ ...
 	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/res/.gitkeep /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/res/.gitkeep
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ sdkbox_config.json\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/sdkbox_config.json /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/sdkbox_config.json
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ season-tag.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/season-tag.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/season-tag.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ setting-logo.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/setting-logo.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/setting-logo.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ soundeffect-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/soundeffect-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/soundeffect-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ startgame-btn-click.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/startgame-btn-click.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/startgame-btn-click.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ startgame-btn.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/startgame-btn.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/startgame-btn.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ user-icon.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/user-icon.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/user-icon.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ username-input.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/username-input.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/username-input.png
+	/usr/bin/cmake -E echo copy\ file\ into\ Resources:\ week-tag.png\ ...
+	/usr/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/week-tag.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/week-tag.png
 
 # Rule to build all files generated by this target.
 CMakeFiles/Bang.dir/build: bin/Bang/Bang
@@ -204,6 +386,8 @@ CMakeFiles/Bang.dir/build: bin/Bang/Bang
 
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o.requires
+CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o.requires
+CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/User.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/proj.linux/main.cpp.o.requires
 
 .PHONY : CMakeFiles/Bang.dir/requires

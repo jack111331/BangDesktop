@@ -50,10 +50,14 @@ endif()
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
      Classes/LoginScene.cpp
+     Classes/MainMenuScene.cpp
+     Classes/User.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
      Classes/LoginScene.h
+     Classes/MainMenuScene.h
+     Classes/User.h
      )
 
 if(ANDROID)

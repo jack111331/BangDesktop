@@ -333,6 +333,60 @@ Classes/LoginScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoginScene.cpp.s
 .PHONY : Classes/LoginScene.cpp.s
 
+Classes/MainMenuScene.o: Classes/MainMenuScene.cpp.o
+
+.PHONY : Classes/MainMenuScene.o
+
+# target to build an object file
+Classes/MainMenuScene.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
+.PHONY : Classes/MainMenuScene.cpp.o
+
+Classes/MainMenuScene.i: Classes/MainMenuScene.cpp.i
+
+.PHONY : Classes/MainMenuScene.i
+
+# target to preprocess a source file
+Classes/MainMenuScene.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.i
+.PHONY : Classes/MainMenuScene.cpp.i
+
+Classes/MainMenuScene.s: Classes/MainMenuScene.cpp.s
+
+.PHONY : Classes/MainMenuScene.s
+
+# target to generate assembly for a file
+Classes/MainMenuScene.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s
+.PHONY : Classes/MainMenuScene.cpp.s
+
+Classes/User.o: Classes/User.cpp.o
+
+.PHONY : Classes/User.o
+
+# target to build an object file
+Classes/User.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.o
+.PHONY : Classes/User.cpp.o
+
+Classes/User.i: Classes/User.cpp.i
+
+.PHONY : Classes/User.i
+
+# target to preprocess a source file
+Classes/User.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.i
+.PHONY : Classes/User.cpp.i
+
+Classes/User.s: Classes/User.cpp.s
+
+.PHONY : Classes/User.s
+
+# target to generate assembly for a file
+Classes/User.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.s
+.PHONY : Classes/User.cpp.s
+
 proj.linux/main.o: proj.linux/main.cpp.o
 
 .PHONY : proj.linux/main.o
@@ -387,6 +441,12 @@ help:
 	@echo "... Classes/LoginScene.o"
 	@echo "... Classes/LoginScene.i"
 	@echo "... Classes/LoginScene.s"
+	@echo "... Classes/MainMenuScene.o"
+	@echo "... Classes/MainMenuScene.i"
+	@echo "... Classes/MainMenuScene.s"
+	@echo "... Classes/User.o"
+	@echo "... Classes/User.i"
+	@echo "... Classes/User.s"
 	@echo "... proj.linux/main.o"
 	@echo "... proj.linux/main.i"
 	@echo "... proj.linux/main.s"
