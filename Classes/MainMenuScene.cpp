@@ -24,6 +24,7 @@
 
 #include "ui/CocosGUI.h"
 #include "MainMenuScene.h"
+#include "LobbyScene.h"
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
@@ -138,7 +139,7 @@ bool MainMenuScene::init()
 
 void MainMenuScene::menuLobbyCallback(Ref* pSender)
 {
-    return;
+    Director::getInstance()->replaceScene(LobbyScene::createScene());
 }
 
 void MainMenuScene::menuFriendCallback(Ref* pSender)

@@ -60,9 +60,7 @@ bool LoginScene::init()
     this->addChild(backgroundImage);
 
     // 3. add login button item
-    auto loginButton = MenuItemFont::create(
-                                           "Login",
-                                           CC_CALLBACK_1(LoginScene::menuLoginCallback, this));
+    auto loginButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
     if (loginButton == nullptr)
     {
@@ -70,14 +68,27 @@ bool LoginScene::init()
     }
     else
     {
-        float x = origin.x + visibleSize.width - loginButton->getContentSize().width/2;
-        float y = origin.y + loginButton->getContentSize().height/2;
+        //Position
+        float x = 300.0f;
+        float y = 400.0f;
         log("loginButton=(%f, %f)\n", x, y);
         loginButton->setPosition(Vec2(x,y));
+
+        // // compute scaling factors
+        // float factor = visibleSize.width / 2.0f;
+        // float xscale = factor / loginButton->getContentSize().width;
+        // float yscale = factor / loginButton->getContentSize().height;
+
+        // // resize button with x and y scale
+        // loginButton->setScale(xscale, yscale);
+
+
+        loginButton->setTitleFontSize(40);
+        loginButton->setTitleText("Log in");
+
+        loginButton->addClickEventListener(CC_CALLBACK_1(LoginScene::menuLoginCallback, this));
     }
-    auto menu = Menu::create(loginButton, NULL);
-    menu->setPosition(Vec2::ZERO);
-    this->addChild(menu, 1);
+    this->addChild(loginButton);
 
     // 4. add a textField item
     usernameTextField = ui::TextField::create("Username", "fonts/arial.ttf", 40);
@@ -95,6 +106,24 @@ bool LoginScene::init()
     }
 
     this->addChild(usernameTextField);
+
+    // 5. add Bang! logo
+
+    auto bangLogoText = ui::Text::create("Bang!", "fonts/arial.ttf", 80);
+
+    if(bangLogoText == nullptr)
+    {
+        log("Can't initialize bang logo");
+    }
+    else
+    {
+        float x = 400.0f;
+        float y = 200.0f;
+        log("bangLogoText=(%f, %f)\n", x, y);
+        bangLogoText->setPosition(Vec2(x,y));
+    }
+
+    this->addChild(bangLogoText);
 
 
     return true;
