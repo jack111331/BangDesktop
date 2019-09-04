@@ -3272,6 +3272,20 @@ audio/include/SimpleAudioEngine.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
+/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+LobbyScene.h
+/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+SimpleAudioEngine.h
+/home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+
+/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h

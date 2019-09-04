@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/edge/BangDesktop/project/Bang/Classes/AppDelegate.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o"
+  "/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/User.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/User.cpp.o"

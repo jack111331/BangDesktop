@@ -51,12 +51,14 @@ list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
      Classes/LoginScene.cpp
      Classes/MainMenuScene.cpp
+     Classes/LobbyScene.cpp
      Classes/User.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
      Classes/LoginScene.h
      Classes/MainMenuScene.h
+     Classes/LobbyScene.h
      Classes/User.h
      )
 
