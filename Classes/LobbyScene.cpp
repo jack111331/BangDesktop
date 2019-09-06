@@ -24,7 +24,6 @@
 
 #include "ui/CocosGUI.h"
 #include "LobbyScene.h"
-#include "SimpleAudioEngine.h"
 #include "LoungeInfo.h"
 #include "MainMenuScene.h"
 #include <string>

@@ -3277,8 +3277,6 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 LobbyScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
-SimpleAudioEngine.h
-/home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
 LoungeInfo.h
 /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
 MainMenuScene.h
@@ -3297,8 +3295,6 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 LoginScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
-SimpleAudioEngine.h
-/home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
 MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 User.h
@@ -3325,10 +3321,26 @@ MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 LobbyScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+SettingScene.h
+/home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
 SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
 
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
+/home/edge/BangDesktop/project/Bang/Classes/SettingScene.cpp
+SettingScene.h
+/home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+SimpleAudioEngine.h
+/home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+
+/home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 

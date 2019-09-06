@@ -978,6 +978,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/SettingScene.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/SettingScene.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/User.cpp">
 			<Option target="Bang"/>
 		</Unit>

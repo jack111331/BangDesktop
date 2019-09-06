@@ -24,12 +24,15 @@
 
 #include "ui/CocosGUI.h"
 #include "MainMenuScene.h"
+
 #include "LobbyScene.h"
+#include "SettingScene.h"
+
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
-Scene * MainMenuScene::createScene()
+Scene *MainMenuScene::createScene()
 {
     return MainMenuScene::create();
 
@@ -38,10 +41,18 @@ Scene * MainMenuScene::createScene()
 // on "init" you need to initialize your instance
 bool MainMenuScene::init()
 {
-    // 1. super init first
-    if ( !Scene::init() )
+    // 1.a super init first
+    if (!Scene::init())
     {
         return false;
+    }
+
+    // 1.b init background music
+    auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+    audio->preloadBackgroundMusic("music/bg.mp3");
+    if (!audio->isBackgroundMusicPlaying())
+    {
+        audio->playBackgroundMusic("music/bg.mp3");
     }
 
     auto visibleSize = Director::getInstance()->getVisibleSize();
@@ -54,13 +65,12 @@ bool MainMenuScene::init()
     auto backgroundImage = Sprite::create("background.png");
     this->addChild(backgroundImage);
 
-    // 3.a add lobby button item
-    auto lobbyButton = MenuItemFont::create(
-                                           "Lobby",
-                                           CC_CALLBACK_1(MainMenuScene::menuLobbyCallback, this));
+    const float menuItemX = 400.0f;
+    float menuItemY = 600.0f;
 
-    const float menuItemX = 200.0f;
-    float menuItemY = 100.0f;
+
+    // 3.a add lobby button item
+    auto lobbyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (lobbyButton == nullptr)
     {
@@ -68,16 +78,21 @@ bool MainMenuScene::init()
     }
     else
     {
+        //Position
         log("lobbyButton=(%f, %f)\n", menuItemX, menuItemY);
         lobbyButton->setPosition(Vec2(menuItemX, menuItemY));
-        menuItemY -= 30.0f;
+        menuItemY -= 100.0f;
+
+        lobbyButton->setTitleFontSize(40);
+        lobbyButton->setTitleText("Lobby");
+
+        lobbyButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuLobbyCallback, this));
     }
-    menuItemLists.pushBack(lobbyButton);
+
+    this->addChild(lobbyButton);
 
     // 3.b add friend button item
-    auto friendButton = MenuItemFont::create(
-                                           "Friend List",
-                                           CC_CALLBACK_1(MainMenuScene::menuFriendCallback, this));
+    auto friendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (friendButton == nullptr)
     {
@@ -85,16 +100,21 @@ bool MainMenuScene::init()
     }
     else
     {
+        //Position
         log("friendButton=(%f, %f)\n", menuItemX, menuItemY);
         friendButton->setPosition(Vec2(menuItemX, menuItemY));
-                menuItemY -= 30.0f;
+        menuItemY -= 100.0f;
+
+        friendButton->setTitleFontSize(40);
+        friendButton->setTitleText("Friend List");
+
+        friendButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuFriendCallback, this));
     }
-    menuItemLists.pushBack(friendButton);
+
+    this->addChild(friendButton);
 
     // 3.c add setting button item
-    auto settingButton = MenuItemFont::create(
-                                           "Setting",
-                                           CC_CALLBACK_1(MainMenuScene::menuSettingCallback, this));
+    auto settingButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (settingButton == nullptr)
     {
@@ -102,33 +122,41 @@ bool MainMenuScene::init()
     }
     else
     {
+        //Position
         log("settingButton=(%f, %f)\n", menuItemX, menuItemY);
         settingButton->setPosition(Vec2(menuItemX, menuItemY));
-                menuItemY -= 30.0f;
-    }
-    menuItemLists.pushBack(settingButton);
+        menuItemY -= 100.0f;
 
+        settingButton->setTitleFontSize(40);
+        settingButton->setTitleText("Setting");
+
+        settingButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuSettingCallback, this));
+    }
+
+    this->addChild(settingButton);
     // 3.d add log out button item
-    auto logoutButton = MenuItemFont::create(
-            "Log out",
-            CC_CALLBACK_1(MainMenuScene::menuLogoutCallback, this));
+    auto logoutButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (logoutButton == nullptr)
     {
-        log("Can't initialize exit button");
+        log("Can't initialize logout button");
     }
     else
     {
+        //Position
         log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
         logoutButton->setPosition(Vec2(menuItemX, menuItemY));
-        menuItemY -= 30.0f;
-    }
-    menuItemLists.pushBack(logoutButton);
+        menuItemY -= 100.0f;
 
+        logoutButton->setTitleFontSize(40);
+        logoutButton->setTitleText("Setting");
+
+        logoutButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuLogoutCallback, this));
+    }
+
+    this->addChild(logoutButton);
     // 3.e add exit button item
-    auto exitButton = MenuItemFont::create(
-                                           "Exit",
-                                           CC_CALLBACK_1(MainMenuScene::menuExitCallback, this));
+    auto exitButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (exitButton == nullptr)
     {
@@ -136,39 +164,42 @@ bool MainMenuScene::init()
     }
     else
     {
-        log("exitButton=(%f, %f)\n", menuItemX, menuItemY);
+        //Position
+        log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
         exitButton->setPosition(Vec2(menuItemX, menuItemY));
+
+        exitButton->setTitleFontSize(40);
+        exitButton->setTitleText("Exit");
+
+        exitButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuExitCallback, this));
     }
-    menuItemLists.pushBack(exitButton);
 
-    auto menu = Menu::createWithArray(menuItemLists);
-    menu->setPosition(Vec2::ZERO);
-    this->addChild(menu, 1);
-
+    this->addChild(exitButton);
     return true;
 }
 
 
-void MainMenuScene::menuLobbyCallback(Ref* pSender)
+void MainMenuScene::menuLobbyCallback(Ref *pSender)
 {
     Director::getInstance()->pushScene(LobbyScene::createScene());
 }
 
-void MainMenuScene::menuFriendCallback(Ref* pSender)
+void MainMenuScene::menuFriendCallback(Ref *pSender)
 {
     return;
 }
 
-void MainMenuScene::menuSettingCallback(Ref* pSender)
+void MainMenuScene::menuSettingCallback(Ref *pSender)
 {
-    return;
+    Director::getInstance()->pushScene(SettingScene::createScene());
 }
-void MainMenuScene::menuLogoutCallback(Ref* pSender)
+
+void MainMenuScene::menuLogoutCallback(Ref *pSender)
 {
-    //Close the cocos2d-x game scene and quit the application
     Director::getInstance()->popScene();
 }
-void MainMenuScene::menuExitCallback(Ref* pSender)
+
+void MainMenuScene::menuExitCallback(Ref *pSender)
 {
     //Close the cocos2d-x game scene and quit the application
     Director::getInstance()->end();
