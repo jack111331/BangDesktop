@@ -38,11 +38,13 @@ public:
     // ready button click callback
     void menuReadyCallback(cocos2d::Ref* pSender);
 
+    // exit button click callback
+    void menuExitCallback(cocos2d::Ref* pSender);
+
     // implement the "static create()" method manually
     CREATE_FUNC(LobbyScene);
 
 private:
-    static Scene * instance;
     cocos2d::ui::Button * readyButton;
     bool ready = false;
 };

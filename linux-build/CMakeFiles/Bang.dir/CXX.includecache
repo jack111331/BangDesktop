@@ -3279,6 +3279,12 @@ LobbyScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
 SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+LoungeInfo.h
+/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
+MainMenuScene.h
+/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+string
+-
 
 /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
 ui/CocosGUI.h
@@ -3304,11 +3310,21 @@ ui/CocosGUI.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
+/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.cpp
+LoungeInfo.h
+/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
+
+/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
+cstdint
+-
+
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+LobbyScene.h
+/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
 SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
 

@@ -29,15 +29,10 @@
 
 USING_NS_CC;
 
-Scene * MainMenuScene::instance = nullptr;
-
 Scene * MainMenuScene::createScene()
 {
-    if(instance == nullptr)
-    {
-        instance = MainMenuScene::create();
-    }
-    return instance;
+    return MainMenuScene::create();
+
 }
 
 // on "init" you need to initialize your instance
@@ -113,7 +108,24 @@ bool MainMenuScene::init()
     }
     menuItemLists.pushBack(settingButton);
 
-    // 3.d add lobby button item
+    // 3.d add log out button item
+    auto logoutButton = MenuItemFont::create(
+            "Log out",
+            CC_CALLBACK_1(MainMenuScene::menuLogoutCallback, this));
+
+    if (logoutButton == nullptr)
+    {
+        log("Can't initialize exit button");
+    }
+    else
+    {
+        log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
+        logoutButton->setPosition(Vec2(menuItemX, menuItemY));
+        menuItemY -= 30.0f;
+    }
+    menuItemLists.pushBack(logoutButton);
+
+    // 3.e add exit button item
     auto exitButton = MenuItemFont::create(
                                            "Exit",
                                            CC_CALLBACK_1(MainMenuScene::menuExitCallback, this));
@@ -139,7 +151,7 @@ bool MainMenuScene::init()
 
 void MainMenuScene::menuLobbyCallback(Ref* pSender)
 {
-    Director::getInstance()->replaceScene(LobbyScene::createScene());
+    Director::getInstance()->pushScene(LobbyScene::createScene());
 }
 
 void MainMenuScene::menuFriendCallback(Ref* pSender)
@@ -151,7 +163,11 @@ void MainMenuScene::menuSettingCallback(Ref* pSender)
 {
     return;
 }
-
+void MainMenuScene::menuLogoutCallback(Ref* pSender)
+{
+    //Close the cocos2d-x game scene and quit the application
+    Director::getInstance()->popScene();
+}
 void MainMenuScene::menuExitCallback(Ref* pSender)
 {
     //Close the cocos2d-x game scene and quit the application

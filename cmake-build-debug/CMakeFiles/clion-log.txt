@@ -1,0 +1,20 @@
+/home/edge/clion-2019.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/edge/BangDesktop/project/Bang
+-- PROJECT_NAME:Bang
+-- PROJECT_SOURCE_DIR:/home/edge/BangDesktop/project/Bang
+-- COCOS2DX_ROOT_PATH:/home/edge/BangDesktop/project/Bang/cocos2d
+-- CMAKE_MODULE_PATH:/home/edge/BangDesktop/project/Bang/cocos2d/cmake/Modules/
+-- PROJECT_BINARY_DIR:/home/edge/BangDesktop/project/Bang/cmake-build-debug
+-- ENGINE_BINARY_PATH:/home/edge/BangDesktop/project/Bang/cmake-build-debug/engine
+-- CMAKE_GENERATOR: Unix Makefiles
+-- CMAKE_BUILD_TYPE: Debug
+-- Fontconfig include dirs: /usr/include/freetype2
+-- GTK3 include dirs: /usr/include/gtk-3.0;/usr/include/at-spi2-atk/2.0;/usr/include/at-spi-2.0;/usr/include/dbus-1.0;/usr/lib/x86_64-linux-gnu/dbus-1.0/include;/usr/include/gtk-3.0;/usr/include/gio-unix-2.0/;/usr/include/mirclient;/usr/include/mircore;/usr/include/mircookie;/usr/include/cairo;/usr/include/pango-1.0;/usr/include/harfbuzz;/usr/include/pango-1.0;/usr/include/atk-1.0;/usr/include/cairo;/usr/include/pixman-1;/usr/include/freetype2;/usr/include/libpng12;/usr/include/gdk-pixbuf-2.0;/usr/include/libpng12;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include
+-- ZLIB include dirs: /usr/include
+-- PNG include dirs: /usr/include;/usr/include
+-- GLEW include dirs: /usr/include
+-- OpenGL include dirs: /usr/include
+-- CURL include dirs: /usr/include
+-- SQLite3 include dirs: /usr/include
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/edge/BangDesktop/project/Bang/cmake-build-debug

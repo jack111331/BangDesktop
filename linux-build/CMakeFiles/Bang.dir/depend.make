@@ -568,6 +568,8 @@ CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../cocos2d/external/glfw3/include/
 CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3native.h
 CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../Classes/LobbyScene.cpp
 CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../Classes/LobbyScene.h
+CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../Classes/LoungeInfo.h
+CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../Classes/MainMenuScene.h
 
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -854,6 +856,9 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/LoginScene.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/MainMenuScene.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/User.h
 
+CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o: ../Classes/LoungeInfo.cpp
+CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o: ../Classes/LoungeInfo.h
+
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -1134,6 +1139,7 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/vr/CCVRGeneric
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3native.h
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/LobbyScene.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.cpp
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.h
 

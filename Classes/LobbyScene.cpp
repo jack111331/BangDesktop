@@ -25,25 +25,22 @@
 #include "ui/CocosGUI.h"
 #include "LobbyScene.h"
 #include "SimpleAudioEngine.h"
+#include "LoungeInfo.h"
+#include "MainMenuScene.h"
+#include <string>
 
 USING_NS_CC;
 
-Scene * LobbyScene::instance = nullptr;
-
-Scene * LobbyScene::createScene()
+Scene *LobbyScene::createScene()
 {
-    if(instance == nullptr)
-    {
-        instance = LobbyScene::create();
-    }
-    return instance;
+    return LobbyScene::create();
 }
 
 // on "init" you need to initialize your instance
 bool LobbyScene::init()
 {
     // 1. super init first
-    if ( !Scene::init() )
+    if (!Scene::init())
     {
         return false;
     }
@@ -70,7 +67,7 @@ bool LobbyScene::init()
         float x = 300.0f;
         float y = 400.0f;
         log("readyButton=(%f, %f)\n", x, y);
-        readyButton->setPosition(Vec2(x,y));
+        readyButton->setPosition(Vec2(x, y));
 
         readyButton->setTitleFontSize(40);
         readyButton->setTitleText("Ready");
@@ -80,12 +77,80 @@ bool LobbyScene::init()
 
     this->addChild(readyButton);
 
+
+    std::vector<LoungeInfo> loungeInfoList;
+    loungeInfoList.push_back(LoungeInfo(1234, false));
+    loungeInfoList.push_back(LoungeInfo(12345, true));
+    for (LoungeInfo loungeInfo : loungeInfoList)
+    {
+        static float iconX = 100.0f;
+        float iconY = 500.0f;
+        Sprite *userIcon = Sprite::create("user-icon.png");
+        userIcon->setPosition(iconX, iconY);
+        iconX += 100.0f;
+        this->addChild(userIcon);
+
+
+        static float usernameX = 100.0f;
+        float usernameY = 450.0f;
+        Label *usernameLabel = Label::create(std::to_string(loungeInfo.getId()), "fonts/arial.ttf", 40);
+        usernameLabel->setPosition(usernameX, usernameY);
+        usernameX += 100.0f;
+        this->addChild(usernameLabel);
+
+
+        static float readyX = 100.0f;
+        float readyY = 500.0f;
+        Label *readyLabel = Label::create(loungeInfo.isReady() ? "Ready" : "Not Ready", "fonts/arial.ttf", 40);
+        readyLabel->setPosition(readyX, readyY);
+        readyX += 100.0f;
+        this->addChild(readyLabel);
+
+    }
+
+
+    auto exitButton = ui::Button::create("login-btn.png", "login-btn-click.png");
+
+    if (exitButton == nullptr)
+    {
+        log("Can't initialize exit button");
+    }
+    else
+    {
+        //Position
+        float x = 500.0f;
+        float y = 600.0f;
+        log("exitButton=(%f, %f)\n", x, y);
+        exitButton->setPosition(Vec2(x, y));
+
+        exitButton->setTitleFontSize(40);
+        exitButton->setTitleText("Exit");
+
+        exitButton->addClickEventListener(CC_CALLBACK_1(LobbyScene::menuExitCallback, this));
+    }
+    this->addChild(exitButton);
+
+
     return true;
 }
 
 
-void LobbyScene::menuReadyCallback(Ref* pSender)
+void LobbyScene::menuReadyCallback(Ref *pSender)
 {
     ready = !ready;
-    readyButton->loadTextureNormal("ready-btn.png");
+    if (ready)
+    {
+        readyButton->loadTextureNormal("ready-btn-ready.png");
+        readyButton->loadTexturePressed("ready-btn-ready-click.png");
+    }
+    else
+    {
+        readyButton->loadTextureNormal("ready-btn.png");
+        readyButton->loadTexturePressed("ready-btn-click.png");
+    }
+
+}
+void LobbyScene::menuExitCallback(Ref *pSender)
+{
+    Director::getInstance()->popScene();
 }

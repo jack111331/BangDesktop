@@ -30,15 +30,12 @@
 
 USING_NS_CC;
 
-Scene * LoginScene::instance = nullptr;
 
 Scene* LoginScene::createScene()
 {
-    if(instance == nullptr)
-    {
-        instance = LoginScene::create();
-    }
-    return instance;
+
+    return LoginScene::create();
+
 }
 
 // on "init" you need to initialize your instance
@@ -73,15 +70,6 @@ bool LoginScene::init()
         float y = 400.0f;
         log("loginButton=(%f, %f)\n", x, y);
         loginButton->setPosition(Vec2(x,y));
-
-        // // compute scaling factors
-        // float factor = visibleSize.width / 2.0f;
-        // float xscale = factor / loginButton->getContentSize().width;
-        // float yscale = factor / loginButton->getContentSize().height;
-
-        // // resize button with x and y scale
-        // loginButton->setScale(xscale, yscale);
-
 
         loginButton->setTitleFontSize(40);
         loginButton->setTitleText("Log in");
@@ -134,6 +122,6 @@ void LoginScene::menuLoginCallback(Ref* pSender)
 {
     User::getInstance()->setName(usernameTextField->getString());
     log("Username=%s", User::getInstance()->getName().c_str());
-    Director::getInstance()->replaceScene(MainMenuScene::createScene());
+    Director::getInstance()->pushScene(MainMenuScene::createScene());
 
 }

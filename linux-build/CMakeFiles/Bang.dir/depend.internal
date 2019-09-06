@@ -569,6 +569,8 @@ CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
  /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
+ /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -854,6 +856,9 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
  /home/edge/BangDesktop/project/Bang/Classes/User.h
+CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o
+ /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -1135,6 +1140,7 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  ../cocos2d/cocos/vr/CCVRProtocol.h
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
+ /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 CMakeFiles/Bang.dir/Classes/User.cpp.o

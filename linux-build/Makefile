@@ -360,6 +360,33 @@ Classes/LoginScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoginScene.cpp.s
 .PHONY : Classes/LoginScene.cpp.s
 
+Classes/LoungeInfo.o: Classes/LoungeInfo.cpp.o
+
+.PHONY : Classes/LoungeInfo.o
+
+# target to build an object file
+Classes/LoungeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o
+.PHONY : Classes/LoungeInfo.cpp.o
+
+Classes/LoungeInfo.i: Classes/LoungeInfo.cpp.i
+
+.PHONY : Classes/LoungeInfo.i
+
+# target to preprocess a source file
+Classes/LoungeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.i
+.PHONY : Classes/LoungeInfo.cpp.i
+
+Classes/LoungeInfo.s: Classes/LoungeInfo.cpp.s
+
+.PHONY : Classes/LoungeInfo.s
+
+# target to generate assembly for a file
+Classes/LoungeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.s
+.PHONY : Classes/LoungeInfo.cpp.s
+
 Classes/MainMenuScene.o: Classes/MainMenuScene.cpp.o
 
 .PHONY : Classes/MainMenuScene.o
@@ -471,6 +498,9 @@ help:
 	@echo "... Classes/LoginScene.o"
 	@echo "... Classes/LoginScene.i"
 	@echo "... Classes/LoginScene.s"
+	@echo "... Classes/LoungeInfo.o"
+	@echo "... Classes/LoungeInfo.i"
+	@echo "... Classes/LoungeInfo.s"
 	@echo "... Classes/MainMenuScene.o"
 	@echo "... Classes/MainMenuScene.i"
 	@echo "... Classes/MainMenuScene.s"

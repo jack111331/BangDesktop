@@ -43,14 +43,16 @@ public:
     // setting button click callback
     void menuSettingCallback(cocos2d::Ref* pSender);
 
+    // log out button click callback
+    void menuLogoutCallback(cocos2d::Ref* pSender);
+
     // exit button click callback
     void menuExitCallback(cocos2d::Ref* pSender);
 
     // implement the "static create()" method manually
     CREATE_FUNC(MainMenuScene);
 
-private:
-    static Scene * instance;
+
 };
 
 #endif // __MAIN_MENU_SCENE_H__
