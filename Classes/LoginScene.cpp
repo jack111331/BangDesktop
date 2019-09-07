@@ -26,6 +26,7 @@
 #include "LoginScene.h"
 #include "MainMenuScene.h"
 #include "User.h"
+#include "ResolutionUtil.h"
 
 USING_NS_CC;
 
@@ -65,13 +66,15 @@ bool LoginScene::init()
     else
     {
         //Position
-        float x = 300.0f;
-        float y = 400.0f;
+        constexpr float x = 0.7f, y = 0.5f;
         log("loginButton=(%f, %f)\n", x, y);
-        loginButton->setPosition(Vec2(x,y));
+        loginButton->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
 
         loginButton->setTitleFontSize(40);
         loginButton->setTitleText("Log in");
+        auto loginButtonTitleSize = loginButton->getTitleRenderer()->getContentSize();
+        loginButton->ignoreContentAdaptWithSize(false);
+        loginButton->setContentSize(Size(loginButtonTitleSize.width * 3.0f, loginButtonTitleSize.height * 1.7f));
 
         loginButton->addClickEventListener(CC_CALLBACK_1(LoginScene::menuLoginCallback, this));
     }
@@ -86,10 +89,9 @@ bool LoginScene::init()
     }
     else
     {
-        float x = 200.0f;
-        float y = 100.0f;
+        constexpr float x = 0.4f, y = 0.55f;
         log("usernameTextField=(%f, %f)\n", x, y);
-        usernameTextField->setPosition(Vec2(x,y));
+        usernameTextField->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
     }
 
     this->addChild(usernameTextField);
@@ -104,10 +106,10 @@ bool LoginScene::init()
     }
     else
     {
-        float x = 400.0f;
-        float y = 200.0f;
+        constexpr float x = 0.4f, y = 0.8f;
         log("bangLogoText=(%f, %f)\n", x, y);
-        bangLogoText->setPosition(Vec2(x,y));
+        bangLogoText->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
+        bangLogoText->setFontSize(70);
     }
 
     this->addChild(bangLogoText);

@@ -30,6 +30,7 @@
 #include "SettingScene.h"
 
 #include "SimpleAudioEngine.h"
+#include "ResolutionUtil.h"
 
 USING_NS_CC;
 
@@ -56,18 +57,14 @@ bool MainMenuScene::init()
         audio->playBackgroundMusic("music/bg.mp3");
     }
 
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    log("visibleSize=(%f, %f)", visibleSize.width, visibleSize.height);
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    log("origin=(%f, %f)", origin.x, origin.y);
     Vector<MenuItem *> menuItemLists;
 
     // 2. cover background image
     auto backgroundImage = Sprite::create("background.png");
     this->addChild(backgroundImage);
 
-    const float menuItemX = 400.0f;
-    float menuItemY = 600.0f;
+    const float menuItemX = 0.5f;
+    float menuItemY = 0.7f;
 
 
     // 3.a add lobby button item
@@ -81,8 +78,8 @@ bool MainMenuScene::init()
     {
         //Position
         log("lobbyButton=(%f, %f)\n", menuItemX, menuItemY);
-        lobbyButton->setPosition(Vec2(menuItemX, menuItemY));
-        menuItemY -= 100.0f;
+        lobbyButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
+        menuItemY -= 0.1f;
 
         lobbyButton->setTitleFontSize(40);
         lobbyButton->setTitleText("Lobby");
@@ -103,8 +100,8 @@ bool MainMenuScene::init()
     {
         //Position
         log("friendButton=(%f, %f)\n", menuItemX, menuItemY);
-        friendButton->setPosition(Vec2(menuItemX, menuItemY));
-        menuItemY -= 100.0f;
+        friendButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
+        menuItemY -= 0.1f;
 
         friendButton->setTitleFontSize(40);
         friendButton->setTitleText("Friend List");
@@ -125,8 +122,8 @@ bool MainMenuScene::init()
     {
         //Position
         log("settingButton=(%f, %f)\n", menuItemX, menuItemY);
-        settingButton->setPosition(Vec2(menuItemX, menuItemY));
-        menuItemY -= 100.0f;
+        settingButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
+        menuItemY -= 0.1f;
 
         settingButton->setTitleFontSize(40);
         settingButton->setTitleText("Setting");
@@ -146,11 +143,11 @@ bool MainMenuScene::init()
     {
         //Position
         log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
-        logoutButton->setPosition(Vec2(menuItemX, menuItemY));
-        menuItemY -= 100.0f;
+        logoutButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
+        menuItemY -= 0.1f;
 
         logoutButton->setTitleFontSize(40);
-        logoutButton->setTitleText("Setting");
+        logoutButton->setTitleText("Log out");
 
         logoutButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuLogoutCallback, this));
     }
@@ -167,7 +164,7 @@ bool MainMenuScene::init()
     {
         //Position
         log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
-        exitButton->setPosition(Vec2(menuItemX, menuItemY));
+        exitButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
 
         exitButton->setTitleFontSize(40);
         exitButton->setTitleText("Exit");

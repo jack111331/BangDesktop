@@ -68,6 +68,7 @@ list(APPEND GAME_HEADER
         Classes/AddFriendLayer.h
         Classes/User.h
         Classes/LoungeInfo.h
+        Classes/ResolutionUtil.h
         )
 
 if (ANDROID)

@@ -851,6 +851,7 @@ CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/FriendScene.h
  /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -1416,6 +1417,7 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.cpp
@@ -1705,6 +1707,7 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h

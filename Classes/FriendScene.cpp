@@ -27,6 +27,7 @@
 #include "LoungeInfo.h"
 #include "MainMenuScene.h"
 #include "AddFriendLayer.h"
+#include "ResolutionUtil.h"
 #include <string>
 
 USING_NS_CC;
@@ -130,14 +131,38 @@ bool FriendScene::init()
 //    }
 
     auto friendListView = ui::ListView::create();
-    friendListView->setAnchorPoint(Vec2(0.5, 0.5));
-    friendListView->setContentSize(Size(400, visibleSize.height - 100));
-    friendListView->setPosition(Vec2(600,visibleSize.height/2));
-    friendListView->setDirection(ui::ScrollView::Direction::VERTICAL);
+    if (friendListView == nullptr)
+    {
+        log("Can't initialize friend list view");
+    }
+    else
+    {
+        friendListView->setAnchorPoint(Vec2(0.5, 0.5));
+        constexpr float sizeX = 0.4, sizeY = 0.4;
+        constexpr float positionX = 0.8, positionY = 0.5;
+        friendListView->setContentSize(ResolutionUtil::getCorrespondSize(sizeX, sizeY));
+        friendListView->setPosition(ResolutionUtil::getCorrespondPosition(positionX, positionY));
+        friendListView->setDirection(ui::ScrollView::Direction::VERTICAL);
+
+
+
+        auto trump = Sprite::create("background-layer.png");
+        trump->setAnchorPoint(Vec2::ZERO);
+        trump->setScale(1.5, 1.5);
+        // container
+        ui::Layout* listLayout = ui::Layout::create();
+        listLayout->addChild(trump);
+        listLayout->setContentSize(Size(100, 150));
+        // need
+        listLayout->setTouchEnabled(true);
+        // push item
+        friendListView->pushBackCustomItem(listLayout);
+    }
     this->addChild(friendListView);
 
     return true;
 }
+
 void FriendScene::menuBackCallback(Ref *pSender)
 {
     Director::getInstance()->popScene();
@@ -147,7 +172,7 @@ void FriendScene::menuAddFriendCallback(Ref *pSender)
 {
     auto addFriendLayer = AddFriendLayer::create();
     auto visibleSize = Director::getInstance()->getVisibleSize();
-    addFriendLayer->setContentSize(cocos2d::Size(visibleSize.width * 0.5, visibleSize.height * 0.5));
+    addFriendLayer->setContentSize(cocos2d::Size(100.0, 100.0));
     addFriendLayer->setAnchorPoint(Size(0.5, 0.5));
     addFriendLayer->setPosition(cocos2d::Vec2(0, visibleSize.height * 0.2));
     this->addChild(addFriendLayer);

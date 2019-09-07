@@ -850,6 +850,7 @@ CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../Classes/FriendScene.cpp
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../Classes/FriendScene.h
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../Classes/LoungeInfo.h
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../Classes/MainMenuScene.h
+CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../Classes/ResolutionUtil.h
 
 CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -1415,6 +1416,7 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/external/glfw3/include/
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/LoginScene.cpp
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/LoginScene.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/MainMenuScene.h
+CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o: ../Classes/LoungeInfo.cpp
@@ -1704,6 +1706,7 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/FriendScene.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/LobbyScene.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.cpp
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.h
+CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/SettingScene.h
 
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
