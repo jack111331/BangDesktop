@@ -52,7 +52,9 @@ list(APPEND GAME_SOURCE
         Classes/LoginScene.cpp
         Classes/MainMenuScene.cpp
         Classes/LobbyScene.cpp
+        Classes/FriendScene.cpp
         Classes/SettingScene.cpp
+        Classes/AddFriendLayer.cpp
         Classes/User.cpp
         Classes/LoungeInfo.cpp
         )
@@ -61,7 +63,9 @@ list(APPEND GAME_HEADER
         Classes/LoginScene.h
         Classes/MainMenuScene.h
         Classes/LobbyScene.h
+        Classes/FriendScene.h
         Classes/SettingScene.h
+        Classes/AddFriendLayer.h
         Classes/User.h
         Classes/LoungeInfo.h
         )

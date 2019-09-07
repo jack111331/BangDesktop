@@ -3258,6 +3258,16 @@ GL/glx.h
 EGL/egl.h
 -
 
+/home/edge/BangDesktop/project/Bang/Classes/AddFriendLayer.cpp
+AddFriendLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/AddFriendLayer.h
+
+/home/edge/BangDesktop/project/Bang/Classes/AddFriendLayer.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
 /home/edge/BangDesktop/project/Bang/Classes/AppDelegate.cpp
 AppDelegate.h
 /home/edge/BangDesktop/project/Bang/Classes/AppDelegate.h
@@ -3269,6 +3279,26 @@ audio/include/SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/audio/include/SimpleAudioEngine.h
 
 /home/edge/BangDesktop/project/Bang/Classes/AppDelegate.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
+/home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+FriendScene.h
+/home/edge/BangDesktop/project/Bang/Classes/FriendScene.h
+LoungeInfo.h
+/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
+MainMenuScene.h
+/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+AddFriendLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/AddFriendLayer.h
+string
+-
+
+/home/edge/BangDesktop/project/Bang/Classes/FriendScene.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
@@ -3321,6 +3351,8 @@ MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 LobbyScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+FriendScene.h
+/home/edge/BangDesktop/project/Bang/Classes/FriendScene.h
 SettingScene.h
 /home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
 SimpleAudioEngine.h

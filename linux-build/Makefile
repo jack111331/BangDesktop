@@ -279,6 +279,33 @@ ext_unzip/fast:
 	$(MAKE) -f engine/external/unzip/CMakeFiles/ext_unzip.dir/build.make engine/external/unzip/CMakeFiles/ext_unzip.dir/build
 .PHONY : ext_unzip/fast
 
+Classes/AddFriendLayer.o: Classes/AddFriendLayer.cpp.o
+
+.PHONY : Classes/AddFriendLayer.o
+
+# target to build an object file
+Classes/AddFriendLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/AddFriendLayer.cpp.o
+.PHONY : Classes/AddFriendLayer.cpp.o
+
+Classes/AddFriendLayer.i: Classes/AddFriendLayer.cpp.i
+
+.PHONY : Classes/AddFriendLayer.i
+
+# target to preprocess a source file
+Classes/AddFriendLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/AddFriendLayer.cpp.i
+.PHONY : Classes/AddFriendLayer.cpp.i
+
+Classes/AddFriendLayer.s: Classes/AddFriendLayer.cpp.s
+
+.PHONY : Classes/AddFriendLayer.s
+
+# target to generate assembly for a file
+Classes/AddFriendLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/AddFriendLayer.cpp.s
+.PHONY : Classes/AddFriendLayer.cpp.s
+
 Classes/AppDelegate.o: Classes/AppDelegate.cpp.o
 
 .PHONY : Classes/AppDelegate.o
@@ -305,6 +332,33 @@ Classes/AppDelegate.s: Classes/AppDelegate.cpp.s
 Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
+
+Classes/FriendScene.o: Classes/FriendScene.cpp.o
+
+.PHONY : Classes/FriendScene.o
+
+# target to build an object file
+Classes/FriendScene.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o
+.PHONY : Classes/FriendScene.cpp.o
+
+Classes/FriendScene.i: Classes/FriendScene.cpp.i
+
+.PHONY : Classes/FriendScene.i
+
+# target to preprocess a source file
+Classes/FriendScene.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendScene.cpp.i
+.PHONY : Classes/FriendScene.cpp.i
+
+Classes/FriendScene.s: Classes/FriendScene.cpp.s
+
+.PHONY : Classes/FriendScene.s
+
+# target to generate assembly for a file
+Classes/FriendScene.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendScene.cpp.s
+.PHONY : Classes/FriendScene.cpp.s
 
 Classes/LobbyScene.o: Classes/LobbyScene.cpp.o
 
@@ -516,9 +570,15 @@ help:
 	@echo "... ext_poly2tri"
 	@echo "... ext_md5"
 	@echo "... ext_unzip"
+	@echo "... Classes/AddFriendLayer.o"
+	@echo "... Classes/AddFriendLayer.i"
+	@echo "... Classes/AddFriendLayer.s"
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
+	@echo "... Classes/FriendScene.o"
+	@echo "... Classes/FriendScene.i"
+	@echo "... Classes/FriendScene.s"
 	@echo "... Classes/LobbyScene.o"
 	@echo "... Classes/LobbyScene.i"
 	@echo "... Classes/LobbyScene.s"

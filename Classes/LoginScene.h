@@ -41,7 +41,6 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(LoginScene);
 private:
-
     cocos2d::ui::TextField * usernameTextField;
 };
 

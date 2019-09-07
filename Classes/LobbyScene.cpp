@@ -141,11 +141,13 @@ void LobbyScene::menuReadyCallback(Ref *pSender)
     {
         readyButton->loadTextureNormal("ready-btn-ready.png");
         readyButton->loadTexturePressed("ready-btn-ready-click.png");
+        readyButton->setTitleText("Ready");
     }
     else
     {
         readyButton->loadTextureNormal("ready-btn.png");
         readyButton->loadTexturePressed("ready-btn-click.png");
+        readyButton->setTitleText("Not Ready");
     }
 
 }

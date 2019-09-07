@@ -26,6 +26,7 @@
 #include "MainMenuScene.h"
 
 #include "LobbyScene.h"
+#include "FriendScene.h"
 #include "SettingScene.h"
 
 #include "SimpleAudioEngine.h"
@@ -186,7 +187,7 @@ void MainMenuScene::menuLobbyCallback(Ref *pSender)
 
 void MainMenuScene::menuFriendCallback(Ref *pSender)
 {
-    return;
+    Director::getInstance()->pushScene(FriendScene::createScene());
 }
 
 void MainMenuScene::menuSettingCallback(Ref *pSender)
