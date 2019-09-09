@@ -3,6 +3,7 @@
 //
 
 #include "AddFriendLayer.h"
+#include "ResolutionUtil.h"
 
 USING_NS_CC;
 
@@ -21,6 +22,7 @@ bool AddFriendLayer::init()
 
     // 2. cover background image
     auto backgroundImage = Sprite::create("background-layer.png");
+    backgroundImage->setScale(0.1);
     this->addChild(backgroundImage);
 
     // 3. add user id text field
@@ -31,10 +33,7 @@ bool AddFriendLayer::init()
     }
     else
     {
-        float x = 200.0f;
-        float y = 100.0f;
-        log("userIdTextField=(%f, %f)\n", x, y);
-        userIdTextField->setPosition(Vec2(x, y));
+        userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.0, 0.1f));
     }
     this->addChild(this->userIdTextField);
 
@@ -48,10 +47,7 @@ bool AddFriendLayer::init()
     else
     {
         //Position
-        float x = 300.0f;
-        float y = 400.0f;
-        log("addButton=(%f, %f)\n", x, y);
-        addButton->setPosition(Vec2(x, y));
+        addButton->setPosition(ResolutionUtil::getCorrespondPosition(-0.1, -0.1f));
 
         addButton->setTitleFontSize(40);
         addButton->setTitleText("Add");
@@ -70,10 +66,7 @@ bool AddFriendLayer::init()
     else
     {
         //Position
-        float x = 300.0f;
-        float y = 500.0f;
-        log("cancelButton=(%f, %f)\n", x, y);
-        cancelButton->setPosition(Vec2(x, y));
+        cancelButton->setPosition(ResolutionUtil::getCorrespondPosition(0.1, -0.1f));
 
         cancelButton->setTitleFontSize(40);
         cancelButton->setTitleText("Cancel");
@@ -91,7 +84,6 @@ void AddFriendLayer::menuAddCallback(Ref *pSender)
 
 void AddFriendLayer::menuCancelCallback(Ref *pSender)
 {
-    log("User id=%s", this->userIdTextField->getString().c_str());
     this->removeFromParent();
 }
 

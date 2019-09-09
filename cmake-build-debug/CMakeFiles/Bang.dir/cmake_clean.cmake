@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/GameScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/AddFriendLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/User.cpp.o"
   "CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o"

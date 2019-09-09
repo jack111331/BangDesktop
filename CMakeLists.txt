@@ -54,6 +54,7 @@ list(APPEND GAME_SOURCE
         Classes/LobbyScene.cpp
         Classes/FriendScene.cpp
         Classes/SettingScene.cpp
+        Classes/GameScene.cpp
         Classes/AddFriendLayer.cpp
         Classes/User.cpp
         Classes/LoungeInfo.cpp
@@ -65,10 +66,13 @@ list(APPEND GAME_HEADER
         Classes/LobbyScene.h
         Classes/FriendScene.h
         Classes/SettingScene.h
+        Classes/GameScene.h
         Classes/AddFriendLayer.h
         Classes/User.h
         Classes/LoungeInfo.h
         Classes/ResolutionUtil.h
+        Classes/vo
+        Classes/nlohmann
         )
 
 if (ANDROID)

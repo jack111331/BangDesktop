@@ -360,6 +360,33 @@ Classes/FriendScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendScene.cpp.s
 .PHONY : Classes/FriendScene.cpp.s
 
+Classes/GameScene.o: Classes/GameScene.cpp.o
+
+.PHONY : Classes/GameScene.o
+
+# target to build an object file
+Classes/GameScene.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.o
+.PHONY : Classes/GameScene.cpp.o
+
+Classes/GameScene.i: Classes/GameScene.cpp.i
+
+.PHONY : Classes/GameScene.i
+
+# target to preprocess a source file
+Classes/GameScene.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.i
+.PHONY : Classes/GameScene.cpp.i
+
+Classes/GameScene.s: Classes/GameScene.cpp.s
+
+.PHONY : Classes/GameScene.s
+
+# target to generate assembly for a file
+Classes/GameScene.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.s
+.PHONY : Classes/GameScene.cpp.s
+
 Classes/LobbyScene.o: Classes/LobbyScene.cpp.o
 
 .PHONY : Classes/LobbyScene.o
@@ -579,6 +606,9 @@ help:
 	@echo "... Classes/FriendScene.o"
 	@echo "... Classes/FriendScene.i"
 	@echo "... Classes/FriendScene.s"
+	@echo "... Classes/GameScene.o"
+	@echo "... Classes/GameScene.i"
+	@echo "... Classes/GameScene.s"
 	@echo "... Classes/LobbyScene.o"
 	@echo "... Classes/LobbyScene.i"
 	@echo "... Classes/LobbyScene.s"

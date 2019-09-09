@@ -24,11 +24,9 @@
 
 #include "ui/CocosGUI.h"
 #include "FriendScene.h"
-#include "LoungeInfo.h"
 #include "MainMenuScene.h"
 #include "AddFriendLayer.h"
 #include "ResolutionUtil.h"
-#include <string>
 
 USING_NS_CC;
 
@@ -77,6 +75,7 @@ bool FriendScene::init()
     }
 
     this->addChild(backButton);
+
     // 3.b add add friend button item
     auto addFriendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
@@ -100,35 +99,6 @@ bool FriendScene::init()
 
     this->addChild(addFriendButton);
 
-//    std::vector<LoungeInfo> loungeInfoList;
-//    loungeInfoList.push_back(LoungeInfo(1234, false));
-//    loungeInfoList.push_back(LoungeInfo(12345, true));
-//    for (LoungeInfo loungeInfo : loungeInfoList)
-//    {
-//        static float iconX = 100.0f;
-//        float iconY = 500.0f;
-//        Sprite *userIcon = Sprite::create("user-icon.png");
-//        userIcon->setPosition(iconX, iconY);
-//        iconX += 100.0f;
-//        this->addChild(userIcon);
-//
-//
-//        static float usernameX = 100.0f;
-//        float usernameY = 450.0f;
-//        auto usernameLabel = Label::createWithTTF(std::to_string(loungeInfo.getId()), "fonts/arial.ttf", 40);
-//        usernameLabel->setPosition(usernameX, usernameY);
-//        usernameX += 100.0f;
-//        this->addChild(usernameLabel);
-//
-//
-//        static float readyX = 100.0f;
-//        float readyY = 500.0f;
-//        auto readyLabel = Label::createWithTTF(loungeInfo.isReady() ? "Ready" : "Not Ready", "fonts/arial.ttf", 40);
-//        readyLabel->setPosition(readyX, readyY);
-//        readyX += 100.0f;
-//        this->addChild(readyLabel);
-//
-//    }
 
     auto friendListView = ui::ListView::create();
     if (friendListView == nullptr)
@@ -145,16 +115,27 @@ bool FriendScene::init()
         friendListView->setDirection(ui::ScrollView::Direction::VERTICAL);
 
 
-
         auto trump = Sprite::create("background-layer.png");
         trump->setAnchorPoint(Vec2::ZERO);
-        trump->setScale(1.5, 1.5);
+//        trump->setScale(1.5, 1.5);
+
+        auto usernameLabel = Label::createWithTTF("1234", "fonts/arial.ttf", 40);
+        usernameLabel->setAnchorPoint(Vec2(-0.4f, -0.5f));
+
+        auto userIcon = Sprite::create("user-icon.png");
+        userIcon->setScale(0.1f, 0.1f);
+        userIcon->setAnchorPoint(Vec2(0.0f, -0.5f));
+
         // container
-        ui::Layout* listLayout = ui::Layout::create();
+        ui::Layout *listLayout = ui::Layout::create();
         listLayout->addChild(trump);
-        listLayout->setContentSize(Size(100, 150));
+        listLayout->addChild(usernameLabel);
+        listLayout->addChild(userIcon);
+        listLayout->setContentSize(Size(100, 80));
+        listLayout->setAnchorPoint(Vec2::ZERO);
         // need
         listLayout->setTouchEnabled(true);
+
         // push item
         friendListView->pushBackCustomItem(listLayout);
     }
@@ -172,9 +153,8 @@ void FriendScene::menuAddFriendCallback(Ref *pSender)
 {
     auto addFriendLayer = AddFriendLayer::create();
     auto visibleSize = Director::getInstance()->getVisibleSize();
-    addFriendLayer->setContentSize(cocos2d::Size(100.0, 100.0));
     addFriendLayer->setAnchorPoint(Size(0.5, 0.5));
-    addFriendLayer->setPosition(cocos2d::Vec2(0, visibleSize.height * 0.2));
+    addFriendLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5, 0.5));
     this->addChild(addFriendLayer);
 }
 
