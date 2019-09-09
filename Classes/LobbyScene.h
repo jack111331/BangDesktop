@@ -39,6 +39,9 @@ public:
     void menuReadyCallback(cocos2d::Ref* pSender);
 
     // exit button click callback
+    void menuStartCallback(cocos2d::Ref* pSender);
+
+    // exit button click callback
     void menuExitCallback(cocos2d::Ref* pSender);
 
     // implement the "static create()" method manually

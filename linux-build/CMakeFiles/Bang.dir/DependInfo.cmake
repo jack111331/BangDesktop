@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/edge/BangDesktop/project/Bang/Classes/AddFriendLayer.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/AddFriendLayer.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/AppDelegate.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o"
+  "/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/GameScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o"

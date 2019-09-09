@@ -26,6 +26,8 @@
 #include "LobbyScene.h"
 #include "LoungeInfo.h"
 #include "MainMenuScene.h"
+#include "GameScene.h"
+#include "ResolutionUtil.h"
 #include <string>
 
 USING_NS_CC;
@@ -76,38 +78,62 @@ bool LobbyScene::init()
 
     this->addChild(readyButton);
 
-
+    // 4. add user info
     std::vector<LoungeInfo> loungeInfoList;
     loungeInfoList.push_back(LoungeInfo(1234, false));
     loungeInfoList.push_back(LoungeInfo(12345, true));
     for (LoungeInfo loungeInfo : loungeInfoList)
     {
-        static float iconX = 100.0f;
-        float iconY = 500.0f;
+        static float iconX = 0.2f;
+        float iconY = 0.7f;
         Sprite *userIcon = Sprite::create("user-icon.png");
-        userIcon->setPosition(iconX, iconY);
-        iconX += 100.0f;
+        userIcon->setScale(0.1f, 0.1f);
+        userIcon->setPosition(ResolutionUtil::getCorrespondPosition(iconX, iconY));
+        iconX += 0.2f;
         this->addChild(userIcon);
 
 
-        static float usernameX = 100.0f;
-        float usernameY = 450.0f;
+        static float usernameX = 0.2f;
+        float usernameY = 0.5f;
         Label *usernameLabel = Label::create(std::to_string(loungeInfo.getId()), "fonts/arial.ttf", 40);
-        usernameLabel->setPosition(usernameX, usernameY);
-        usernameX += 100.0f;
+        usernameLabel->setPosition(ResolutionUtil::getCorrespondPosition(usernameX, usernameY));
+        usernameX += 0.2f;
         this->addChild(usernameLabel);
 
 
-        static float readyX = 100.0f;
-        float readyY = 500.0f;
+        static float readyX = 0.2f;
+        float readyY = 0.4f;
         Label *readyLabel = Label::create(loungeInfo.isReady() ? "Ready" : "Not Ready", "fonts/arial.ttf", 40);
-        readyLabel->setPosition(readyX, readyY);
-        readyX += 100.0f;
+        readyLabel->setPosition(ResolutionUtil::getCorrespondPosition(readyX, readyY));
+        readyX += 0.2f;
         this->addChild(readyLabel);
 
     }
 
+    // 5. add start button
+    auto startButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
+    if (startButton == nullptr)
+    {
+        log("Can't initialize start button");
+    }
+    else
+    {
+        //Position
+        float startButtonX = 0.5f;
+        float startButtonY = 0.2f;
+        log("startButton=(%f, %f)\n", startButtonX, startButtonY);
+        startButton->setPosition(ResolutionUtil::getCorrespondPosition(startButtonX, startButtonY));
+
+        startButton->setTitleFontSize(40);
+        startButton->setTitleText("Start");
+
+        startButton->addClickEventListener(CC_CALLBACK_1(LobbyScene::menuStartCallback, this));
+    }
+    this->addChild(startButton);
+
+
+    // 6. add exit button
     auto exitButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
     if (exitButton == nullptr)
@@ -117,10 +143,10 @@ bool LobbyScene::init()
     else
     {
         //Position
-        float x = 500.0f;
-        float y = 600.0f;
-        log("exitButton=(%f, %f)\n", x, y);
-        exitButton->setPosition(Vec2(x, y));
+        float exitButtonX = 0.1f;
+        float exitButtonY = 0.2f;
+        log("exitButton=(%f, %f)\n", exitButtonX, exitButtonY);
+        exitButton->setPosition(ResolutionUtil::getCorrespondPosition(exitButtonX, exitButtonY));
 
         exitButton->setTitleFontSize(40);
         exitButton->setTitleText("Exit");
@@ -150,6 +176,10 @@ void LobbyScene::menuReadyCallback(Ref *pSender)
         readyButton->setTitleText("Not Ready");
     }
 
+}
+void LobbyScene::menuStartCallback(Ref *pSender)
+{
+    Director::getInstance()->pushScene(GameScene::createScene());
 }
 void LobbyScene::menuExitCallback(Ref *pSender)
 {

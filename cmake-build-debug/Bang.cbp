@@ -960,6 +960,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/AppDelegate.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp">
 			<Option target="Bang"/>
 		</Unit>

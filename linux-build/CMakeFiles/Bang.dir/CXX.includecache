@@ -3284,6 +3284,20 @@ audio/include/SimpleAudioEngine.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
+/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.cpp
+ChooseCharacterLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+
+/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+string
+-
+
 /home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
@@ -3305,6 +3319,8 @@ cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp
 GameScene.h
 /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
+ChooseCharacterLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 ResolutionUtil.h
@@ -3325,6 +3341,10 @@ LoungeInfo.h
 /home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h
 MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+GameScene.h
+/home/edge/BangDesktop/project/Bang/Classes/GameScene.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 string
 -
 

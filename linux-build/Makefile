@@ -333,6 +333,33 @@ Classes/AppDelegate.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.s
 .PHONY : Classes/AppDelegate.cpp.s
 
+Classes/ChooseCharacterLayer.o: Classes/ChooseCharacterLayer.cpp.o
+
+.PHONY : Classes/ChooseCharacterLayer.o
+
+# target to build an object file
+Classes/ChooseCharacterLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o
+.PHONY : Classes/ChooseCharacterLayer.cpp.o
+
+Classes/ChooseCharacterLayer.i: Classes/ChooseCharacterLayer.cpp.i
+
+.PHONY : Classes/ChooseCharacterLayer.i
+
+# target to preprocess a source file
+Classes/ChooseCharacterLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.i
+.PHONY : Classes/ChooseCharacterLayer.cpp.i
+
+Classes/ChooseCharacterLayer.s: Classes/ChooseCharacterLayer.cpp.s
+
+.PHONY : Classes/ChooseCharacterLayer.s
+
+# target to generate assembly for a file
+Classes/ChooseCharacterLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.s
+.PHONY : Classes/ChooseCharacterLayer.cpp.s
+
 Classes/FriendScene.o: Classes/FriendScene.cpp.o
 
 .PHONY : Classes/FriendScene.o
@@ -603,6 +630,9 @@ help:
 	@echo "... Classes/AppDelegate.o"
 	@echo "... Classes/AppDelegate.i"
 	@echo "... Classes/AppDelegate.s"
+	@echo "... Classes/ChooseCharacterLayer.o"
+	@echo "... Classes/ChooseCharacterLayer.i"
+	@echo "... Classes/ChooseCharacterLayer.s"
 	@echo "... Classes/FriendScene.o"
 	@echo "... Classes/FriendScene.i"
 	@echo "... Classes/FriendScene.s"

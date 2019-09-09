@@ -3,6 +3,7 @@
 //
 
 #include "GameScene.h"
+#include "ChooseCharacterLayer.h"
 
 #include "ui/CocosGUI.h"
 #include "ResolutionUtil.h"
@@ -35,7 +36,11 @@ bool GameScene::init()
     auto backgroundImage = Sprite::create("background.png");
     this->addChild(backgroundImage);
 
-
+    // 3. add choose character layer
+    auto chooseCharacterLayer = ChooseCharacterLayer::create();
+    chooseCharacterLayer->setAnchorPoint(Size(0.5, 0.5));
+    chooseCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5, 0.5));
+    this->addChild(chooseCharacterLayer);
 
     return true;
 }
