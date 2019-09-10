@@ -414,6 +414,33 @@ Classes/GameScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.s
 .PHONY : Classes/GameScene.cpp.s
 
+Classes/LargeCardLayer.o: Classes/LargeCardLayer.cpp.o
+
+.PHONY : Classes/LargeCardLayer.o
+
+# target to build an object file
+Classes/LargeCardLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o
+.PHONY : Classes/LargeCardLayer.cpp.o
+
+Classes/LargeCardLayer.i: Classes/LargeCardLayer.cpp.i
+
+.PHONY : Classes/LargeCardLayer.i
+
+# target to preprocess a source file
+Classes/LargeCardLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.i
+.PHONY : Classes/LargeCardLayer.cpp.i
+
+Classes/LargeCardLayer.s: Classes/LargeCardLayer.cpp.s
+
+.PHONY : Classes/LargeCardLayer.s
+
+# target to generate assembly for a file
+Classes/LargeCardLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.s
+.PHONY : Classes/LargeCardLayer.cpp.s
+
 Classes/LobbyScene.o: Classes/LobbyScene.cpp.o
 
 .PHONY : Classes/LobbyScene.o
@@ -549,6 +576,33 @@ Classes/SettingScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/SettingScene.cpp.s
 .PHONY : Classes/SettingScene.cpp.s
 
+Classes/SmallCardLayer.o: Classes/SmallCardLayer.cpp.o
+
+.PHONY : Classes/SmallCardLayer.o
+
+# target to build an object file
+Classes/SmallCardLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o
+.PHONY : Classes/SmallCardLayer.cpp.o
+
+Classes/SmallCardLayer.i: Classes/SmallCardLayer.cpp.i
+
+.PHONY : Classes/SmallCardLayer.i
+
+# target to preprocess a source file
+Classes/SmallCardLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.i
+.PHONY : Classes/SmallCardLayer.cpp.i
+
+Classes/SmallCardLayer.s: Classes/SmallCardLayer.cpp.s
+
+.PHONY : Classes/SmallCardLayer.s
+
+# target to generate assembly for a file
+Classes/SmallCardLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.s
+.PHONY : Classes/SmallCardLayer.cpp.s
+
 Classes/User.o: Classes/User.cpp.o
 
 .PHONY : Classes/User.o
@@ -639,6 +693,9 @@ help:
 	@echo "... Classes/GameScene.o"
 	@echo "... Classes/GameScene.i"
 	@echo "... Classes/GameScene.s"
+	@echo "... Classes/LargeCardLayer.o"
+	@echo "... Classes/LargeCardLayer.i"
+	@echo "... Classes/LargeCardLayer.s"
 	@echo "... Classes/LobbyScene.o"
 	@echo "... Classes/LobbyScene.i"
 	@echo "... Classes/LobbyScene.s"
@@ -654,6 +711,9 @@ help:
 	@echo "... Classes/SettingScene.o"
 	@echo "... Classes/SettingScene.i"
 	@echo "... Classes/SettingScene.s"
+	@echo "... Classes/SmallCardLayer.o"
+	@echo "... Classes/SmallCardLayer.i"
+	@echo "... Classes/SmallCardLayer.s"
 	@echo "... Classes/User.o"
 	@echo "... Classes/User.i"
 	@echo "... Classes/User.s"

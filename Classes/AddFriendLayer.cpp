@@ -22,32 +22,42 @@ bool AddFriendLayer::init()
 
     // 2. cover background image
     auto backgroundImage = Sprite::create("background-layer.png");
-    backgroundImage->setScale(0.1);
+    auto backgroundImageFitScale = ResolutionUtil::getCorrespondBackgroundSize(backgroundImage->getContentSize());
+    backgroundImage->setScale(backgroundImageFitScale.x, backgroundImageFitScale.y);
     this->addChild(backgroundImage);
 
-    // 3. add user id text field
-    this->userIdTextField = ui::TextField::create("User Id", "fonts/arial.ttf", 40);
+    // 3. add tip text
+    auto tipText = ui::Text::create();
+    tipText->setText("Please Enter User Id who you want to add as friend.");
+    tipText->setFontName("fonts/arial.ttf");
+    tipText->setFontSize(40);
+    tipText->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.25f));
+    this->addChild(tipText);
+
+
+    // 4. add user id text field
+    this->userIdTextField = ui::TextField::create("User Id", "fonts/arial.ttf", 60);
     if (userIdTextField == nullptr)
     {
         log("Can't initialize user id textfield");
     }
     else
     {
-        userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.0, 0.1f));
+        userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
     }
     this->addChild(this->userIdTextField);
 
-    // 4.a Add add button
+    // 5.a Add add button
     auto addButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
     if (addButton == nullptr)
     {
-        log("Can't initialize login button");
+        log("Can't initialize add button");
     }
     else
     {
         //Position
-        addButton->setPosition(ResolutionUtil::getCorrespondPosition(-0.1, -0.1f));
+        addButton->setPosition(ResolutionUtil::getCorrespondPosition(-0.25, -0.2f));
 
         addButton->setTitleFontSize(40);
         addButton->setTitleText("Add");
@@ -56,7 +66,7 @@ bool AddFriendLayer::init()
     }
     this->addChild(addButton);
 
-    // 4.b Add cancel button
+    // 5.b Add cancel button
     auto cancelButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
     if (cancelButton == nullptr)
@@ -66,7 +76,7 @@ bool AddFriendLayer::init()
     else
     {
         //Position
-        cancelButton->setPosition(ResolutionUtil::getCorrespondPosition(0.1, -0.1f));
+        cancelButton->setPosition(ResolutionUtil::getCorrespondPosition(0.25, -0.2f));
 
         cancelButton->setTitleFontSize(40);
         cancelButton->setTitleText("Cancel");

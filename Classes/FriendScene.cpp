@@ -44,10 +44,6 @@ bool FriendScene::init()
         return false;
     }
 
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    log("visibleSize=(%f, %f)", visibleSize.width, visibleSize.height);
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    log("origin=(%f, %f)", origin.x, origin.y);
 
     // 2. cover background image
     auto backgroundImage = Sprite::create("background.png");
@@ -58,7 +54,7 @@ bool FriendScene::init()
 
     if (backButton == nullptr)
     {
-        log("Can't initialize ready button");
+        log("Can't initialize back button");
     }
     else
     {
@@ -153,8 +149,8 @@ void FriendScene::menuAddFriendCallback(Ref *pSender)
 {
     auto addFriendLayer = AddFriendLayer::create();
     auto visibleSize = Director::getInstance()->getVisibleSize();
-    addFriendLayer->setAnchorPoint(Size(0.5, 0.5));
-    addFriendLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5, 0.5));
+    addFriendLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.25, 0.25));
+    addFriendLayer->setScale(0.5);
     this->addChild(addFriendLayer);
 }
 

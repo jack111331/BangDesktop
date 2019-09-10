@@ -53,6 +53,7 @@ bool LobbyScene::init()
 
     // 2. cover background image
     auto backgroundImage = Sprite::create("background.png");
+
     this->addChild(backgroundImage);
 
     // 3. add ready button item

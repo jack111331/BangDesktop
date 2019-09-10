@@ -57,6 +57,8 @@ list(APPEND GAME_SOURCE
         Classes/GameScene.cpp
         Classes/AddFriendLayer.cpp
         Classes/ChooseCharacterLayer.cpp
+        Classes/LargeCardLayer.cpp
+        Classes/SmallCardLayer.cpp
         Classes/User.cpp
         Classes/LoungeInfo.cpp
         )
@@ -70,6 +72,8 @@ list(APPEND GAME_HEADER
         Classes/GameScene.h
         Classes/AddFriendLayer.h
         Classes/ChooseCharacterLayer.h
+        Classes/LargeCardLayer.h
+        Classes/SmallCardLayer.h
         Classes/User.h
         Classes/LoungeInfo.h
         Classes/ResolutionUtil.h

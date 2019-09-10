@@ -48,10 +48,9 @@ bool ChooseCharacterLayer::init()
     }
     else
     {
-        //Position
-        rightButton->setPosition(ResolutionUtil::getCorrespondPosition(0.1, -0.1f));
-
-        rightButton->setTitleFontSize(40);
+        rightButton->setPosition(ResolutionUtil::getCorrespondPosition(0.3f, 0.0f));
+        rightButton->setScale(0.25f, 0.25f);
+        rightButton->setTitleFontSize(100);
         rightButton->setTitleText("Dio");
 
         rightButton->addClickEventListener(CC_CALLBACK_1(ChooseCharacterLayer::menuChooseCallback, this, "Dio"));

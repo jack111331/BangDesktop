@@ -20,6 +20,13 @@ public:
         auto visibleSize = Director::getInstance()->getVisibleSize();
         return Size(x * visibleSize.width, y * visibleSize.height);
     }
+    static Vec2 getCorrespondBackgroundSize(Size originalSize)
+    {
+        auto visibleSize = Director::getInstance()->getVisibleSize();
+        log("visibleSize=(%f, %f)", visibleSize.width, visibleSize.height);
+        return Vec2(visibleSize.width / originalSize.width, visibleSize.height / originalSize.height);
+    }
+
 };
 
 

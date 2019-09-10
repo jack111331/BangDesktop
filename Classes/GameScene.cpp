@@ -7,6 +7,7 @@
 
 #include "ui/CocosGUI.h"
 #include "ResolutionUtil.h"
+#include "SmallCardLayer.h"
 
 USING_NS_CC;
 
@@ -34,6 +35,7 @@ bool GameScene::init()
 
     // 2. cover background image
     auto backgroundImage = Sprite::create("background.png");
+
     this->addChild(backgroundImage);
 
     // 3. add choose character layer
@@ -41,6 +43,11 @@ bool GameScene::init()
     chooseCharacterLayer->setAnchorPoint(Size(0.5, 0.5));
     chooseCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5, 0.5));
     this->addChild(chooseCharacterLayer);
+
+    // 4. add card layer
+    auto cardLayer = SmallCardLayer::create();
+    cardLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+    this->addChild(cardLayer);
 
     return true;
 }
