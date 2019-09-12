@@ -5,18 +5,20 @@
 #ifndef BANG_CHOOSECHARACTERLAYER_H
 #define BANG_CHOOSECHARACTERLAYER_H
 
-#include "ui/CocosGUI.h"
+#include "LargeCardLayer.h"
 #include "cocos2d.h"
 #include <string>
 
-class ChooseCharacterLayer : public cocos2d::Layer
+class ChooseCharacterLayer : public LargeCardLayer
 {
 
 public:
     ChooseCharacterLayer();
     virtual bool init();
 
-    void menuChooseCallback(Ref* pSender, std::string characterName);
+    bool onCharacterTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
+    bool onCharacterTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
+    bool onCharacterTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event);
 
     CREATE_FUNC(ChooseCharacterLayer);
     ~ChooseCharacterLayer();

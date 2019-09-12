@@ -38,16 +38,23 @@ bool GameScene::init()
 
     this->addChild(backgroundImage);
 
-    // 3. add choose character layer
-    auto chooseCharacterLayer = ChooseCharacterLayer::create();
-    chooseCharacterLayer->setAnchorPoint(Size(0.5, 0.5));
-    chooseCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5, 0.5));
-    this->addChild(chooseCharacterLayer);
+    // 3.a add leftchoose character layer
+    auto leftChooseCharacterLayer = ChooseCharacterLayer::create();
+    leftChooseCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.25f, 0.5f));
+    leftChooseCharacterLayer->setScale(0.6f);
+    this->addChild(leftChooseCharacterLayer);
+
+    // 3.b add right choose character layer
+    auto rightChooseCharacterLayer = ChooseCharacterLayer::create();
+    rightChooseCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.75f, 0.5f));
+    rightChooseCharacterLayer->setScale(0.6f);
+    this->addChild(rightChooseCharacterLayer);
 
     // 4. add card layer
-    auto cardLayer = SmallCardLayer::create();
-    cardLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
-    this->addChild(cardLayer);
+//    auto cardLayer = SmallCardLayer::create();
+//    cardLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+//    cardLayer->setScale(0.2f, 0.2f);
+//    this->addChild(cardLayer);
 
     return true;
 }

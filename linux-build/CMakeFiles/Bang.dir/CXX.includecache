@@ -3289,10 +3289,12 @@ ChooseCharacterLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
 ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+LargeCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
 
 /home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
-ui/CocosGUI.h
-/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+LargeCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 string
@@ -3337,8 +3339,16 @@ cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.cpp
 LargeCardLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 
 /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+string
+-
 
 /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp
 ui/CocosGUI.h

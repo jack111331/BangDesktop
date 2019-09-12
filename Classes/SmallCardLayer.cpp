@@ -40,14 +40,6 @@ bool SmallCardLayer::init()
     cardImageSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
     this->addChild(cardImageSprite);
 
-    // 5. add card description label
-    auto cardDescriptionText = ui::Text::create();
-    cardDescriptionText->setText("This is description");
-    cardDescriptionText->setFontName("fonts/arial.ttf");
-    cardDescriptionText->setFontSize(40);
-    cardDescriptionText->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, -0.2f));
-    this->addChild(cardDescriptionText);
-
     return true;
 }
 
