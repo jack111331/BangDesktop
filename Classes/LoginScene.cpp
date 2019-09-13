@@ -47,11 +47,6 @@ bool LoginScene::init()
         return false;
     }
 
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    log("visibleSize=(%f, %f)", visibleSize.width, visibleSize.height);
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    log("origin=(%f, %f)", origin.x, origin.y);
-
     // 2. cover background image
     auto backgroundImage = Sprite::create("background.png");
     this->addChild(backgroundImage);

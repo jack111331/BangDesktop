@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/User.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/Player.cpp.o"
   "CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o"
   "CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
   "bin/Bang/Bang.pdb"

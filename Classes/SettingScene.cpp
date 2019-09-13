@@ -24,10 +24,6 @@ bool SettingScene::init()
         return false;
     }
 
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    log("visibleSize=(%f, %f)", visibleSize.width, visibleSize.height);
-    Vec2 origin = Director::getInstance()->getVisibleOrigin();
-    log("origin=(%f, %f)", origin.x, origin.y);
     Vector<MenuItem *> menuItemLists;
 
     // 2. cover background image

@@ -44,7 +44,6 @@ bool FriendScene::init()
         return false;
     }
 
-
     // 2. cover background image
     auto backgroundImage = Sprite::create("background.png");
     this->addChild(backgroundImage);

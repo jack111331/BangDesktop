@@ -60,6 +60,7 @@ list(APPEND GAME_SOURCE
         Classes/LargeCardLayer.cpp
         Classes/SmallCardLayer.cpp
         Classes/User.cpp
+        Classes/Player.cpp
         Classes/LoungeInfo.cpp
         )
 list(APPEND GAME_HEADER
@@ -75,6 +76,7 @@ list(APPEND GAME_HEADER
         Classes/LargeCardLayer.h
         Classes/SmallCardLayer.h
         Classes/User.h
+        Classes/Player.h
         Classes/LoungeInfo.h
         Classes/ResolutionUtil.h
         Classes/vo

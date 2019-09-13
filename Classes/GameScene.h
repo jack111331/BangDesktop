@@ -8,6 +8,8 @@
 
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
+class Player;
+class ChooseCharacterLayer;
 
 class GameScene : public cocos2d::Scene
 {
@@ -19,8 +21,14 @@ public:
     // a selector callback
     void menuLoginCallback(cocos2d::Ref* pSender);
 
+    void chooseCharacterUpdate(float delay);
+
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);
+private:
+    Player *player;
+    ChooseCharacterLayer * leftCharacterLayer;
+    ChooseCharacterLayer * rightCharacterLayer;
 };
 
 #endif //BANG_GAMESCENE_H

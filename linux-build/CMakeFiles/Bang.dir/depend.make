@@ -815,7 +815,9 @@ CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../cocos2d/external/glfw
 CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../Classes/ChooseCharacterLayer.cpp
 CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../Classes/ChooseCharacterLayer.h
 CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../Classes/LargeCardLayer.h
+CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../Classes/Player.h
 CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../Classes/ResolutionUtil.h
+CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -1383,8 +1385,10 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/ChooseCharacterLayer.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/GameScene.cpp
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/GameScene.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/LargeCardLayer.h
+CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/Player.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/SmallCardLayer.h
+CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2526,6 +2530,10 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.cpp
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/SettingScene.h
+
+CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/Player.cpp
+CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/Player.h
+CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h

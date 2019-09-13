@@ -816,7 +816,9 @@ CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.cpp
  /home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/Player.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+ /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -1384,8 +1386,10 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/Player.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2527,6 +2531,10 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
+CMakeFiles/Bang.dir/Classes/Player.cpp.o
+ /home/edge/BangDesktop/project/Bang/Classes/Player.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/Player.h
+ /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h

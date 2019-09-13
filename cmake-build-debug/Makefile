@@ -549,6 +549,33 @@ Classes/MainMenuScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s
 .PHONY : Classes/MainMenuScene.cpp.s
 
+Classes/Player.o: Classes/Player.cpp.o
+
+.PHONY : Classes/Player.o
+
+# target to build an object file
+Classes/Player.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.o
+.PHONY : Classes/Player.cpp.o
+
+Classes/Player.i: Classes/Player.cpp.i
+
+.PHONY : Classes/Player.i
+
+# target to preprocess a source file
+Classes/Player.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.i
+.PHONY : Classes/Player.cpp.i
+
+Classes/Player.s: Classes/Player.cpp.s
+
+.PHONY : Classes/Player.s
+
+# target to generate assembly for a file
+Classes/Player.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.s
+.PHONY : Classes/Player.cpp.s
+
 Classes/SettingScene.o: Classes/SettingScene.cpp.o
 
 .PHONY : Classes/SettingScene.o
@@ -708,6 +735,9 @@ help:
 	@echo "... Classes/MainMenuScene.o"
 	@echo "... Classes/MainMenuScene.i"
 	@echo "... Classes/MainMenuScene.s"
+	@echo "... Classes/Player.o"
+	@echo "... Classes/Player.i"
+	@echo "... Classes/Player.s"
 	@echo "... Classes/SettingScene.o"
 	@echo "... Classes/SettingScene.i"
 	@echo "... Classes/SettingScene.s"
