@@ -414,6 +414,33 @@ Classes/GameScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.s
 .PHONY : Classes/GameScene.cpp.s
 
+Classes/HandCardLayer.o: Classes/HandCardLayer.cpp.o
+
+.PHONY : Classes/HandCardLayer.o
+
+# target to build an object file
+Classes/HandCardLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o
+.PHONY : Classes/HandCardLayer.cpp.o
+
+Classes/HandCardLayer.i: Classes/HandCardLayer.cpp.i
+
+.PHONY : Classes/HandCardLayer.i
+
+# target to preprocess a source file
+Classes/HandCardLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.i
+.PHONY : Classes/HandCardLayer.cpp.i
+
+Classes/HandCardLayer.s: Classes/HandCardLayer.cpp.s
+
+.PHONY : Classes/HandCardLayer.s
+
+# target to generate assembly for a file
+Classes/HandCardLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.s
+.PHONY : Classes/HandCardLayer.cpp.s
+
 Classes/LargeCardLayer.o: Classes/LargeCardLayer.cpp.o
 
 .PHONY : Classes/LargeCardLayer.o
@@ -720,6 +747,9 @@ help:
 	@echo "... Classes/GameScene.o"
 	@echo "... Classes/GameScene.i"
 	@echo "... Classes/GameScene.s"
+	@echo "... Classes/HandCardLayer.o"
+	@echo "... Classes/HandCardLayer.i"
+	@echo "... Classes/HandCardLayer.s"
 	@echo "... Classes/LargeCardLayer.o"
 	@echo "... Classes/LargeCardLayer.i"
 	@echo "... Classes/LargeCardLayer.s"

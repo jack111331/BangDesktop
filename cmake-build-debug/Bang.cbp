@@ -978,6 +978,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameScene.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.cpp">
 			<Option target="Bang"/>
 		</Unit>

@@ -22,15 +22,15 @@ bool ChooseCharacterLayer::init()
     this->setAnchorPoint(Vec2::ZERO);
     auto eventDispatcher = Director::getInstance()->getEventDispatcher();
     auto eventListener = EventListenerTouchOneByOne::create();
-    eventListener->onTouchBegan = CC_CALLBACK_2(ChooseCharacterLayer::onCharacterTouchBegan, this);
-    eventListener->onTouchEnded = CC_CALLBACK_2(ChooseCharacterLayer::onCharacterTouchEnded, this);
+    eventListener->onTouchBegan = CC_CALLBACK_2(ChooseCharacterLayer::onTouchBegan, this);
+    eventListener->onTouchEnded = CC_CALLBACK_2(ChooseCharacterLayer::onTouchEnded, this);
     eventListener->setSwallowTouches(true);
     eventDispatcher->addEventListenerWithSceneGraphPriority(eventListener, this);
 
     return true;
 }
 
-bool ChooseCharacterLayer::onCharacterTouchBegan(Touch *touch, Event *event)
+bool ChooseCharacterLayer::onTouchBegan(Touch *touch, Event *event)
 {
     auto target = event->getCurrentTarget();
 
@@ -53,7 +53,7 @@ bool ChooseCharacterLayer::onCharacterTouchBegan(Touch *touch, Event *event)
     return false;
 }
 
-bool ChooseCharacterLayer::onCharacterTouchEnded(Touch *touch, Event *event)
+void ChooseCharacterLayer::onTouchEnded(Touch *touch, Event *event)
 {
     log("touched layer ended");
     this->onClickCallback(event->getCurrentTarget());

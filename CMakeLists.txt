@@ -56,9 +56,10 @@ list(APPEND GAME_SOURCE
         Classes/SettingScene.cpp
         Classes/GameScene.cpp
         Classes/AddFriendLayer.cpp
-        Classes/ChooseCharacterLayer.cpp
         Classes/LargeCardLayer.cpp
         Classes/SmallCardLayer.cpp
+        Classes/ChooseCharacterLayer.cpp
+        Classes/HandCardLayer.cpp
         Classes/User.cpp
         Classes/Player.cpp
         Classes/LoungeInfo.cpp
@@ -72,9 +73,10 @@ list(APPEND GAME_HEADER
         Classes/SettingScene.h
         Classes/GameScene.h
         Classes/AddFriendLayer.h
-        Classes/ChooseCharacterLayer.h
         Classes/LargeCardLayer.h
         Classes/SmallCardLayer.h
+        Classes/ChooseCharacterLayer.h
+        Classes/HandCardLayer.h
         Classes/User.h
         Classes/Player.h
         Classes/LoungeInfo.h
