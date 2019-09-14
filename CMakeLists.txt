@@ -60,6 +60,7 @@ list(APPEND GAME_SOURCE
         Classes/SmallCardLayer.cpp
         Classes/ChooseCharacterLayer.cpp
         Classes/HandCardLayer.cpp
+        Classes/TableCardLayer.cpp
         Classes/User.cpp
         Classes/Player.cpp
         Classes/LoungeInfo.cpp
@@ -77,6 +78,7 @@ list(APPEND GAME_HEADER
         Classes/SmallCardLayer.h
         Classes/ChooseCharacterLayer.h
         Classes/HandCardLayer.h
+        Classes/TableCardLayer.h
         Classes/User.h
         Classes/Player.h
         Classes/LoungeInfo.h

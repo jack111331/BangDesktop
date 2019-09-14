@@ -32,19 +32,19 @@ bool GameScene::init() {
     this->addChild(backgroundImage);
 
 
-//    // 3.a add left choose character layer
-//    this->leftCharacterLayer = ChooseCharacterLayer::create();
-//    leftCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.25f, 0.5f));
-//    leftCharacterLayer->setScale(0.6f);
-//    this->addChild(leftCharacterLayer);
-//
-//    // 3.b add right choose character layer
-//    this->rightCharacterLayer = ChooseCharacterLayer::create();
-//    rightCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.75f, 0.5f));
-//    rightCharacterLayer->setScale(0.6f);
-//    this->addChild(rightCharacterLayer);
-//
-//    this->schedule(schedule_selector(GameScene::chooseCharacterUpdate), 0.1f);
+    //    // 3.a add left choose character layer
+    //    this->leftCharacterLayer = ChooseCharacterLayer::create();
+    //    leftCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.25f, 0.5f));
+    //    leftCharacterLayer->setScale(0.6f);
+    //    this->addChild(leftCharacterLayer);
+    //
+    //    // 3.b add right choose character layer
+    //    this->rightCharacterLayer = ChooseCharacterLayer::create();
+    //    rightCharacterLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.75f, 0.5f));
+    //    rightCharacterLayer->setScale(0.6f);
+    //    this->addChild(rightCharacterLayer);
+    //
+    //    this->schedule(schedule_selector(GameScene::chooseCharacterUpdate), 0.1f);
 
     // 4. add card layer
     auto cardLayer = HandCardLayer::create();
@@ -67,5 +67,6 @@ void GameScene::chooseCharacterUpdate(float delay) {
         leftCharacterLayer->removeFromParent();
         rightCharacterLayer->removeFromParent();
         this->unschedule(schedule_selector(GameScene::chooseCharacterUpdate));
+        // schedule gaming scene
     }
 }

@@ -3341,8 +3341,6 @@ HandCardLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
 SmallCardLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
-LargeCardLayer.h
-/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
 
 /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
 cocos2d.h
@@ -3399,8 +3397,6 @@ ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
-ui/CocosGUI.h
-/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
@@ -3473,6 +3469,18 @@ cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 string
 -
+
+/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.cpp
+TableCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.h
+SmallCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
+
+/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+SmallCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
 
 /home/edge/BangDesktop/project/Bang/Classes/User.cpp
 User.h

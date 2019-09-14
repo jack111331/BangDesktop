@@ -5,8 +5,6 @@
 #include "HandCardLayer.h"
 #include "SmallCardLayer.h"
 
-#include "LargeCardLayer.h"
-
 USING_NS_CC;
 
 HandCardLayer::HandCardLayer() {
@@ -56,11 +54,17 @@ void HandCardLayer::onTouchMoved(Touch *touch, Event *event) {
 }
 
 void HandCardLayer::onTouchEnded(Touch *touch, Event *event) {
-    this->onClickCallback(event->getCurrentTarget());
+    if(touch->getLocation().y >= Director::getInstance()->getVisibleSize().height * 0.25) {
+        this->onPlayCardCallback(event->getCurrentTarget());
+    } else {
+        // back to its original position
+        // this->setPosition(touch->getLocation());
+    }
 }
 
-void HandCardLayer::onClickCallback(Ref *pSender) {
-
+void HandCardLayer::onPlayCardCallback(Ref *pSender) {
+    // inform parent scene to play card animation
+    this->removeFromParent();
 }
 
 HandCardLayer::~HandCardLayer() {

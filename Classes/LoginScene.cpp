@@ -31,19 +31,15 @@
 USING_NS_CC;
 
 
-Scene* LoginScene::createScene()
-{
-
+Scene *LoginScene::createScene() {
     return LoginScene::create();
 
 }
 
 // on "init" you need to initialize your instance
-bool LoginScene::init()
-{
+bool LoginScene::init() {
     // 1. super init first
-    if ( !Scene::init() )
-    {
+    if (!Scene::init()) {
         return false;
     }
 
@@ -54,14 +50,11 @@ bool LoginScene::init()
     // 3. add login button item
     auto loginButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
-    if (loginButton == nullptr)
-    {
+    if (loginButton == nullptr) {
         log("Can't initialize login button");
-    }
-    else
-    {
+    } else {
         //Position
-        constexpr float x = 0.7f, y = 0.5f;
+        constexpr float x = 0.7f, y = 0.45f;
         log("loginButton=(%f, %f)\n", x, y);
         loginButton->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
 
@@ -76,31 +69,58 @@ bool LoginScene::init()
     this->addChild(loginButton);
 
     // 4. add a textField item
-    usernameTextField = ui::TextField::create("Username", "fonts/arial.ttf", 40);
+    this->usernameTextField = TextFieldTTF::textFieldWithPlaceHolder("Username", "fonts/arial.ttf", 40);
 
-    if (usernameTextField == nullptr)
-    {
+    if (usernameTextField == nullptr) {
         log("Can't initialize username textfield");
+    } else {
+        usernameTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.55f));
+        auto listener = EventListenerTouchOneByOne::create();
+        listener->onTouchBegan = [this](Touch *touch, Event *event) {
+            if (this->usernameTextField->getBoundingBox().containsPoint(touch->getLocation())) {
+                this->usernameTextField->attachWithIME();
+            } else {
+                this->usernameTextField->detachWithIME();
+            }
+            return false;
+        };
+        Director::getInstance()->getEventDispatcher()->
+                addEventListenerWithSceneGraphPriority(listener, usernameTextField);
+        usernameTextField->setCursorEnabled(true);
+        usernameTextField->setTextColor(Color4B::BLACK);
     }
-    else
-    {
-        constexpr float x = 0.4f, y = 0.55f;
-        log("usernameTextField=(%f, %f)\n", x, y);
-        usernameTextField->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
-    }
-
     this->addChild(usernameTextField);
 
-    // 5. add Bang! logo
+    // 5. add a textField item
+    this->passwordTextField = TextFieldTTF::textFieldWithPlaceHolder("Password", "fonts/arial.ttf", 40);
+
+    if (passwordTextField == nullptr) {
+        log("Can't initialize username textfield");
+    } else {
+        passwordTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.45f));
+        auto listener = EventListenerTouchOneByOne::create();
+        listener->onTouchBegan = [this](Touch *touch, Event *event) {
+            if (this->passwordTextField->getBoundingBox().containsPoint(touch->getLocation())) {
+                this->passwordTextField->attachWithIME();
+            } else {
+                this->passwordTextField->detachWithIME();
+            }
+            return false;
+        };
+        Director::getInstance()->getEventDispatcher()->
+                addEventListenerWithSceneGraphPriority(listener, passwordTextField);
+        passwordTextField->setCursorEnabled(true);
+        passwordTextField->setTextColor(Color4B::BLACK);
+    }
+    this->addChild(passwordTextField);
+
+    // 6. add Bang! logo
 
     auto bangLogoText = ui::Text::create("Bang!", "fonts/arial.ttf", 80);
 
-    if(bangLogoText == nullptr)
-    {
+    if (bangLogoText == nullptr) {
         log("Can't initialize bang logo");
-    }
-    else
-    {
+    } else {
         constexpr float x = 0.4f, y = 0.8f;
         log("bangLogoText=(%f, %f)\n", x, y);
         bangLogoText->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
@@ -114,8 +134,7 @@ bool LoginScene::init()
 }
 
 
-void LoginScene::menuLoginCallback(Ref* pSender)
-{
+void LoginScene::menuLoginCallback(Ref *pSender) {
     User::getInstance()->setName(usernameTextField->getString());
     log("Username=%s", User::getInstance()->getName().c_str());
     Director::getInstance()->pushScene(MainMenuScene::createScene());

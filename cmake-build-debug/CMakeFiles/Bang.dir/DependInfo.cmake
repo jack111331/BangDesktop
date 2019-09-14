@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/edge/BangDesktop/project/Bang/Classes/Player.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/Player.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/SettingScene.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o"
+  "/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/User.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/User.cpp.o"
   "/home/edge/BangDesktop/project/Bang/proj.linux/main.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
   )

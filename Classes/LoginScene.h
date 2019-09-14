@@ -25,7 +25,6 @@
 #ifndef __LOGIN_SCENE_H__
 #define __LOGIN_SCENE_H__
 
-#include "ui/CocosGUI.h"
 #include "cocos2d.h"
 
 class LoginScene : public cocos2d::Scene
@@ -37,11 +36,14 @@ public:
     
     // a selector callback
     void menuLoginCallback(cocos2d::Ref* pSender);
+
+
     
     // implement the "static create()" method manually
     CREATE_FUNC(LoginScene);
 private:
-    cocos2d::ui::TextField * usernameTextField;
+    cocos2d::TextFieldTTF * usernameTextField;
+    cocos2d::TextFieldTTF * passwordTextField;
 };
 
 #endif // __LOGIN_SCENE_H__

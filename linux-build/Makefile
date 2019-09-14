@@ -657,6 +657,33 @@ Classes/SmallCardLayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.s
 .PHONY : Classes/SmallCardLayer.cpp.s
 
+Classes/TableCardLayer.o: Classes/TableCardLayer.cpp.o
+
+.PHONY : Classes/TableCardLayer.o
+
+# target to build an object file
+Classes/TableCardLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o
+.PHONY : Classes/TableCardLayer.cpp.o
+
+Classes/TableCardLayer.i: Classes/TableCardLayer.cpp.i
+
+.PHONY : Classes/TableCardLayer.i
+
+# target to preprocess a source file
+Classes/TableCardLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.i
+.PHONY : Classes/TableCardLayer.cpp.i
+
+Classes/TableCardLayer.s: Classes/TableCardLayer.cpp.s
+
+.PHONY : Classes/TableCardLayer.s
+
+# target to generate assembly for a file
+Classes/TableCardLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.s
+.PHONY : Classes/TableCardLayer.cpp.s
+
 Classes/User.o: Classes/User.cpp.o
 
 .PHONY : Classes/User.o
@@ -774,6 +801,9 @@ help:
 	@echo "... Classes/SmallCardLayer.o"
 	@echo "... Classes/SmallCardLayer.i"
 	@echo "... Classes/SmallCardLayer.s"
+	@echo "... Classes/TableCardLayer.o"
+	@echo "... Classes/TableCardLayer.i"
+	@echo "... Classes/TableCardLayer.s"
 	@echo "... Classes/User.o"
 	@echo "... Classes/User.i"
 	@echo "... Classes/User.s"

@@ -17,7 +17,7 @@ public:
     virtual void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
     virtual void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event);
 
-    void onClickCallback(Ref *pSender);
+    void onPlayCardCallback(Ref *pSender);
 
     CREATE_FUNC(HandCardLayer);
 

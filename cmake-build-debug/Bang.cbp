@@ -1035,6 +1035,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/User.cpp">
 			<Option target="Bang"/>
 		</Unit>
