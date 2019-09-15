@@ -387,6 +387,33 @@ Classes/FriendScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendScene.cpp.s
 .PHONY : Classes/FriendScene.cpp.s
 
+Classes/FriendTableView.o: Classes/FriendTableView.cpp.o
+
+.PHONY : Classes/FriendTableView.o
+
+# target to build an object file
+Classes/FriendTableView.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o
+.PHONY : Classes/FriendTableView.cpp.o
+
+Classes/FriendTableView.i: Classes/FriendTableView.cpp.i
+
+.PHONY : Classes/FriendTableView.i
+
+# target to preprocess a source file
+Classes/FriendTableView.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.i
+.PHONY : Classes/FriendTableView.cpp.i
+
+Classes/FriendTableView.s: Classes/FriendTableView.cpp.s
+
+.PHONY : Classes/FriendTableView.s
+
+# target to generate assembly for a file
+Classes/FriendTableView.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.s
+.PHONY : Classes/FriendTableView.cpp.s
+
 Classes/GameScene.o: Classes/GameScene.cpp.o
 
 .PHONY : Classes/GameScene.o
@@ -521,33 +548,6 @@ Classes/LoginScene.s: Classes/LoginScene.cpp.s
 Classes/LoginScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoginScene.cpp.s
 .PHONY : Classes/LoginScene.cpp.s
-
-Classes/LoungeInfo.o: Classes/LoungeInfo.cpp.o
-
-.PHONY : Classes/LoungeInfo.o
-
-# target to build an object file
-Classes/LoungeInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.o
-.PHONY : Classes/LoungeInfo.cpp.o
-
-Classes/LoungeInfo.i: Classes/LoungeInfo.cpp.i
-
-.PHONY : Classes/LoungeInfo.i
-
-# target to preprocess a source file
-Classes/LoungeInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.i
-.PHONY : Classes/LoungeInfo.cpp.i
-
-Classes/LoungeInfo.s: Classes/LoungeInfo.cpp.s
-
-.PHONY : Classes/LoungeInfo.s
-
-# target to generate assembly for a file
-Classes/LoungeInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LoungeInfo.cpp.s
-.PHONY : Classes/LoungeInfo.cpp.s
 
 Classes/MainMenuScene.o: Classes/MainMenuScene.cpp.o
 
@@ -711,6 +711,33 @@ Classes/User.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.s
 .PHONY : Classes/User.cpp.s
 
+Classes/vo/LoungeInfo.o: Classes/vo/LoungeInfo.cpp.o
+
+.PHONY : Classes/vo/LoungeInfo.o
+
+# target to build an object file
+Classes/vo/LoungeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o
+.PHONY : Classes/vo/LoungeInfo.cpp.o
+
+Classes/vo/LoungeInfo.i: Classes/vo/LoungeInfo.cpp.i
+
+.PHONY : Classes/vo/LoungeInfo.i
+
+# target to preprocess a source file
+Classes/vo/LoungeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.i
+.PHONY : Classes/vo/LoungeInfo.cpp.i
+
+Classes/vo/LoungeInfo.s: Classes/vo/LoungeInfo.cpp.s
+
+.PHONY : Classes/vo/LoungeInfo.s
+
+# target to generate assembly for a file
+Classes/vo/LoungeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.s
+.PHONY : Classes/vo/LoungeInfo.cpp.s
+
 proj.linux/main.o: proj.linux/main.cpp.o
 
 .PHONY : proj.linux/main.o
@@ -771,6 +798,9 @@ help:
 	@echo "... Classes/FriendScene.o"
 	@echo "... Classes/FriendScene.i"
 	@echo "... Classes/FriendScene.s"
+	@echo "... Classes/FriendTableView.o"
+	@echo "... Classes/FriendTableView.i"
+	@echo "... Classes/FriendTableView.s"
 	@echo "... Classes/GameScene.o"
 	@echo "... Classes/GameScene.i"
 	@echo "... Classes/GameScene.s"
@@ -786,9 +816,6 @@ help:
 	@echo "... Classes/LoginScene.o"
 	@echo "... Classes/LoginScene.i"
 	@echo "... Classes/LoginScene.s"
-	@echo "... Classes/LoungeInfo.o"
-	@echo "... Classes/LoungeInfo.i"
-	@echo "... Classes/LoungeInfo.s"
 	@echo "... Classes/MainMenuScene.o"
 	@echo "... Classes/MainMenuScene.i"
 	@echo "... Classes/MainMenuScene.s"
@@ -807,6 +834,9 @@ help:
 	@echo "... Classes/User.o"
 	@echo "... Classes/User.i"
 	@echo "... Classes/User.s"
+	@echo "... Classes/vo/LoungeInfo.o"
+	@echo "... Classes/vo/LoungeInfo.i"
+	@echo "... Classes/vo/LoungeInfo.s"
 	@echo "... proj.linux/main.o"
 	@echo "... proj.linux/main.i"
 	@echo "... proj.linux/main.s"

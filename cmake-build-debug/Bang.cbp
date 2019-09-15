@@ -972,6 +972,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/FriendScene.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/FriendTableView.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/FriendTableView.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp">
 			<Option target="Bang"/>
 		</Unit>
@@ -1000,12 +1006,6 @@
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LoginScene.h">
-			<Option target="Bang"/>
-		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.cpp">
-			<Option target="Bang"/>
-		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LoungeInfo.h">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp">
@@ -1051,6 +1051,12 @@
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/vo">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.h">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/cocos2d/cocos/2d/CCAction.cpp">

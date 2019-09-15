@@ -95,7 +95,6 @@ bool LoginScene::init() {
         Director::getInstance()->getEventDispatcher()->
                 addEventListenerWithSceneGraphPriority(listener, usernameTextField);
         usernameTextField->setCursorEnabled(true);
-        usernameTextField->setAlignment(TextHAlignment::LEFT);
         usernameTextField->setTextColor(Color4B::BLACK);
     }
     this->addChild(usernameTextField);
@@ -127,7 +126,6 @@ bool LoginScene::init() {
         Director::getInstance()->getEventDispatcher()->
                 addEventListenerWithSceneGraphPriority(listener, passwordTextField);
         passwordTextField->setCursorEnabled(true);
-        passwordTextField->setAlignment(TextHAlignment::LEFT);
         passwordTextField->setTextColor(Color4B::BLACK);
     }
     this->addChild(passwordTextField);

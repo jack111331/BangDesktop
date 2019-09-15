@@ -61,9 +61,10 @@ list(APPEND GAME_SOURCE
         Classes/ChooseCharacterLayer.cpp
         Classes/HandCardLayer.cpp
         Classes/TableCardLayer.cpp
+        Classes/FriendTableView.cpp
         Classes/User.cpp
         Classes/Player.cpp
-        Classes/LoungeInfo.cpp
+        Classes/vo/LoungeInfo.cpp
         )
 list(APPEND GAME_HEADER
         Classes/AppDelegate.h
@@ -79,9 +80,10 @@ list(APPEND GAME_HEADER
         Classes/ChooseCharacterLayer.h
         Classes/HandCardLayer.h
         Classes/TableCardLayer.h
+        Classes/FriendTableView.h
         Classes/User.h
         Classes/Player.h
-        Classes/LoungeInfo.h
+        Classes/vo/LoungeInfo.h
         Classes/ResolutionUtil.h
         Classes/vo
         Classes/nlohmann
