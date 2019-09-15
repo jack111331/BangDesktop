@@ -32,17 +32,14 @@
 
 USING_NS_CC;
 
-Scene *LobbyScene::createScene()
-{
+Scene *LobbyScene::createScene() {
     return LobbyScene::create();
 }
 
 // on "init" you need to initialize your instance
-bool LobbyScene::init()
-{
+bool LobbyScene::init() {
     // 1. super init first
-    if (!Scene::init())
-    {
+    if (!Scene::init()) {
         return false;
     }
 
@@ -54,12 +51,9 @@ bool LobbyScene::init()
     // 3. add ready button item
     this->readyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (readyButton == nullptr)
-    {
+    if (readyButton == nullptr) {
         log("Can't initialize ready button");
-    }
-    else
-    {
+    } else {
         //Position
         float x = 300.0f;
         float y = 400.0f;
@@ -78,8 +72,7 @@ bool LobbyScene::init()
     std::vector<LoungeInfo> loungeInfoList;
     loungeInfoList.push_back(LoungeInfo(1234, false));
     loungeInfoList.push_back(LoungeInfo(12345, true));
-    for (LoungeInfo loungeInfo : loungeInfoList)
-    {
+    for (LoungeInfo loungeInfo : loungeInfoList) {
         static float iconX = 0.2f;
         float iconY = 0.7f;
         Sprite *userIcon = Sprite::create("user-icon.png");
@@ -99,22 +92,19 @@ bool LobbyScene::init()
 
         static float readyX = 0.2f;
         float readyY = 0.4f;
-        Label *readyLabel = Label::create(loungeInfo.isReady() ? "Ready" : "Not Ready", "fonts/arial.ttf", 40);
-        readyLabel->setPosition(ResolutionUtil::getCorrespondPosition(readyX, readyY));
+        auto readyText = ui::Text::create(loungeInfo.isReady() ? "Ready" : "Not Ready", "fonts/arial.ttf", 40);
+        readyText->setPosition(ResolutionUtil::getCorrespondPosition(readyX, readyY));
         readyX += 0.2f;
-        this->addChild(readyLabel);
+        this->addChild(readyText);
 
     }
 
     // 5. add start button
     auto startButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
-    if (startButton == nullptr)
-    {
+    if (startButton == nullptr) {
         log("Can't initialize start button");
-    }
-    else
-    {
+    } else {
         //Position
         float startButtonX = 0.5f;
         float startButtonY = 0.2f;
@@ -132,12 +122,9 @@ bool LobbyScene::init()
     // 6. add exit button
     auto exitButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
-    if (exitButton == nullptr)
-    {
+    if (exitButton == nullptr) {
         log("Can't initialize exit button");
-    }
-    else
-    {
+    } else {
         //Position
         float exitButtonX = 0.1f;
         float exitButtonY = 0.2f;
@@ -156,28 +143,24 @@ bool LobbyScene::init()
 }
 
 
-void LobbyScene::menuReadyCallback(Ref *pSender)
-{
+void LobbyScene::menuReadyCallback(Ref *pSender) {
     ready = !ready;
-    if (ready)
-    {
+    if (ready) {
         readyButton->loadTextureNormal("ready-btn-ready.png");
         readyButton->loadTexturePressed("ready-btn-ready-click.png");
         readyButton->setTitleText("Ready");
-    }
-    else
-    {
+    } else {
         readyButton->loadTextureNormal("ready-btn.png");
         readyButton->loadTexturePressed("ready-btn-click.png");
         readyButton->setTitleText("Not Ready");
     }
 
 }
-void LobbyScene::menuStartCallback(Ref *pSender)
-{
+
+void LobbyScene::menuStartCallback(Ref *pSender) {
     Director::getInstance()->pushScene(GameScene::createScene());
 }
-void LobbyScene::menuExitCallback(Ref *pSender)
-{
+
+void LobbyScene::menuExitCallback(Ref *pSender) {
     Director::getInstance()->popScene();
 }

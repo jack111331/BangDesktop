@@ -8,16 +8,13 @@
 
 USING_NS_CC;
 
-SmallCardLayer::SmallCardLayer()
-{
+SmallCardLayer::SmallCardLayer() {
 
 }
 
-bool SmallCardLayer::init()
-{
+bool SmallCardLayer::init() {
     // 1. super init first
-    if (!Layer::init())
-    {
+    if (!Layer::init()) {
         return false;
     }
     // 2. cover background image
@@ -43,7 +40,6 @@ bool SmallCardLayer::init()
     return true;
 }
 
-SmallCardLayer::~SmallCardLayer()
-{
+SmallCardLayer::~SmallCardLayer() {
 
 }

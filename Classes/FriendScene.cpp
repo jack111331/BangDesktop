@@ -30,17 +30,14 @@
 
 USING_NS_CC;
 
-Scene *FriendScene::createScene()
-{
+Scene *FriendScene::createScene() {
     return FriendScene::create();
 }
 
 // on "init" you need to initialize your instance
-bool FriendScene::init()
-{
+bool FriendScene::init() {
     // 1. super init first
-    if (!Scene::init())
-    {
+    if (!Scene::init()) {
         return false;
     }
 
@@ -51,17 +48,10 @@ bool FriendScene::init()
     // 3.a add ready button item
     auto backButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (backButton == nullptr)
-    {
+    if (backButton == nullptr) {
         log("Can't initialize back button");
-    }
-    else
-    {
-        //Position
-        float x = 300.0f;
-        float y = 400.0f;
-        log("backButton=(%f, %f)\n", x, y);
-        backButton->setPosition(Vec2(x, y));
+    } else {
+        backButton->setPosition(ResolutionUtil::getCorrespondPosition(0.2f, 0.2f));
 
         backButton->setTitleFontSize(40);
         backButton->setTitleText("Back");
@@ -74,17 +64,10 @@ bool FriendScene::init()
     // 3.b add add friend button item
     auto addFriendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (addFriendButton == nullptr)
-    {
+    if (addFriendButton == nullptr) {
         log("Can't initialize add friend button");
-    }
-    else
-    {
-        //Position
-        float x = 300.0f;
-        float y = 600.0f;
-        log("addFriendButton=(%f, %f)\n", x, y);
-        addFriendButton->setPosition(Vec2(x, y));
+    } else {
+        addFriendButton->setPosition(ResolutionUtil::getCorrespondPosition(0.8f, 0.8f));
 
         addFriendButton->setTitleFontSize(40);
         addFriendButton->setTitleText("+");
@@ -96,12 +79,9 @@ bool FriendScene::init()
 
 
     auto friendListView = ui::ListView::create();
-    if (friendListView == nullptr)
-    {
+    if (friendListView == nullptr) {
         log("Can't initialize friend list view");
-    }
-    else
-    {
+    } else {
         friendListView->setAnchorPoint(Vec2(0.5, 0.5));
         constexpr float sizeX = 0.4, sizeY = 0.4;
         constexpr float positionX = 0.8, positionY = 0.5;
@@ -112,7 +92,7 @@ bool FriendScene::init()
 
         auto trump = Sprite::create("background-layer.png");
         trump->setAnchorPoint(Vec2::ZERO);
-//        trump->setScale(1.5, 1.5);
+                trump->setScale(0.01f);
 
         auto usernameLabel = Label::createWithTTF("1234", "fonts/arial.ttf", 40);
         usernameLabel->setAnchorPoint(Vec2(-0.4f, -0.5f));
@@ -121,8 +101,19 @@ bool FriendScene::init()
         userIcon->setScale(0.1f, 0.1f);
         userIcon->setAnchorPoint(Vec2(0.0f, -0.5f));
 
+        auto trump1 = Sprite::create("background-layer.png");
+        trump1->setAnchorPoint(Vec2::ZERO);
+                trump1->setScale(0.01f);
+
+        auto usernameLabel1 = Label::createWithTTF("1234", "fonts/arial.ttf", 40);
+        usernameLabel1->setAnchorPoint(Vec2(-0.4f, -0.5f));
+
+        auto userIcon1 = Sprite::create("user-icon.png");
+        userIcon1->setScale(0.1f, 0.1f);
+        userIcon1->setAnchorPoint(Vec2(0.0f, -0.5f));
+
         // container
-        ui::Layout *listLayout = ui::Layout::create();
+        auto listLayout = ui::Layout::create();
         listLayout->addChild(trump);
         listLayout->addChild(usernameLabel);
         listLayout->addChild(userIcon);
@@ -131,21 +122,29 @@ bool FriendScene::init()
         // need
         listLayout->setTouchEnabled(true);
 
+        auto listLayout1 = ui::Layout::create();
+        listLayout1->addChild(trump1);
+        listLayout1->addChild(usernameLabel1);
+        listLayout1->addChild(userIcon1);
+        listLayout1->setContentSize(Size(100, 80));
+        listLayout1->setAnchorPoint(Vec2::ZERO);
+        // need
+        listLayout->setTouchEnabled(true);
+
         // push item
         friendListView->pushBackCustomItem(listLayout);
+        friendListView->pushBackCustomItem(listLayout1);
     }
     this->addChild(friendListView);
 
     return true;
 }
 
-void FriendScene::menuBackCallback(Ref *pSender)
-{
+void FriendScene::menuBackCallback(Ref *pSender) {
     Director::getInstance()->popScene();
 }
 
-void FriendScene::menuAddFriendCallback(Ref *pSender)
-{
+void FriendScene::menuAddFriendCallback(Ref *pSender) {
     auto addFriendLayer = AddFriendLayer::create();
     auto visibleSize = Director::getInstance()->getVisibleSize();
     addFriendLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.25, 0.25));
@@ -153,7 +152,6 @@ void FriendScene::menuAddFriendCallback(Ref *pSender)
     this->addChild(addFriendLayer);
 }
 
-void FriendScene::menuDeleteFriendCallback(Ref *pSender)
-{
+void FriendScene::menuDeleteFriendCallback(Ref *pSender) {
     Director::getInstance()->popScene();
 }

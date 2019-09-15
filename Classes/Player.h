@@ -9,17 +9,14 @@
 #include <string>
 
 
-
-enum class Team
-{
+enum class Team {
     Sergeant = 0, //警長
     ChiefSergeant = 1, //副警長
     BadAss = 2, //歹徒
     Traitor = 3 //叛徒
 };
 
-class Player
-{
+class Player {
 public:
     // getter and setter
     User *getUser() const;
@@ -67,7 +64,7 @@ public:
     void setMinusRange(int minusRange);
 
 private:
-    User * user;
+    User *user;
     Team identity;
     std::string characterName;
     int hP;

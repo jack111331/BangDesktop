@@ -3028,6 +3028,7 @@ CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o
  ../cocos2d/cocos/vr/CCVRProtocol.h
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
+ /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/SettingScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
 CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o

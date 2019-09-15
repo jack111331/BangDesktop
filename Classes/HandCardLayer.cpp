@@ -54,7 +54,7 @@ void HandCardLayer::onTouchMoved(Touch *touch, Event *event) {
 }
 
 void HandCardLayer::onTouchEnded(Touch *touch, Event *event) {
-    if(touch->getLocation().y >= Director::getInstance()->getVisibleSize().height * 0.25) {
+    if (touch->getLocation().y >= Director::getInstance()->getVisibleSize().height * 0.25) {
         this->onPlayCardCallback(event->getCurrentTarget());
     } else {
         // back to its original position

@@ -4,8 +4,7 @@
 
 #include "LoungeInfo.h"
 
-LoungeInfo::LoungeInfo(uint32_t id, bool ready) : id(id), ready(ready)
-{
+LoungeInfo::LoungeInfo(uint32_t id, bool ready) : id(id), ready(ready) {
 
 }
 

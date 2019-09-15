@@ -28,23 +28,22 @@
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
 
-class FriendScene : public cocos2d::Scene
-{
+class FriendScene : public cocos2d::Scene {
 public:
-    static cocos2d::Scene* createScene();
+    static cocos2d::Scene *createScene();
 
     virtual bool init();
 
 
     // back button click callback
-    void menuBackCallback(cocos2d::Ref* pSender);
+    void menuBackCallback(cocos2d::Ref *pSender);
 
 
     // add friend button click callback
-    void menuAddFriendCallback(cocos2d::Ref* pSender);
+    void menuAddFriendCallback(cocos2d::Ref *pSender);
 
     // delete friend button click callback
-    void menuDeleteFriendCallback(cocos2d::Ref* pSender);
+    void menuDeleteFriendCallback(cocos2d::Ref *pSender);
 
     // implement the "static create()" method manually
     CREATE_FUNC(FriendScene);

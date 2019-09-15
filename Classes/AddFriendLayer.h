@@ -4,24 +4,27 @@
 
 #ifndef BANG_ADDFRIENDLAYER_H
 #define BANG_ADDFRIENDLAYER_H
+
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
 
-class AddFriendLayer : public cocos2d::Layer
-{
+class AddFriendLayer : public cocos2d::Layer {
 
 public:
     AddFriendLayer();
-	virtual bool init();
 
-    void menuAddCallback(Ref* pSender);
-    void menuCancelCallback(Ref* pSender);
+    virtual bool init();
 
-	CREATE_FUNC(AddFriendLayer);
+    void menuAddCallback(Ref *pSender);
+
+    void menuCancelCallback(Ref *pSender);
+
+    CREATE_FUNC(AddFriendLayer);
+
     ~AddFriendLayer();
 
 private:
-    cocos2d::ui::TextField * userIdTextField;
+    cocos2d::ui::TextField *userIdTextField;
 };
 
 

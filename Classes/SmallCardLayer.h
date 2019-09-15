@@ -8,14 +8,15 @@
 #include "cocos2d.h"
 #include <string>
 
-class SmallCardLayer : public cocos2d::Layer
-{
+class SmallCardLayer : public cocos2d::Layer {
 
 public:
     SmallCardLayer();
+
     virtual bool init();
 
     CREATE_FUNC(SmallCardLayer);
+
     ~SmallCardLayer();
 
 };

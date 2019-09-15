@@ -34,26 +34,22 @@
 
 USING_NS_CC;
 
-Scene *MainMenuScene::createScene()
-{
+Scene *MainMenuScene::createScene() {
     return MainMenuScene::create();
 
 }
 
 // on "init" you need to initialize your instance
-bool MainMenuScene::init()
-{
+bool MainMenuScene::init() {
     // 1.a super init first
-    if (!Scene::init())
-    {
+    if (!Scene::init()) {
         return false;
     }
 
     // 1.b init background music
     auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
     audio->preloadBackgroundMusic("music/bg.mp3");
-    if (!audio->isBackgroundMusicPlaying())
-    {
+    if (!audio->isBackgroundMusicPlaying()) {
         audio->playBackgroundMusic("music/bg.mp3");
     }
 
@@ -70,12 +66,9 @@ bool MainMenuScene::init()
     // 3.a add lobby button item
     auto lobbyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (lobbyButton == nullptr)
-    {
+    if (lobbyButton == nullptr) {
         log("Can't initialize lobby button");
-    }
-    else
-    {
+    } else {
         //Position
         log("lobbyButton=(%f, %f)\n", menuItemX, menuItemY);
         lobbyButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
@@ -92,12 +85,9 @@ bool MainMenuScene::init()
     // 3.b add friend button item
     auto friendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (friendButton == nullptr)
-    {
+    if (friendButton == nullptr) {
         log("Can't initialize friend button");
-    }
-    else
-    {
+    } else {
         //Position
         log("friendButton=(%f, %f)\n", menuItemX, menuItemY);
         friendButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
@@ -114,12 +104,9 @@ bool MainMenuScene::init()
     // 3.c add setting button item
     auto settingButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (settingButton == nullptr)
-    {
+    if (settingButton == nullptr) {
         log("Can't initialize setting button");
-    }
-    else
-    {
+    } else {
         //Position
         log("settingButton=(%f, %f)\n", menuItemX, menuItemY);
         settingButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
@@ -135,12 +122,9 @@ bool MainMenuScene::init()
     // 3.d add log out button item
     auto logoutButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (logoutButton == nullptr)
-    {
+    if (logoutButton == nullptr) {
         log("Can't initialize logout button");
-    }
-    else
-    {
+    } else {
         //Position
         log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
         logoutButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
@@ -156,12 +140,9 @@ bool MainMenuScene::init()
     // 3.e add exit button item
     auto exitButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (exitButton == nullptr)
-    {
+    if (exitButton == nullptr) {
         log("Can't initialize exit button");
-    }
-    else
-    {
+    } else {
         //Position
         log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
         exitButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
@@ -177,28 +158,23 @@ bool MainMenuScene::init()
 }
 
 
-void MainMenuScene::menuLobbyCallback(Ref *pSender)
-{
+void MainMenuScene::menuLobbyCallback(Ref *pSender) {
     Director::getInstance()->pushScene(LobbyScene::createScene());
 }
 
-void MainMenuScene::menuFriendCallback(Ref *pSender)
-{
+void MainMenuScene::menuFriendCallback(Ref *pSender) {
     Director::getInstance()->pushScene(FriendScene::createScene());
 }
 
-void MainMenuScene::menuSettingCallback(Ref *pSender)
-{
+void MainMenuScene::menuSettingCallback(Ref *pSender) {
     Director::getInstance()->pushScene(SettingScene::createScene());
 }
 
-void MainMenuScene::menuLogoutCallback(Ref *pSender)
-{
+void MainMenuScene::menuLogoutCallback(Ref *pSender) {
     Director::getInstance()->popScene();
 }
 
-void MainMenuScene::menuExitCallback(Ref *pSender)
-{
+void MainMenuScene::menuExitCallback(Ref *pSender) {
     //Close the cocos2d-x game scene and quit the application
     Director::getInstance()->end();
 }

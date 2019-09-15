@@ -68,7 +68,15 @@ bool LoginScene::init() {
     }
     this->addChild(loginButton);
 
-    // 4. add a textField item
+    // 4. add username textField
+
+    // 4.a add username background sprite
+    auto usernameSprite = Sprite::create("username-input.png");
+    usernameSprite->setScale(0.16f);
+    usernameSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.55f));
+    this->addChild(usernameSprite);
+
+    // 4.b add username textField item
     this->usernameTextField = TextFieldTTF::textFieldWithPlaceHolder("Username", "fonts/arial.ttf", 40);
 
     if (usernameTextField == nullptr) {
@@ -87,11 +95,20 @@ bool LoginScene::init() {
         Director::getInstance()->getEventDispatcher()->
                 addEventListenerWithSceneGraphPriority(listener, usernameTextField);
         usernameTextField->setCursorEnabled(true);
+        usernameTextField->setAlignment(TextHAlignment::LEFT);
         usernameTextField->setTextColor(Color4B::BLACK);
     }
     this->addChild(usernameTextField);
 
-    // 5. add a textField item
+    // 5. add password textField
+
+    // 5.a add password background sprite
+    auto passwordSprite = Sprite::create("username-input.png");
+    passwordSprite->setScale(0.16f);
+    passwordSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.45f));
+    this->addChild(passwordSprite);
+
+    // 5.b add password textField item
     this->passwordTextField = TextFieldTTF::textFieldWithPlaceHolder("Password", "fonts/arial.ttf", 40);
 
     if (passwordTextField == nullptr) {
@@ -110,25 +127,22 @@ bool LoginScene::init() {
         Director::getInstance()->getEventDispatcher()->
                 addEventListenerWithSceneGraphPriority(listener, passwordTextField);
         passwordTextField->setCursorEnabled(true);
+        passwordTextField->setAlignment(TextHAlignment::LEFT);
         passwordTextField->setTextColor(Color4B::BLACK);
     }
     this->addChild(passwordTextField);
 
     // 6. add Bang! logo
 
-    auto bangLogoText = ui::Text::create("Bang!", "fonts/arial.ttf", 80);
+    auto bangLogoText = ui::Text::create("Bang!", "fonts/arial.ttf", 70);
 
     if (bangLogoText == nullptr) {
         log("Can't initialize bang logo");
     } else {
-        constexpr float x = 0.4f, y = 0.8f;
-        log("bangLogoText=(%f, %f)\n", x, y);
-        bangLogoText->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
-        bangLogoText->setFontSize(70);
+        bangLogoText->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.8f));
+        bangLogoText->setColor(Color3B::BLACK);
     }
-
     this->addChild(bangLogoText);
-
 
     return true;
 }

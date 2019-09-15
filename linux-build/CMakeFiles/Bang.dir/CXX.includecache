@@ -3449,6 +3449,8 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 
 /home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
 ui/CocosGUI.h

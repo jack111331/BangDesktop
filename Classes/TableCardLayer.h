@@ -12,10 +12,13 @@
 class TableCardLayer : public SmallCardLayer {
 public:
     TableCardLayer();
+
     virtual bool init();
 
     virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
+
     virtual void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
+
     virtual void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event);
 
 
@@ -23,7 +26,6 @@ public:
 
     ~TableCardLayer();
 };
-
 
 
 #endif //BANG_TABLECARDLAYER_H

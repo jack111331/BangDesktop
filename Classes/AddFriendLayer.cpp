@@ -7,16 +7,13 @@
 
 USING_NS_CC;
 
-AddFriendLayer::AddFriendLayer()
-{
+AddFriendLayer::AddFriendLayer() {
 
 }
 
-bool AddFriendLayer::init()
-{
+bool AddFriendLayer::init() {
     // 1. super init first
-    if (!Layer::init())
-    {
+    if (!Layer::init()) {
         return false;
     }
 
@@ -37,12 +34,9 @@ bool AddFriendLayer::init()
 
     // 4. add user id text field
     this->userIdTextField = ui::TextField::create("User Id", "fonts/arial.ttf", 60);
-    if (userIdTextField == nullptr)
-    {
+    if (userIdTextField == nullptr) {
         log("Can't initialize user id textfield");
-    }
-    else
-    {
+    } else {
         userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
     }
     this->addChild(this->userIdTextField);
@@ -50,12 +44,9 @@ bool AddFriendLayer::init()
     // 5.a Add add button
     auto addButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
-    if (addButton == nullptr)
-    {
+    if (addButton == nullptr) {
         log("Can't initialize add button");
-    }
-    else
-    {
+    } else {
         //Position
         addButton->setPosition(ResolutionUtil::getCorrespondPosition(-0.25, -0.2f));
 
@@ -69,12 +60,9 @@ bool AddFriendLayer::init()
     // 5.b Add cancel button
     auto cancelButton = ui::Button::create("login-btn.png", "login-btn-click.png");
 
-    if (cancelButton == nullptr)
-    {
+    if (cancelButton == nullptr) {
         log("Can't initialize cancel button");
-    }
-    else
-    {
+    } else {
         //Position
         cancelButton->setPosition(ResolutionUtil::getCorrespondPosition(0.25, -0.2f));
 
@@ -87,17 +75,14 @@ bool AddFriendLayer::init()
     return true;
 }
 
-void AddFriendLayer::menuAddCallback(Ref *pSender)
-{
+void AddFriendLayer::menuAddCallback(Ref *pSender) {
     log("User id=%s", this->userIdTextField->getString().c_str());
 }
 
-void AddFriendLayer::menuCancelCallback(Ref *pSender)
-{
+void AddFriendLayer::menuCancelCallback(Ref *pSender) {
     this->removeFromParent();
 }
 
-AddFriendLayer::~AddFriendLayer()
-{
+AddFriendLayer::~AddFriendLayer() {
 
 }

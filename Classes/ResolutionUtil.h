@@ -6,22 +6,22 @@
 #define BANG_RESOLUTIONUTIL_H
 
 #include "cocos2d.h"
+
 USING_NS_CC;
-class ResolutionUtil
-{
+
+class ResolutionUtil {
 public:
-    static Vec2 getCorrespondPosition(float x, float y)
-    {
+    static Vec2 getCorrespondPosition(float x, float y) {
         auto visibleSize = Director::getInstance()->getVisibleSize();
         return Vec2(x * visibleSize.width, y * visibleSize.height);
     }
-    static Size getCorrespondSize(float x, float y)
-    {
+
+    static Size getCorrespondSize(float x, float y) {
         auto visibleSize = Director::getInstance()->getVisibleSize();
         return Size(x * visibleSize.width, y * visibleSize.height);
     }
-    static Vec2 getCorrespondBackgroundSize(Size originalSize)
-    {
+
+    static Vec2 getCorrespondBackgroundSize(Size originalSize) {
         auto visibleSize = Director::getInstance()->getVisibleSize();
         log("visibleSize=(%f, %f)", visibleSize.width, visibleSize.height);
         return Vec2(visibleSize.width / originalSize.width, visibleSize.height / originalSize.height);

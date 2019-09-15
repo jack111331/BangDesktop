@@ -3027,6 +3027,7 @@ CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/cocos/vr/CCVRGenericR
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3.h
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3native.h
+CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../Classes/SettingScene.cpp
 CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o: ../Classes/SettingScene.h
 

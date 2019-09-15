@@ -9,13 +9,14 @@
 #include "cocos2d.h"
 #include <string>
 
-class ChooseCharacterLayer : public LargeCardLayer
-{
+class ChooseCharacterLayer : public LargeCardLayer {
 public:
     ChooseCharacterLayer();
+
     virtual bool init();
 
     virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
+
     virtual void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event);
 
     void onClickCallback(Ref *pSender);
@@ -29,6 +30,7 @@ public:
     bool isChosen() const;
 
     ~ChooseCharacterLayer();
+
 private:
     std::string characterName;
     bool chosen = false;

@@ -16,9 +16,13 @@ private:
     bool ready;
 public:
     LoungeInfo(uint32_t id, bool ready);
+
     uint32_t getId() const;
+
     bool isReady() const;
+
     void setId(uint32_t id);
+
     void setReady(bool ready);
 };
 

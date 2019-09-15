@@ -27,27 +27,26 @@
 
 #include "cocos2d.h"
 
-class MainMenuScene : public cocos2d::Scene
-{
+class MainMenuScene : public cocos2d::Scene {
 public:
-    static cocos2d::Scene* createScene();
+    static cocos2d::Scene *createScene();
 
     virtual bool init();
-    
+
     // lobby button click callback
-    void menuLobbyCallback(cocos2d::Ref* pSender);
+    void menuLobbyCallback(cocos2d::Ref *pSender);
 
     // friend button click callback
-    void menuFriendCallback(cocos2d::Ref* pSender);
+    void menuFriendCallback(cocos2d::Ref *pSender);
 
     // setting button click callback
-    void menuSettingCallback(cocos2d::Ref* pSender);
+    void menuSettingCallback(cocos2d::Ref *pSender);
 
     // log out button click callback
-    void menuLogoutCallback(cocos2d::Ref* pSender);
+    void menuLogoutCallback(cocos2d::Ref *pSender);
 
     // exit button click callback
-    void menuExitCallback(cocos2d::Ref* pSender);
+    void menuExitCallback(cocos2d::Ref *pSender);
 
     // implement the "static create()" method manually
     CREATE_FUNC(MainMenuScene);

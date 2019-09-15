@@ -13,8 +13,7 @@ LargeCardLayer::LargeCardLayer()
 
 }
 
-bool LargeCardLayer::init()
-{
+bool LargeCardLayer::init() {
     // 1. super init first
     if (!Layer::init())
     {
