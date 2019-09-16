@@ -495,32 +495,32 @@ Classes/LargeCardLayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.s
 .PHONY : Classes/LargeCardLayer.cpp.s
 
-Classes/LobbyScene.o: Classes/LobbyScene.cpp.o
+Classes/LobbyLayer.o: Classes/LobbyLayer.cpp.o
 
-.PHONY : Classes/LobbyScene.o
+.PHONY : Classes/LobbyLayer.o
 
 # target to build an object file
-Classes/LobbyScene.cpp.o:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o
-.PHONY : Classes/LobbyScene.cpp.o
+Classes/LobbyLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o
+.PHONY : Classes/LobbyLayer.cpp.o
 
-Classes/LobbyScene.i: Classes/LobbyScene.cpp.i
+Classes/LobbyLayer.i: Classes/LobbyLayer.cpp.i
 
-.PHONY : Classes/LobbyScene.i
+.PHONY : Classes/LobbyLayer.i
 
 # target to preprocess a source file
-Classes/LobbyScene.cpp.i:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.i
-.PHONY : Classes/LobbyScene.cpp.i
+Classes/LobbyLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.i
+.PHONY : Classes/LobbyLayer.cpp.i
 
-Classes/LobbyScene.s: Classes/LobbyScene.cpp.s
+Classes/LobbyLayer.s: Classes/LobbyLayer.cpp.s
 
-.PHONY : Classes/LobbyScene.s
+.PHONY : Classes/LobbyLayer.s
 
 # target to generate assembly for a file
-Classes/LobbyScene.cpp.s:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.s
-.PHONY : Classes/LobbyScene.cpp.s
+Classes/LobbyLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.s
+.PHONY : Classes/LobbyLayer.cpp.s
 
 Classes/LoginScene.o: Classes/LoginScene.cpp.o
 
@@ -810,9 +810,9 @@ help:
 	@echo "... Classes/LargeCardLayer.o"
 	@echo "... Classes/LargeCardLayer.i"
 	@echo "... Classes/LargeCardLayer.s"
-	@echo "... Classes/LobbyScene.o"
-	@echo "... Classes/LobbyScene.i"
-	@echo "... Classes/LobbyScene.s"
+	@echo "... Classes/LobbyLayer.o"
+	@echo "... Classes/LobbyLayer.i"
+	@echo "... Classes/LobbyLayer.s"
 	@echo "... Classes/LoginScene.o"
 	@echo "... Classes/LoginScene.i"
 	@echo "... Classes/LoginScene.s"

@@ -9,6 +9,14 @@
 USING_NS_CC;
 USING_NS_CC_EXT;
 
+using std::string;
+
+
+const string stateIcon[2] = {
+        "green-dot.png",
+        "gray-dot.png"
+};
+
 bool FriendTableView::init() {
     // 1. super init first
     if (!Layer::init()) {
@@ -31,8 +39,11 @@ bool FriendTableView::init() {
 }
 
 void FriendTableView::tableCellTouched(TableView *table, TableViewCell *cell) {
-    log("cell touched at index: %ld", cell->getIdx());
-    // Join room
+    ssize_t idx = cell->getIdx();
+    log("cell touched at index: %ld", idx);
+    if(friendInfoList[idx].getState() == 2) {
+        // Join room
+    }
 }
 
 Size FriendTableView::tableCellSizeForIndex(TableView *table, ssize_t idx) {
@@ -47,9 +58,7 @@ TableViewCell *FriendTableView::tableCellAtIndex(TableView *table, ssize_t idx) 
     TableViewCell *cell = table->dequeueCell();
 
     if (!cell) {
-        //创建一个新的cell
         cell = new TableViewCell();
-        //加入到自动释放池中
         cell->autorelease();
         cell->setContentSize(ResolutionUtil::getCorrespondSize(0.3f, 0.1f));
 
@@ -58,37 +67,35 @@ TableViewCell *FriendTableView::tableCellAtIndex(TableView *table, ssize_t idx) 
         cellBackground->setContentSize(Size(cell->getBoundingBox().size.width, cell->getBoundingBox().size.height));
         cell->addChild(cellBackground);
 
-        //创建一个图片精灵
-        Sprite *sprite = Sprite::create("user-icon.png");
-        //设置精灵锚点为左下角
-        sprite->setAnchorPoint(Vec2::ZERO);
-        //设置精灵位置 相当于在cell中的相对位置
-        sprite->setPosition(Vec2(0, 0));
-        //将精灵加入到cell中
-        sprite->setScale(0.1f);
-        cell->addChild(sprite);
+        auto iconSprite = Sprite::create("user-icon.png");
+        iconSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.02f, 0.05f));
+        iconSprite->setScale(0.1f);
+        cell->addChild(iconSprite);
 
-        //创建一个标签
-        auto label = ui::Text::create(friendInfoList[idx].getUsername(), "Helvetica", 20.0);
+        auto usernameText = ui::Text::create(friendInfoList[idx].getUsername(), "fonts/arial.ttf", 20.0);
         //设置标签相对cell的位置
-        label->setPosition(Vec2::ZERO);
-        //设置标签锚点为左下角
-        label->setAnchorPoint(Vec2::ZERO);
+        usernameText->setPosition(ResolutionUtil::getCorrespondPosition(0.07f, 0.05f));
         //为标签做一个标记,以便于在cell在重用队列中被取出来时，能够获取的该label并重置label信息
-        label->setTag((int)idx);
+        usernameText->setTag((int) idx);
         //将标签加入到cell中
-        cell->addChild(label);
+        cell->addChild(usernameText);
+
+        string stateIconFilename = stateIcon[friendInfoList[idx].getState()];
+        auto stateSprite = Sprite::create(stateIconFilename);
+        stateSprite->setScale(0.1f);
+        stateSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.28f, 0.05f));
+        cell->addChild(stateSprite);
+
     } else {
         // 如果cell不为空,则根据tag获取到之前cell中存放的元素,并将元素信息重置
         //获取当前cell中的label
-        auto label = (ui::Text *) cell->getChildByTag((int)idx);
+        auto usernameText = (ui::Text *) cell->getChildByTag((int) idx);
         //重置label的相关信息
-        label->setString(friendInfoList[idx].getUsername());
+        usernameText->setString(friendInfoList[idx].getUsername());
     }
     return cell;
 }
 
-//设置cell的个数 即一个tableview中包含了20个cell
 ssize_t FriendTableView::numberOfCellsInTableView(TableView *table) {
     return friendInfoList.size();
 }
@@ -100,6 +107,7 @@ const std::vector<FriendInfo> &FriendTableView::getFriendInfoList() const {
 void FriendTableView::setFriendInfoList(const std::vector<FriendInfo> &friendInfoList) {
     FriendTableView::friendInfoList = friendInfoList;
 }
+
 void FriendTableView::reloadData() {
     tableView->reloadData();
 }

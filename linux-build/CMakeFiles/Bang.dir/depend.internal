@@ -2271,7 +2271,7 @@ CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.cpp
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
-CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o
+CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
  ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -2551,9 +2551,8 @@ CMakeFiles/Bang.dir/Classes/LobbyScene.cpp.o
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
- /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp
- /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
- /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
@@ -3122,7 +3121,6 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
  /home/edge/BangDesktop/project/Bang/Classes/FriendScene.h
- /home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h

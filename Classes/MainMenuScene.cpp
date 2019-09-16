@@ -25,7 +25,6 @@
 #include "ui/CocosGUI.h"
 #include "MainMenuScene.h"
 
-#include "LobbyScene.h"
 #include "FriendScene.h"
 #include "SettingScene.h"
 
@@ -62,27 +61,7 @@ bool MainMenuScene::init() {
     const float menuItemX = 0.5f;
     float menuItemY = 0.7f;
 
-
-    // 3.a add lobby button item
-    auto lobbyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
-
-    if (lobbyButton == nullptr) {
-        log("Can't initialize lobby button");
-    } else {
-        //Position
-        log("lobbyButton=(%f, %f)\n", menuItemX, menuItemY);
-        lobbyButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.1f;
-
-        lobbyButton->setTitleFontSize(40);
-        lobbyButton->setTitleText("Lobby");
-
-        lobbyButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuLobbyCallback, this));
-    }
-
-    this->addChild(lobbyButton);
-
-    // 3.b add friend button item
+    // 3.a add friend button item
     auto friendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (friendButton == nullptr) {
@@ -91,7 +70,7 @@ bool MainMenuScene::init() {
         //Position
         log("friendButton=(%f, %f)\n", menuItemX, menuItemY);
         friendButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.1f;
+        menuItemY -= 0.15f;
 
         friendButton->setTitleFontSize(40);
         friendButton->setTitleText("Friend List");
@@ -101,7 +80,7 @@ bool MainMenuScene::init() {
 
     this->addChild(friendButton);
 
-    // 3.c add setting button item
+    // 3.b add setting button item
     auto settingButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (settingButton == nullptr) {
@@ -110,7 +89,7 @@ bool MainMenuScene::init() {
         //Position
         log("settingButton=(%f, %f)\n", menuItemX, menuItemY);
         settingButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.1f;
+        menuItemY -= 0.15f;
 
         settingButton->setTitleFontSize(40);
         settingButton->setTitleText("Setting");
@@ -119,7 +98,7 @@ bool MainMenuScene::init() {
     }
 
     this->addChild(settingButton);
-    // 3.d add log out button item
+    // 3.c add log out button item
     auto logoutButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (logoutButton == nullptr) {
@@ -128,7 +107,7 @@ bool MainMenuScene::init() {
         //Position
         log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
         logoutButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.1f;
+        menuItemY -= 0.15f;
 
         logoutButton->setTitleFontSize(40);
         logoutButton->setTitleText("Log out");
@@ -137,7 +116,7 @@ bool MainMenuScene::init() {
     }
 
     this->addChild(logoutButton);
-    // 3.e add exit button item
+    // 3.d add exit button item
     auto exitButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (exitButton == nullptr) {
@@ -157,10 +136,6 @@ bool MainMenuScene::init() {
     return true;
 }
 
-
-void MainMenuScene::menuLobbyCallback(Ref *pSender) {
-    Director::getInstance()->pushScene(LobbyScene::createScene());
-}
 
 void MainMenuScene::menuFriendCallback(Ref *pSender) {
     Director::getInstance()->pushScene(FriendScene::createScene());

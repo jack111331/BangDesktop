@@ -51,11 +51,11 @@ list(APPEND GAME_SOURCE
         Classes/AppDelegate.cpp
         Classes/LoginScene.cpp
         Classes/MainMenuScene.cpp
-        Classes/LobbyScene.cpp
         Classes/FriendScene.cpp
         Classes/SettingScene.cpp
         Classes/GameScene.cpp
         Classes/AddFriendLayer.cpp
+        Classes/LobbyLayer.cpp
         Classes/LargeCardLayer.cpp
         Classes/SmallCardLayer.cpp
         Classes/ChooseCharacterLayer.cpp
@@ -70,11 +70,11 @@ list(APPEND GAME_HEADER
         Classes/AppDelegate.h
         Classes/LoginScene.h
         Classes/MainMenuScene.h
-        Classes/LobbyScene.h
         Classes/FriendScene.h
         Classes/SettingScene.h
         Classes/GameScene.h
         Classes/AddFriendLayer.h
+        Classes/LobbyLayer.h
         Classes/LargeCardLayer.h
         Classes/SmallCardLayer.h
         Classes/ChooseCharacterLayer.h

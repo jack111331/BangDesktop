@@ -3890,15 +3890,13 @@ cocos2d.h
 string
 -
 
-/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp
+/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.cpp
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
-LobbyScene.h
-/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+LobbyLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h
 vo/LoungeInfo.h
 /home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.h
-MainMenuScene.h
-/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 GameScene.h
 /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
 ResolutionUtil.h
@@ -3906,7 +3904,7 @@ ResolutionUtil.h
 string
 -
 
-/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
+/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 cocos2d.h
@@ -3933,8 +3931,6 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
-LobbyScene.h
-/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h
 FriendScene.h
 /home/edge/BangDesktop/project/Bang/Classes/FriendScene.h
 SettingScene.h

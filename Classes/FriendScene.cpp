@@ -48,71 +48,9 @@ bool FriendScene::init() {
     auto backgroundImage = Sprite::create("background.png");
     this->addChild(backgroundImage);
 
-
-
-
-//    auto friendListView = ui::ListView::create();
-//    if (friendListView == nullptr) {
-//        log("Can't initialize friend list view");
-//    } else {
-//        friendListView->setAnchorPoint(Vec2(0.5, 0.5));
-//        constexpr float sizeX = 0.4, sizeY = 0.4;
-//        constexpr float positionX = 0.8, positionY = 0.5;
-//        friendListView->setContentSize(ResolutionUtil::getCorrespondSize(sizeX, sizeY));
-//        friendListView->setPosition(ResolutionUtil::getCorrespondPosition(positionX, positionY));
-//        friendListView->setDirection(ui::ScrollView::Direction::VERTICAL);
-//
-//
-//        auto trump = Sprite::create("background-layer.png");
-//        trump->setAnchorPoint(Vec2::ZERO);
-//                trump->setScale(0.01f);
-//
-//        auto usernameLabel = Label::createWithTTF("1234", "fonts/arial.ttf", 40);
-//        usernameLabel->setAnchorPoint(Vec2(-0.4f, -0.5f));
-//
-//        auto userIcon = Sprite::create("user-icon.png");
-//        userIcon->setScale(0.1f, 0.1f);
-//        userIcon->setAnchorPoint(Vec2(0.0f, -0.5f));
-//
-//        auto trump1 = Sprite::create("background-layer.png");
-//        trump1->setAnchorPoint(Vec2::ZERO);
-//                trump1->setScale(0.01f);
-//
-//        auto usernameLabel1 = Label::createWithTTF("1234", "fonts/arial.ttf", 40);
-//        usernameLabel1->setAnchorPoint(Vec2(-0.4f, -0.5f));
-//
-//        auto userIcon1 = Sprite::create("user-icon.png");
-//        userIcon1->setScale(0.1f, 0.1f);
-//        userIcon1->setAnchorPoint(Vec2(0.0f, -0.5f));
-//
-//        // container
-//        auto listLayout = ui::Layout::create();
-//        listLayout->addChild(trump);
-//        listLayout->addChild(usernameLabel);
-//        listLayout->addChild(userIcon);
-//        listLayout->setContentSize(Size(100, 80));
-//        listLayout->setAnchorPoint(Vec2::ZERO);
-//        // need
-//        listLayout->setTouchEnabled(true);
-//
-//        auto listLayout1 = ui::Layout::create();
-//        listLayout1->addChild(trump1);
-//        listLayout1->addChild(usernameLabel1);
-//        listLayout1->addChild(userIcon1);
-//        listLayout1->setContentSize(Size(100, 80));
-//        listLayout1->setAnchorPoint(Vec2::ZERO);
-//        // need
-//        listLayout->setTouchEnabled(true);
-//
-//        // push item
-//        friendListView->pushBackCustomItem(listLayout);
-//        friendListView->pushBackCustomItem(listLayout1);
-//    }
-//    this->addChild(friendListView);
-
     std::vector<FriendInfo> friendInfoList;
-    friendInfoList.push_back(FriendInfo(1, "jack"));
-    friendInfoList.push_back(FriendInfo(2, "Edge"));
+    friendInfoList.push_back(FriendInfo(0, "jack"));
+    friendInfoList.push_back(FriendInfo(1, "Edge"));
 
     auto friendTableView = FriendTableView::create();
     friendTableView->setFriendInfoList(friendInfoList);
@@ -144,7 +82,7 @@ bool FriendScene::init() {
     if (addFriendButton == nullptr) {
         log("Can't initialize add friend button");
     } else {
-        addFriendButton->setPosition(ResolutionUtil::getCorrespondPosition(0.8f, 0.8f));
+        addFriendButton->setPosition(ResolutionUtil::getCorrespondPosition(0.8f, 0.9f));
 
         addFriendButton->setTitleFontSize(40);
         addFriendButton->setTitleText("+");

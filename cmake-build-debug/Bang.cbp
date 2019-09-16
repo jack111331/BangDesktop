@@ -996,10 +996,10 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h">
 			<Option target="Bang"/>
 		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.cpp">
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.cpp">
 			<Option target="Bang"/>
 		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyScene.h">
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp">
