@@ -1002,6 +1002,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp">
 			<Option target="Bang"/>
 		</Unit>

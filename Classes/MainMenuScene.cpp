@@ -31,6 +31,8 @@
 #include "SimpleAudioEngine.h"
 #include "ResolutionUtil.h"
 
+#include "LobbyLayer.h"
+
 USING_NS_CC;
 
 Scene *MainMenuScene::createScene() {
@@ -131,8 +133,11 @@ bool MainMenuScene::init() {
 
         exitButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuExitCallback, this));
     }
-
     this->addChild(exitButton);
+
+    auto lobbyLayer = LobbyLayer::create();
+    this->addChild(lobbyLayer);
+
     return true;
 }
 

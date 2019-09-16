@@ -522,6 +522,33 @@ Classes/LobbyLayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.s
 .PHONY : Classes/LobbyLayer.cpp.s
 
+Classes/LobbyMemberTableView.o: Classes/LobbyMemberTableView.cpp.o
+
+.PHONY : Classes/LobbyMemberTableView.o
+
+# target to build an object file
+Classes/LobbyMemberTableView.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o
+.PHONY : Classes/LobbyMemberTableView.cpp.o
+
+Classes/LobbyMemberTableView.i: Classes/LobbyMemberTableView.cpp.i
+
+.PHONY : Classes/LobbyMemberTableView.i
+
+# target to preprocess a source file
+Classes/LobbyMemberTableView.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.i
+.PHONY : Classes/LobbyMemberTableView.cpp.i
+
+Classes/LobbyMemberTableView.s: Classes/LobbyMemberTableView.cpp.s
+
+.PHONY : Classes/LobbyMemberTableView.s
+
+# target to generate assembly for a file
+Classes/LobbyMemberTableView.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.s
+.PHONY : Classes/LobbyMemberTableView.cpp.s
+
 Classes/LoginScene.o: Classes/LoginScene.cpp.o
 
 .PHONY : Classes/LoginScene.o
@@ -813,6 +840,9 @@ help:
 	@echo "... Classes/LobbyLayer.o"
 	@echo "... Classes/LobbyLayer.i"
 	@echo "... Classes/LobbyLayer.s"
+	@echo "... Classes/LobbyMemberTableView.o"
+	@echo "... Classes/LobbyMemberTableView.i"
+	@echo "... Classes/LobbyMemberTableView.s"
 	@echo "... Classes/LoginScene.o"
 	@echo "... Classes/LoginScene.i"
 	@echo "... Classes/LoginScene.s"

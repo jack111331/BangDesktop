@@ -62,6 +62,7 @@ list(APPEND GAME_SOURCE
         Classes/HandCardLayer.cpp
         Classes/TableCardLayer.cpp
         Classes/FriendTableView.cpp
+        Classes/LobbyMemberTableView.cpp
         Classes/User.cpp
         Classes/Player.cpp
         Classes/vo/LoungeInfo.cpp
@@ -81,6 +82,7 @@ list(APPEND GAME_HEADER
         Classes/HandCardLayer.h
         Classes/TableCardLayer.h
         Classes/FriendTableView.h
+        Classes/LobbyMemberTableView.h
         Classes/User.h
         Classes/Player.h
         Classes/vo/LoungeInfo.h

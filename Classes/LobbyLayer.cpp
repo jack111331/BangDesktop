@@ -3,6 +3,7 @@
 #include "vo/LoungeInfo.h"
 #include "GameScene.h"
 #include "ResolutionUtil.h"
+#include "LobbyMemberTableView.h"
 #include <string>
 
 USING_NS_CC;
@@ -19,72 +20,42 @@ bool LobbyLayer::init() {
     }
 
     // 2. cover background image
-    auto backgroundImage = Sprite::create("background.png");
-
+    auto backgroundImage = Sprite::create("background-layer.png");
+    backgroundImage->setContentSize(ResolutionUtil::getCorrespondSize(0.35f, 0.1f));
+    backgroundImage->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.95f));
     this->addChild(backgroundImage);
 
-    // 3. add ready button item
-    this->readyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
+    // 3. add user info
+    std::vector<LoungeInfo> loungeInfoList;
+    loungeInfoList.push_back(LoungeInfo(1234, false));
+    loungeInfoList.push_back(LoungeInfo(12345, true));
+    auto lobbyMemberTableView = LobbyMemberTableView::create();
+    lobbyMemberTableView->setLoungeInfoList(loungeInfoList);
+    lobbyMemberTableView->reloadData();
+    lobbyMemberTableView->setPosition(ResolutionUtil::getCorrespondPosition(0.55f, 0.6f));
+    this->addChild(lobbyMemberTableView);
 
+    // 4. add ready button item
+    this->readyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
     if (readyButton == nullptr) {
         log("Can't initialize ready button");
     } else {
-        //Position
-        float x = 300.0f;
-        float y = 400.0f;
-        log("readyButton=(%f, %f)\n", x, y);
-        readyButton->setPosition(Vec2(x, y));
+        readyButton->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.5f));
 
         readyButton->setTitleFontSize(40);
         readyButton->setTitleText("Ready");
 
         readyButton->addClickEventListener(CC_CALLBACK_1(LobbyLayer::menuReadyCallback, this));
     }
-
     this->addChild(readyButton);
 
-    // 4. add user info
-    std::vector<LoungeInfo> loungeInfoList;
-    loungeInfoList.push_back(LoungeInfo(1234, false));
-    loungeInfoList.push_back(LoungeInfo(12345, true));
-    for (LoungeInfo loungeInfo : loungeInfoList) {
-        static float iconX = 0.2f;
-        float iconY = 0.7f;
-        Sprite *userIcon = Sprite::create("user-icon.png");
-        userIcon->setScale(0.1f, 0.1f);
-        userIcon->setPosition(ResolutionUtil::getCorrespondPosition(iconX, iconY));
-        iconX += 0.2f;
-        this->addChild(userIcon);
-
-
-        static float usernameX = 0.2f;
-        float usernameY = 0.5f;
-        Label *usernameLabel = Label::create(std::to_string(loungeInfo.getId()), "fonts/arial.ttf", 40);
-        usernameLabel->setPosition(ResolutionUtil::getCorrespondPosition(usernameX, usernameY));
-        usernameX += 0.2f;
-        this->addChild(usernameLabel);
-
-
-        static float readyX = 0.2f;
-        float readyY = 0.4f;
-        auto readyText = ui::Text::create(loungeInfo.isReady() ? "Ready" : "Not Ready", "fonts/arial.ttf", 40);
-        readyText->setPosition(ResolutionUtil::getCorrespondPosition(readyX, readyY));
-        readyX += 0.2f;
-        this->addChild(readyText);
-
-    }
-
     // 5. add start button
-    auto startButton = ui::Button::create("login-btn.png", "login-btn-click.png");
+    auto startButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
     if (startButton == nullptr) {
         log("Can't initialize start button");
     } else {
-        //Position
-        float startButtonX = 0.5f;
-        float startButtonY = 0.2f;
-        log("startButton=(%f, %f)\n", startButtonX, startButtonY);
-        startButton->setPosition(ResolutionUtil::getCorrespondPosition(startButtonX, startButtonY));
+        startButton->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.4f));
 
         startButton->setTitleFontSize(40);
         startButton->setTitleText("Start");
@@ -102,11 +73,9 @@ void LobbyLayer::menuReadyCallback(Ref *pSender) {
     if (ready) {
         readyButton->loadTextureNormal("ready-btn-ready.png");
         readyButton->loadTexturePressed("ready-btn-ready-click.png");
-        readyButton->setTitleText("Ready");
     } else {
         readyButton->loadTextureNormal("ready-btn.png");
         readyButton->loadTexturePressed("ready-btn-click.png");
-        readyButton->setTitleText("Not Ready");
     }
 
 }

@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o"
   "CMakeFiles/Bang.dir/Classes/User.cpp.o"
   "CMakeFiles/Bang.dir/Classes/Player.cpp.o"
   "CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o"
