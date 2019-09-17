@@ -16,6 +16,9 @@ public:
     // exit button click callback
     void menuStartCallback(cocos2d::Ref *pSender);
 
+    // layer touch callback
+    void layerTouchCallback(cocos2d::Ref * pSender);
+
     // implement the "static create()" method manually
     CREATE_FUNC(LobbyLayer);
 

@@ -25,6 +25,30 @@ bool LobbyLayer::init() {
     backgroundImage->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.95f));
     this->addChild(backgroundImage);
 
+    auto lobbyMemberLayout = ui::Layout::create();
+
+    auto userIcon = ui::ImageView::create("user-icon.png");
+    userIcon->ignoreContentAdaptWithSize(false);
+    userIcon->setContentSize(ResolutionUtil::getCorrespondSize(0.08f, 0.1f));
+    lobbyMemberLayout->addChild(userIcon);
+    auto userIcon1 = ui::ImageView::create("user-icon.png");
+    userIcon1->ignoreContentAdaptWithSize(false);
+    userIcon1->setContentSize(ResolutionUtil::getCorrespondSize(0.08f, 0.1f));
+    lobbyMemberLayout->addChild(userIcon1);
+
+
+    lobbyMemberLayout->setBackGroundColorType(ui::LAYOUT_COLOR_SOLID);
+    lobbyMemberLayout->setBackGroundColor(Color3B::RED);
+    lobbyMemberLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.35f, 0.1f));
+    lobbyMemberLayout->setAnchorPoint(Vec2(0.5f, 0.5f));
+    lobbyMemberLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.95f));
+    lobbyMemberLayout->setTouchEnabled(true);
+    lobbyMemberLayout->addClickEventListener(CC_CALLBACK_1(LobbyLayer::layerTouchCallback, this));
+    lobbyMemberLayout->setLayoutType(ui::LAYOUT_LINEAR_HORIZONTAL);
+    this->addChild(lobbyMemberLayout);
+
+
+
     // 3. add user info
     std::vector<LoungeInfo> loungeInfoList;
     loungeInfoList.push_back(LoungeInfo(1234, false));
@@ -82,6 +106,9 @@ void LobbyLayer::menuReadyCallback(Ref *pSender) {
 
 void LobbyLayer::menuStartCallback(Ref *pSender) {
     Director::getInstance()->pushScene(GameScene::createScene());
+}
+void LobbyLayer::layerTouchCallback(Ref * pSender){
+    log("click layer");
 }
 
 LobbyLayer::~LobbyLayer() {
