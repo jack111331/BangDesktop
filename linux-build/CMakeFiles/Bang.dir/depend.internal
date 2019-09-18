@@ -3029,6 +3029,8 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
  ../cocos2d/cocos/3d/CCSprite3D.h
  ../cocos2d/cocos/3d/CCSprite3DMaterial.h
  ../cocos2d/cocos/3d/CCTerrain.h
+ ../cocos2d/cocos/audio/include/Export.h
+ ../cocos2d/cocos/audio/include/SimpleAudioEngine.h
  ../cocos2d/cocos/base/CCAsyncTaskPool.h
  ../cocos2d/cocos/base/CCAutoreleasePool.h
  ../cocos2d/cocos/base/CCConfiguration.h

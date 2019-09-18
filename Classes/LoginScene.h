@@ -32,6 +32,7 @@ public:
     static cocos2d::Scene *createScene();
 
     virtual bool init();
+    virtual void onEnter();
 
     // a selector callback
     void menuLoginCallback(cocos2d::Ref *pSender);

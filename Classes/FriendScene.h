@@ -34,7 +34,6 @@ public:
 
     virtual bool init();
 
-
     // back button click callback
     void menuBackCallback(cocos2d::Ref *pSender);
 

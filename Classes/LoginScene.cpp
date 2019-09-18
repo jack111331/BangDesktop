@@ -27,6 +27,7 @@
 #include "MainMenuScene.h"
 #include "User.h"
 #include "ResolutionUtil.h"
+#include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
@@ -44,44 +45,48 @@ bool LoginScene::init() {
     }
 
     // 2. cover background image
-    auto backgroundImage = Sprite::create("background.png");
-    this->addChild(backgroundImage);
+    auto backgroundImage = ui::ImageView::create("background.png");
+    if (backgroundImage) {
+        this->addChild(backgroundImage);
+    } else {
+        log("[LoginScene] Can't initialize background image.");
+    }
 
     // 3. add login button item
     auto loginButton = ui::Button::create("login-btn.png", "login-btn-click.png");
-
-    if (loginButton == nullptr) {
-        log("Can't initialize login button");
-    } else {
-        //Position
-        constexpr float x = 0.7f, y = 0.45f;
-        log("loginButton=(%f, %f)\n", x, y);
-        loginButton->setPosition(ResolutionUtil::getCorrespondPosition(x, y));
+    if (loginButton) {
+        loginButton->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.45f));
 
         loginButton->setTitleFontSize(40);
         loginButton->setTitleText("Log in");
+
+        // Let button match it's word size
         auto loginButtonTitleSize = loginButton->getTitleRenderer()->getContentSize();
         loginButton->ignoreContentAdaptWithSize(false);
         loginButton->setContentSize(Size(loginButtonTitleSize.width * 3.0f, loginButtonTitleSize.height * 1.7f));
 
         loginButton->addClickEventListener(CC_CALLBACK_1(LoginScene::menuLoginCallback, this));
+        this->addChild(loginButton);
+    } else {
+        log("[LoginScene] Can't initialize login button");
     }
-    this->addChild(loginButton);
 
     // 4. add username textField
 
-    // 4.a add username background sprite
-    auto usernameSprite = Sprite::create("username-input.png");
-    usernameSprite->setScale(0.16f);
-    usernameSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.55f));
-    this->addChild(usernameSprite);
+    // 4.a add username textfield background
+    auto usernameTextFieldBackground = ui::ImageView::create("username-input.png");
+    if (usernameTextFieldBackground) {
+        usernameTextFieldBackground->ignoreContentAdaptWithSize(false);
+        usernameTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.25f, 0.05f));
+        usernameTextFieldBackground->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.55f));
+        this->addChild(usernameTextFieldBackground);
+    } else {
+        log("[LoginScene] Can't initialize username textfield background");
+    }
 
     // 4.b add username textField item
     this->usernameTextField = TextFieldTTF::textFieldWithPlaceHolder("Username", "fonts/arial.ttf", 40);
-
-    if (usernameTextField == nullptr) {
-        log("Can't initialize username textfield");
-    } else {
+    if (usernameTextField) {
         usernameTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.55f));
         auto listener = EventListenerTouchOneByOne::create();
         listener->onTouchBegan = [this](Touch *touch, Event *event) {
@@ -96,23 +101,27 @@ bool LoginScene::init() {
                 addEventListenerWithSceneGraphPriority(listener, usernameTextField);
         usernameTextField->setCursorEnabled(true);
         usernameTextField->setTextColor(Color4B::BLACK);
+        this->addChild(usernameTextField);
+    } else {
+        log("[LoginScene] Can't initialize username textfield");
     }
-    this->addChild(usernameTextField);
 
     // 5. add password textField
 
-    // 5.a add password background sprite
-    auto passwordSprite = Sprite::create("username-input.png");
-    passwordSprite->setScale(0.16f);
-    passwordSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.45f));
-    this->addChild(passwordSprite);
+    // 5.a add password textfield background
+    auto passwordTextFieldBackground = ui::ImageView::create("username-input.png");
+    if (passwordTextFieldBackground) {
+        passwordTextFieldBackground->ignoreContentAdaptWithSize(false);
+        passwordTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.25f, 0.05f));
+        passwordTextFieldBackground->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.45f));
+        this->addChild(passwordTextFieldBackground);
+    } else {
+        log("[LoginScene] Can't initialize password textfield background");
+    }
 
     // 5.b add password textField item
     this->passwordTextField = TextFieldTTF::textFieldWithPlaceHolder("Password", "fonts/arial.ttf", 40);
-
-    if (passwordTextField == nullptr) {
-        log("Can't initialize username textfield");
-    } else {
+    if (passwordTextField) {
         passwordTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.45f));
         auto listener = EventListenerTouchOneByOne::create();
         listener->onTouchBegan = [this](Touch *touch, Event *event) {
@@ -127,28 +136,37 @@ bool LoginScene::init() {
                 addEventListenerWithSceneGraphPriority(listener, passwordTextField);
         passwordTextField->setCursorEnabled(true);
         passwordTextField->setTextColor(Color4B::BLACK);
+        this->addChild(passwordTextField);
+    } else {
+        log("[LoginScene] Can't initialize password textfield");
     }
-    this->addChild(passwordTextField);
 
     // 6. add Bang! logo
-
     auto bangLogoText = ui::Text::create("Bang!", "fonts/arial.ttf", 70);
-
-    if (bangLogoText == nullptr) {
-        log("Can't initialize bang logo");
-    } else {
+    if (bangLogoText) {
         bangLogoText->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.8f));
         bangLogoText->setColor(Color3B::BLACK);
+        this->addChild(bangLogoText);
+    } else {
+        log("[LoginScene] Can't initialize bang logo");
     }
-    this->addChild(bangLogoText);
-
     return true;
 }
 
 
 void LoginScene::menuLoginCallback(Ref *pSender) {
     User::getInstance()->setName(usernameTextField->getString());
-    log("Username=%s", User::getInstance()->getName().c_str());
+    log("[LoginScene] Username=%s", User::getInstance()->getName().c_str());
     Director::getInstance()->pushScene(MainMenuScene::createScene());
+
+}
+
+void LoginScene::onEnter() {
+    Scene::onEnter();
+    Director::getInstance()->setNotificationNode(nullptr);
+    auto audio = CocosDenshion::SimpleAudioEngine::getInstance();
+    if (audio->isBackgroundMusicPlaying()) {
+        audio->stopBackgroundMusic(true);
+    }
 
 }

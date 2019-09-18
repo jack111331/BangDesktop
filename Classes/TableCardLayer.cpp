@@ -33,7 +33,7 @@ bool TableCardLayer::onTouchBegan(Touch *touch, Event *event) {
 
     //Get the position of the current point relative to the button
     auto locationInNode = touch->getLocation();
-    log("locationInNode=(%f, %f)", locationInNode.x, locationInNode.y);
+    log("[TableCardLayer] locationInNode=(%f, %f)", locationInNode.x, locationInNode.y);
 
     // Because of layer is middle aligned, so we need to adjust bounding box
     auto boundingBoxSize = target->getBoundingBox().size;
@@ -43,18 +43,18 @@ bool TableCardLayer::onTouchBegan(Touch *touch, Event *event) {
 
     //Check the click area
     if (rect.containsPoint(locationInNode)) {
-        log("touched layer began");
+        log("[TableCardLayer] touched layer began");
         return true;
     }
     return false;
 }
 
 void TableCardLayer::onTouchMoved(Touch *touch, Event *event) {
-    // Show card info in left side
+    // TODO Show card info in left side
 }
 
 void TableCardLayer::onTouchEnded(Touch *touch, Event *event) {
-    // Hude card info
+    // TODO Hide card info
 }
 
 

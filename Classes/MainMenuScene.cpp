@@ -136,7 +136,7 @@ bool MainMenuScene::init() {
     this->addChild(exitButton);
 
     auto lobbyLayer = LobbyLayer::create();
-    this->addChild(lobbyLayer);
+    Director::getInstance()->setNotificationNode(lobbyLayer);
 
     return true;
 }

@@ -16,24 +16,26 @@ const string stateIcon[2] = {
         "green-dot.png",
         "gray-dot.png"
 };
+FriendTableView::FriendTableView() {
 
+}
 bool FriendTableView::init() {
     // 1. super init first
     if (!Layer::init()) {
         return false;
     }
 
-    //创建一个talbleview 将datasource设置为当前的类的对象 tableview的显示区域大小为 300 * 300
     this->tableView = TableView::create(this, ResolutionUtil::getCorrespondSize(0.3f, 0.3f));
-    tableView->setDirection(ScrollView::Direction::VERTICAL);
-    tableView->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
-    //设置代理对象
-    tableView->setDelegate(this);
-    tableView->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
-    //添加tableview到当前layer
-    this->addChild(tableView);
-    //加载tableview
-    tableView->reloadData();
+    if(tableView) {
+        tableView->setDirection(ScrollView::Direction::VERTICAL);
+        tableView->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+        // Setup delegate
+        tableView->setDelegate(this);
+        tableView->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
+        this->addChild(tableView);
+    } else {
+        log("[FriendTableView] Can't create friend table view.");
+    }
 
     return true;
 }
@@ -42,10 +44,10 @@ void FriendTableView::tableCellTouched(TableView *table, TableViewCell *cell) {
     ssize_t idx = cell->getIdx();
     log("cell touched at index: %ld", idx);
     if(friendInfoList[idx].getState() == 2) {
-        // Join room
+        // TODO Join room
     }
 }
-
+// Setup each table cell size
 Size FriendTableView::tableCellSizeForIndex(TableView *table, ssize_t idx) {
     return ResolutionUtil::getCorrespondSize(0.3f, 0.1f);
 }
@@ -110,4 +112,7 @@ void FriendTableView::setFriendInfoList(const std::vector<FriendInfo> &friendInf
 
 void FriendTableView::reloadData() {
     tableView->reloadData();
+}
+FriendTableView::~FriendTableView() {
+
 }

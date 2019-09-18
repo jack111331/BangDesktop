@@ -45,51 +45,51 @@ bool FriendScene::init() {
     }
 
     // 2. cover background image
-    auto backgroundImage = Sprite::create("background.png");
-    this->addChild(backgroundImage);
+    auto backgroundImage = ui::ImageView::create("background.png");
+    if (backgroundImage) {
+        this->addChild(backgroundImage);
+    } else {
+        log("[FriendScene] Can't Initialize background image.");
+    }
 
+    //    Fake Data
     std::vector<FriendInfo> friendInfoList;
     friendInfoList.push_back(FriendInfo(0, "jack"));
     friendInfoList.push_back(FriendInfo(1, "Edge"));
 
     auto friendTableView = FriendTableView::create();
-    friendTableView->setFriendInfoList(friendInfoList);
-    friendTableView->reloadData();
-    if(friendTableView == nullptr) {
-        log("create friend table view failed");
-    } else {
+    if (friendTableView) {
+        friendTableView->setFriendInfoList(friendInfoList);
+        // After data update, we must reload data to keep it new
+        friendTableView->reloadData();
         this->addChild(friendTableView);
-    }
-
-    // 3.a add back button item
-    auto backButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
-
-    if (backButton == nullptr) {
-        log("Can't initialize back button");
     } else {
-        backButton->setPosition(ResolutionUtil::getCorrespondPosition(0.2f, 0.2f));
-
-        backButton->setTitleFontSize(40);
-        backButton->setTitleText("Back");
-
-        backButton->addClickEventListener(CC_CALLBACK_1(FriendScene::menuBackCallback, this));
+        log("[FriendScene] Cant' create friend table view.");
     }
-    this->addChild(backButton);
 
-    // 3.b add add friend button item
+    // 3.a add add friend button item
     auto addFriendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
-
-    if (addFriendButton == nullptr) {
-        log("Can't initialize add friend button");
-    } else {
+    if (addFriendButton) {
         addFriendButton->setPosition(ResolutionUtil::getCorrespondPosition(0.8f, 0.9f));
-
         addFriendButton->setTitleFontSize(40);
         addFriendButton->setTitleText("+");
-
         addFriendButton->addClickEventListener(CC_CALLBACK_1(FriendScene::menuAddFriendCallback, this));
+        this->addChild(addFriendButton);
+    } else {
+        log("[FriendScene] Can't initialize add friend button");
     }
-    this->addChild(addFriendButton);
+
+    // 3.b add back button item
+    auto backButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
+    if (backButton) {
+        backButton->setPosition(ResolutionUtil::getCorrespondPosition(0.2f, 0.2f));
+        backButton->setTitleFontSize(40);
+        backButton->setTitleText("Back");
+        backButton->addClickEventListener(CC_CALLBACK_1(FriendScene::menuBackCallback, this));
+        this->addChild(backButton);
+    } else {
+        log("[FriendScene] Can't initialize back button");
+    }
 
     return true;
 }
@@ -100,12 +100,8 @@ void FriendScene::menuBackCallback(Ref *pSender) {
 
 void FriendScene::menuAddFriendCallback(Ref *pSender) {
     auto addFriendLayer = AddFriendLayer::create();
-    auto visibleSize = Director::getInstance()->getVisibleSize();
-    addFriendLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.25, 0.25));
-    addFriendLayer->setScale(0.5);
     this->addChild(addFriendLayer);
 }
 
 void FriendScene::menuDeleteFriendCallback(Ref *pSender) {
-    Director::getInstance()->popScene();
 }

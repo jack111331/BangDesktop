@@ -3947,6 +3947,8 @@ User.h
 /home/edge/BangDesktop/project/Bang/Classes/User.h
 ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+SimpleAudioEngine.h
+/home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
 
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
 cocos2d.h

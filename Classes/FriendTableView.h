@@ -12,6 +12,8 @@
 
 class FriendTableView : public cocos2d::Layer, cocos2d::extension::TableViewDataSource, cocos2d::extension::TableViewDelegate {
 public:
+    FriendTableView();
+
     virtual bool init();
     /* 必须实现的函数 */
     // 当滑动tableview时触发该方法 参数为当前的tableview对象
@@ -30,6 +32,8 @@ public:
     void reloadData();
 
     CREATE_FUNC(FriendTableView);
+
+    ~FriendTableView();
 private:
     cocos2d::extension::TableView * tableView;
     std::vector<FriendInfo> friendInfoList;

@@ -3028,6 +3028,8 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/3d/CCSkybox.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/3d/CCSprite3D.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/3d/CCSprite3DMaterial.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/3d/CCTerrain.h
+CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/audio/include/Export.h
+CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/audio/include/SimpleAudioEngine.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/base/CCAsyncTaskPool.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/base/CCAutoreleasePool.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/base/CCConfiguration.h

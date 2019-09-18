@@ -94,6 +94,8 @@ bool LobbyLayer::init() {
     lobbyMemberDetailLayout->setLayoutType(ui::LAYOUT_LINEAR_VERTICAL);
     this->addChild(lobbyMemberDetailLayout);
 
+    lobbyMemberDetailLayout->setVisible(false);
+
     return true;
 }
 
