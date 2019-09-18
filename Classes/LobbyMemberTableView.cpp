@@ -17,21 +17,24 @@ const string stateIcon[2] = {
         "gray-dot.png"
 };
 
-bool LobbyMemberTableView::init() {
-    // 1. super init first
-    if (!Layer::init()) {
-        return false;
-    }
-
+LobbyMemberTableView::LobbyMemberTableView() {
     this->tableView = TableView::create(this, ResolutionUtil::getCorrespondSize(0.3f, 0.3f));
     tableView->setDirection(ScrollView::Direction::VERTICAL);
     tableView->setDelegate(this);
     tableView->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
-    this->addChild(tableView);
-    this->setContentSize(tableView->getBoundingBox().size);
     tableView->reloadData();
+    this->setContentSize(tableView->getBoundingBox().size);
+    this->addChild(tableView);
+}
 
-    return true;
+LobbyMemberTableView *LobbyMemberTableView::create() {
+    LobbyMemberTableView *widget = new(std::nothrow) LobbyMemberTableView();
+    if (widget && widget->init()) {
+        widget->autorelease();
+        return widget;
+    }
+    CC_SAFE_DELETE(widget);
+    return nullptr;
 }
 
 void LobbyMemberTableView::tableCellTouched(TableView *table, TableViewCell *cell) {
@@ -102,4 +105,11 @@ const std::vector<LoungeInfo> &LobbyMemberTableView::getLoungeInfoList() const {
 
 void LobbyMemberTableView::setLoungeInfoList(const std::vector<LoungeInfo> &loungeInfoList) {
     LobbyMemberTableView::loungeInfoList = loungeInfoList;
+}
+
+bool LobbyMemberTableView::init() {
+    if (Widget::init()) {
+        return true;
+    }
+    return false;
 }

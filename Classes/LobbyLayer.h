@@ -25,6 +25,7 @@ public:
     ~LobbyLayer();
 
 private:
+    cocos2d::ui::Layout *lobbyMemberDetailLayout;
     cocos2d::ui::Button *readyButton;
     bool ready = false;
 };

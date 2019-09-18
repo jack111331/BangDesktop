@@ -7,6 +7,7 @@
 #include <string>
 
 USING_NS_CC;
+USING_NS_CC_EXT;
 
 LobbyLayer::LobbyLayer() {
 
@@ -36,7 +37,6 @@ bool LobbyLayer::init() {
     userIcon1->setContentSize(ResolutionUtil::getCorrespondSize(0.08f, 0.1f));
     lobbyMemberLayout->addChild(userIcon1);
 
-
     lobbyMemberLayout->setBackGroundColorType(ui::LAYOUT_COLOR_SOLID);
     lobbyMemberLayout->setBackGroundColor(Color3B::RED);
     lobbyMemberLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.35f, 0.1f));
@@ -48,6 +48,7 @@ bool LobbyLayer::init() {
     this->addChild(lobbyMemberLayout);
 
 
+    this->lobbyMemberDetailLayout = ui::Layout::create();
 
     // 3. add user info
     std::vector<LoungeInfo> loungeInfoList;
@@ -56,22 +57,20 @@ bool LobbyLayer::init() {
     auto lobbyMemberTableView = LobbyMemberTableView::create();
     lobbyMemberTableView->setLoungeInfoList(loungeInfoList);
     lobbyMemberTableView->reloadData();
-    lobbyMemberTableView->setPosition(ResolutionUtil::getCorrespondPosition(0.55f, 0.6f));
-    this->addChild(lobbyMemberTableView);
+    lobbyMemberDetailLayout->addChild(lobbyMemberTableView);
 
     // 4. add ready button item
     this->readyButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
     if (readyButton == nullptr) {
         log("Can't initialize ready button");
     } else {
-        readyButton->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.5f));
 
         readyButton->setTitleFontSize(40);
         readyButton->setTitleText("Ready");
 
         readyButton->addClickEventListener(CC_CALLBACK_1(LobbyLayer::menuReadyCallback, this));
     }
-    this->addChild(readyButton);
+    lobbyMemberDetailLayout->addChild(readyButton);
 
     // 5. add start button
     auto startButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
@@ -79,18 +78,24 @@ bool LobbyLayer::init() {
     if (startButton == nullptr) {
         log("Can't initialize start button");
     } else {
-        startButton->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.4f));
 
         startButton->setTitleFontSize(40);
         startButton->setTitleText("Start");
 
         startButton->addClickEventListener(CC_CALLBACK_1(LobbyLayer::menuStartCallback, this));
     }
-    this->addChild(startButton);
+    lobbyMemberDetailLayout->addChild(startButton);
+
+    lobbyMemberDetailLayout->setBackGroundColorType(ui::LAYOUT_COLOR_SOLID);
+    lobbyMemberDetailLayout->setBackGroundColor(Color3B::RED);
+    lobbyMemberDetailLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.35f, 0.5f));
+    lobbyMemberDetailLayout->setAnchorPoint(Vec2(0.5f, 0.5f));
+    lobbyMemberDetailLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.6f));
+    lobbyMemberDetailLayout->setLayoutType(ui::LAYOUT_LINEAR_VERTICAL);
+    this->addChild(lobbyMemberDetailLayout);
 
     return true;
 }
-
 
 void LobbyLayer::menuReadyCallback(Ref *pSender) {
     ready = !ready;
@@ -109,6 +114,7 @@ void LobbyLayer::menuStartCallback(Ref *pSender) {
 }
 void LobbyLayer::layerTouchCallback(Ref * pSender){
     log("click layer");
+    lobbyMemberDetailLayout->setVisible(!lobbyMemberDetailLayout->isVisible());
 }
 
 LobbyLayer::~LobbyLayer() {
