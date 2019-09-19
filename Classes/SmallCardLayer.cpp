@@ -19,27 +19,50 @@ bool SmallCardLayer::init() {
     }
     // 2. cover background image
     auto backgroundImage = Sprite::create("card-orange.png");
-    auto backgroundImageFitScale = ResolutionUtil::getCorrespondBackgroundSize(backgroundImage->getContentSize());
-    backgroundImage->setScale(backgroundImageFitScale.y, backgroundImageFitScale.y);
-    this->addChild(backgroundImage);
+    if (backgroundImage) {
+        auto backgroundImageFitScale = ResolutionUtil::getCorrespondBackgroundSize(backgroundImage->getContentSize());
+        backgroundImage->setScale(backgroundImageFitScale.y, backgroundImageFitScale.y);
+        this->addChild(backgroundImage);
+    } else {
+        log("[SmallCardLayer] Can't initialize background image.");
+    }
 
-    // 3. add card name label
-    auto cardNameText = ui::Text::create();
-    cardNameText->setText("Roda");
-    cardNameText->setFontName("fonts/arial.ttf");
-    cardNameText->setFontSize(40);
-    cardNameText->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.3f));
-    this->addChild(cardNameText);
+    // 3. add card name text
+    this->cardNameText = ui::Text::create();
+    if (cardNameText) {
+        cardNameText->setString(cardName);
+        cardNameText->setFontName("fonts/arial.ttf");
+        cardNameText->setFontSize(40);
+        cardNameText->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.3f));
+        this->addChild(cardNameText);
+    } else {
+        log("[SmallCardLayer] Can't initialize card name text.");
+    }
 
     // 4. add card image sprite
-    auto cardImageSprite = Sprite::create();
-    cardImageSprite->setTexture("green-dot.png");
-    cardImageSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
-    this->addChild(cardImageSprite);
+    this->cardImageSprite = Sprite::create();
+    if (cardImageSprite) {
+        cardImageSprite->setTexture(cardImagePath);
+        cardImageSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
+        this->addChild(cardImageSprite);
+    } else {
+        log("[SmallCardLayer] Can't initialize card image.");
+    }
 
     return true;
+}
+
+void SmallCardLayer::setCardName(const std::string &cardName) {
+    this->cardName = cardName;
+    cardNameText->setString(cardName);
+}
+
+void SmallCardLayer::setCardImagePath(const std::string &cardImagePath) {
+    this->cardImagePath = cardImagePath;
+    cardImageSprite->setTexture(cardImagePath);
 }
 
 SmallCardLayer::~SmallCardLayer() {
 
 }
+

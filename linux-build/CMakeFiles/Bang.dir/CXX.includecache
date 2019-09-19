@@ -4015,6 +4015,8 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 string
 -
 

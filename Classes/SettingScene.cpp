@@ -22,50 +22,49 @@ bool SettingScene::init() {
         return false;
     }
 
-    Vector<MenuItem *> menuItemLists;
-
     // 2. cover background image
-    auto backgroundImage = Sprite::create("background.png");
-    this->addChild(backgroundImage);
+    auto backgroundImage = ui::ImageView::create("background.png");
+    if(backgroundImage) {
+        this->addChild(backgroundImage);
+    } else {
+        log("[SettingScene] Can't initialize background image.");
+    }
 
     // 3 add back button item
     auto backButton = ui::Button::create("login-btn.png", "login-btn-click.png");
-
-    if (backButton == nullptr) {
-        log("Can't initialize back button");
-    } else {
+    if (backButton) {
         backButton->setPosition(ResolutionUtil::getCorrespondPosition(0.6f, 0.2f));
 
         backButton->setTitleFontSize(40);
         backButton->setTitleText("Back");
 
         backButton->addClickEventListener(CC_CALLBACK_1(SettingScene::menuBackCallback, this));
+        this->addChild(backButton);
+    } else {
+        log("[SettingScene] Can't initialize back button");
     }
-    this->addChild(backButton);
 
     // 4. add background music slider label
     auto backgroundMusicText = ui::Text::create("BGM Volume", "fonts/arial.ttf", 40);
-
-    if (backgroundMusicText == nullptr) {
-        log("Can't initialize background music slider text");
-    } else {
+    if (backgroundMusicText) {
         backgroundMusicText->setPosition(ResolutionUtil::getCorrespondPosition(0.3f, 0.7f));
+        this->addChild(backgroundMusicText);
+    } else {
+        log("[SettingScene] Can't initialize background music slider text");
     }
-    this->addChild(backgroundMusicText);
 
     // 5. add background music slider
     this->backgroundMusicSlider = ui::Slider::create("mute-bg.png", "mute-thumb.png");
-
-    if (backgroundMusicSlider == nullptr) {
-        log("Can't initialize background Music Slider");
-    } else {
+    if (backgroundMusicSlider) {
         backgroundMusicSlider->setPercent(
                 CocosDenshion::SimpleAudioEngine::getInstance()->getBackgroundMusicVolume() * 100.0);
         backgroundMusicSlider->setPosition(ResolutionUtil::getCorrespondPosition(0.6f, 0.7f));
         backgroundMusicSlider->setScale(0.3f);
         backgroundMusicSlider->addEventListener(CC_CALLBACK_2(SettingScene::sliderCallback, this));
+        this->addChild(backgroundMusicSlider);
+    } else {
+        log("[SettingScene] Can't initialize background music slider");
     }
-    this->addChild(backgroundMusicSlider);
 
     return true;
 }

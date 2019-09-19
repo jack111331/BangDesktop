@@ -54,87 +54,79 @@ bool MainMenuScene::init() {
         audio->playBackgroundMusic("music/bg.mp3");
     }
 
-    Vector<MenuItem *> menuItemLists;
-
     // 2. cover background image
-    auto backgroundImage = Sprite::create("background.png");
-    this->addChild(backgroundImage);
+    auto backgroundImage = ui::ImageView::create("background.png");
+    if(backgroundImage) {
+        this->addChild(backgroundImage);
 
-    const float menuItemX = 0.5f;
-    float menuItemY = 0.7f;
+    } else {
+        log("[MainMenuScene] Can't initialize background image.");
+    }
+
+
+    auto menuButtonLayout = ui::Layout::create();
+
 
     // 3.a add friend button item
     auto friendButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
-
-    if (friendButton == nullptr) {
-        log("Can't initialize friend button");
-    } else {
-        //Position
-        log("friendButton=(%f, %f)\n", menuItemX, menuItemY);
-        friendButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.15f;
-
+    if (friendButton) {
+        friendButton->setAnchorPoint(Vec2(0.5f, 0.5f));
         friendButton->setTitleFontSize(40);
         friendButton->setTitleText("Friend List");
 
         friendButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuFriendCallback, this));
+        menuButtonLayout->addChild(friendButton);
+    } else {
+        log("[MainMenuScene] Can't initialize friend button.");
     }
-
-    this->addChild(friendButton);
 
     // 3.b add setting button item
     auto settingButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
-
-    if (settingButton == nullptr) {
-        log("Can't initialize setting button");
-    } else {
-        //Position
-        log("settingButton=(%f, %f)\n", menuItemX, menuItemY);
-        settingButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.15f;
-
+    if (settingButton) {
         settingButton->setTitleFontSize(40);
         settingButton->setTitleText("Setting");
 
         settingButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuSettingCallback, this));
+        menuButtonLayout->addChild(settingButton);
+    } else {
+        log("[MainMenuScene] Can't initialize setting button");
     }
 
-    this->addChild(settingButton);
     // 3.c add log out button item
     auto logoutButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
-
-    if (logoutButton == nullptr) {
-        log("Can't initialize logout button");
-    } else {
-        //Position
-        log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
-        logoutButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-        menuItemY -= 0.15f;
+    if (logoutButton) {
 
         logoutButton->setTitleFontSize(40);
         logoutButton->setTitleText("Log out");
 
         logoutButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuLogoutCallback, this));
+        menuButtonLayout->addChild(logoutButton);
+    } else {
+        log("[MainMenuScene] Can't initialize logout button");
     }
-
-    this->addChild(logoutButton);
     // 3.d add exit button item
     auto exitButton = ui::Button::create("ready-btn.png", "ready-btn-click.png");
 
-    if (exitButton == nullptr) {
-        log("Can't initialize exit button");
-    } else {
-        //Position
-        log("logoutButton=(%f, %f)\n", menuItemX, menuItemY);
-        exitButton->setPosition(ResolutionUtil::getCorrespondPosition(menuItemX, menuItemY));
-
+    if (exitButton) {
         exitButton->setTitleFontSize(40);
         exitButton->setTitleText("Exit");
 
         exitButton->addClickEventListener(CC_CALLBACK_1(MainMenuScene::menuExitCallback, this));
+        menuButtonLayout->addChild(exitButton);
+    } else {
+        log("[mainMenuScene] Can't initialize exit button");
     }
-    this->addChild(exitButton);
 
+    menuButtonLayout->setBackGroundColorType(ui::LAYOUT_COLOR_SOLID);
+    menuButtonLayout->setBackGroundColor(Color3B::RED);
+
+    menuButtonLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.4f, 0.6f));
+    menuButtonLayout->setLayoutType(ui::Layout::Type::VERTICAL);
+    menuButtonLayout->setAnchorPoint(Vec2(0.5f, 0.5f));
+    menuButtonLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+    this->addChild(menuButtonLayout);
+
+    // TODO optimize creation of lobby layer
     auto lobbyLayer = LobbyLayer::create();
     Director::getInstance()->setNotificationNode(lobbyLayer);
 

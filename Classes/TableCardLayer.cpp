@@ -31,7 +31,7 @@ bool TableCardLayer::init() {
 bool TableCardLayer::onTouchBegan(Touch *touch, Event *event) {
     auto target = event->getCurrentTarget();
 
-    //Get the position of the current point relative to the button
+    // Get the position of the current point relative to the button
     auto locationInNode = touch->getLocation();
     log("[TableCardLayer] locationInNode=(%f, %f)", locationInNode.x, locationInNode.y);
 
@@ -41,7 +41,7 @@ bool TableCardLayer::onTouchBegan(Touch *touch, Event *event) {
                      target->getPosition().y - boundingBoxSize.height / 2.0f, boundingBoxSize.width,
                      boundingBoxSize.height);
 
-    //Check the click area
+    // Check the click area
     if (rect.containsPoint(locationInNode)) {
         log("[TableCardLayer] touched layer began");
         return true;
