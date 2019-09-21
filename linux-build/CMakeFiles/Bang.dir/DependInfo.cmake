@@ -10,7 +10,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/FriendTableView.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/GameScene.cpp.o"
-  "/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o"
+  "/home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/HandCard.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.cpp" "/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o"

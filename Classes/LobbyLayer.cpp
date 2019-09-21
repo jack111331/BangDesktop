@@ -37,14 +37,14 @@ bool LobbyLayer::init() {
     userIcon1->setContentSize(ResolutionUtil::getCorrespondSize(0.08f, 0.1f));
     lobbyMemberLayout->addChild(userIcon1);
 
-    lobbyMemberLayout->setBackGroundColorType(ui::LAYOUT_COLOR_SOLID);
+    lobbyMemberLayout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
     lobbyMemberLayout->setBackGroundColor(Color3B::RED);
     lobbyMemberLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.35f, 0.1f));
     lobbyMemberLayout->setAnchorPoint(Vec2(0.5f, 0.5f));
     lobbyMemberLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.7f, 0.95f));
     lobbyMemberLayout->setTouchEnabled(true);
     lobbyMemberLayout->addClickEventListener(CC_CALLBACK_1(LobbyLayer::layerTouchCallback, this));
-    lobbyMemberLayout->setLayoutType(ui::LAYOUT_LINEAR_HORIZONTAL);
+    lobbyMemberLayout->setLayoutType(ui::Layout::Type::HORIZONTAL);
     this->addChild(lobbyMemberLayout);
 
 

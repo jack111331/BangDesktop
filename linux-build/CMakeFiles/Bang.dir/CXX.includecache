@@ -3857,8 +3857,8 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
-HandCardLayer.h
-/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
+HandCard.h
+/home/edge/BangDesktop/project/Bang/Classes/HandCard.h
 Player.h
 /home/edge/BangDesktop/project/Bang/Classes/Player.h
 
@@ -3868,13 +3868,13 @@ ui/CocosGUI.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
-/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp
-HandCardLayer.h
-/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp
+HandCard.h
+/home/edge/BangDesktop/project/Bang/Classes/HandCard.h
 SmallCardLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
 
-/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/HandCard.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 SmallCardLayer.h

@@ -59,7 +59,7 @@ list(APPEND GAME_SOURCE
         Classes/LargeCardLayer.cpp
         Classes/SmallCardLayer.cpp
         Classes/ChooseCharacterLayer.cpp
-        Classes/HandCardLayer.cpp
+        Classes/HandCard.cpp
         Classes/TableCardLayer.cpp
         Classes/FriendTableView.cpp
         Classes/LobbyMemberTableView.cpp
@@ -79,7 +79,7 @@ list(APPEND GAME_HEADER
         Classes/LargeCardLayer.h
         Classes/SmallCardLayer.h
         Classes/ChooseCharacterLayer.h
-        Classes/HandCardLayer.h
+        Classes/HandCard.h
         Classes/TableCardLayer.h
         Classes/FriendTableView.h
         Classes/LobbyMemberTableView.h

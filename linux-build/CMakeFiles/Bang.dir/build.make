@@ -321,28 +321,28 @@ CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o.provides: CMakeFiles/Bang
 CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o
 
 
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o: CMakeFiles/Bang.dir/flags.make
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o: ../Classes/HandCardLayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../Classes/HandCard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Bang.dir/Classes/HandCard.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/HandCard.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp
 
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp > CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.i
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/HandCard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp > CMakeFiles/Bang.dir/Classes/HandCard.cpp.i
 
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp -o CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.s
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/HandCard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp -o CMakeFiles/Bang.dir/Classes/HandCard.cpp.s
 
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.requires:
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.requires:
 
-.PHONY : CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.requires
+.PHONY : CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.requires
 
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.provides: CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.provides.build
-.PHONY : CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.provides
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.provides: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.provides.build
+.PHONY : CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.provides
 
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
 
 
 CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o: CMakeFiles/Bang.dir/flags.make
@@ -526,7 +526,7 @@ Bang_OBJECTS = \
 "CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o" \
-"CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/HandCard.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o" \
@@ -549,7 +549,7 @@ bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o
-bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o
@@ -767,7 +767,7 @@ CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o.requi
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o.requires
-CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o.requires
+CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o.requires

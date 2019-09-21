@@ -19,10 +19,8 @@ public:
 
     virtual bool init();
 
-    // a selector callback
-    void menuLoginCallback(cocos2d::Ref *pSender);
-
     void chooseCharacterUpdate(float delay);
+    void gameLoopUpdate(float delay);
 
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);
@@ -30,6 +28,7 @@ private:
     Player *player;
     ChooseCharacterLayer *leftCharacterLayer;
     ChooseCharacterLayer *rightCharacterLayer;
+    cocos2d::ui::Layout * handCardLayout;
 };
 
 #endif //BANG_GAMESCENE_H

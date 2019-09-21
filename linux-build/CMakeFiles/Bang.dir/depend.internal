@@ -1735,13 +1735,13 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
- /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/Player.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/User.h
-CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o
+CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
  ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -2020,8 +2020,8 @@ CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o
  ../cocos2d/cocos/vr/CCVRProtocol.h
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
- /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp
- /home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
  /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
