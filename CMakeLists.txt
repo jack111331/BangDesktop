@@ -50,6 +50,7 @@ endif ()
 list(APPEND GAME_SOURCE
         Classes/AppDelegate.cpp
         Classes/LoginScene.cpp
+        Classes/DebugScene.cpp
         Classes/MainMenuScene.cpp
         Classes/FriendScene.cpp
         Classes/SettingScene.cpp
@@ -70,6 +71,7 @@ list(APPEND GAME_SOURCE
 list(APPEND GAME_HEADER
         Classes/AppDelegate.h
         Classes/LoginScene.h
+        Classes/DebugScene.h
         Classes/MainMenuScene.h
         Classes/FriendScene.h
         Classes/SettingScene.h

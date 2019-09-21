@@ -3804,6 +3804,20 @@ cocos2d.h
 string
 -
 
+/home/edge/BangDesktop/project/Bang/Classes/DebugScene.cpp
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+DebugScene.h
+/home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
+HandCard.h
+/home/edge/BangDesktop/project/Bang/Classes/HandCard.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+
+/home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
 /home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp
 ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
@@ -3873,6 +3887,8 @@ HandCard.h
 /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
 SmallCardLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 
 /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
 cocos2d.h
@@ -3943,6 +3959,8 @@ LoginScene.h
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
 MainMenuScene.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
+DebugScene.h
+/home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
 User.h
 /home/edge/BangDesktop/project/Bang/Classes/User.h
 ResolutionUtil.h

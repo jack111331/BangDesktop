@@ -28,7 +28,7 @@ private:
     std::string cardName = "Roda";
     std::string cardImagePath = "green-dot.png";
     cocos2d::ui::Text *cardNameText;
-    cocos2d::Sprite *cardImageSprite;
+    cocos2d::ui::ImageView *cardImage;
 };
 
 

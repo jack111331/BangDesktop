@@ -966,6 +966,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/DebugScene.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/DebugScene.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/FriendScene.cpp">
 			<Option target="Bang"/>
 		</Unit>
@@ -984,10 +990,10 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameScene.h">
 			<Option target="Bang"/>
 		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.cpp">
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp">
 			<Option target="Bang"/>
 		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCardLayer.h">
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCard.h">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.cpp">

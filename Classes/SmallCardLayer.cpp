@@ -18,10 +18,12 @@ bool SmallCardLayer::init() {
         return false;
     }
     // 2. cover background image
-    auto backgroundImage = Sprite::create("card-orange.png");
+    auto backgroundImage = ui::ImageView::create("card-orange.png");
     if (backgroundImage) {
-        auto backgroundImageFitScale = ResolutionUtil::getCorrespondBackgroundSize(backgroundImage->getContentSize());
-        backgroundImage->setScale(backgroundImageFitScale.y, backgroundImageFitScale.y);
+        backgroundImage->ignoreContentAdaptWithSize(false);
+        backgroundImage->setContentSize(ResolutionUtil::getCorrespondSize(0.24f, 0.4f));
+        backgroundImage->ignoreAnchorPointForPosition(true);
+        this->setContentSize(backgroundImage->getBoundingBox().size);
         this->addChild(backgroundImage);
     } else {
         log("[SmallCardLayer] Can't initialize background image.");
@@ -33,18 +35,20 @@ bool SmallCardLayer::init() {
         cardNameText->setString(cardName);
         cardNameText->setFontName("fonts/arial.ttf");
         cardNameText->setFontSize(40);
-        cardNameText->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.3f));
+        //FIXME should use relative position according to background image
+        cardNameText->setPosition(ResolutionUtil::getCorrespondPosition(0.12f, 0.33f));
         this->addChild(cardNameText);
     } else {
         log("[SmallCardLayer] Can't initialize card name text.");
     }
 
     // 4. add card image sprite
-    this->cardImageSprite = Sprite::create();
-    if (cardImageSprite) {
-        cardImageSprite->setTexture(cardImagePath);
-        cardImageSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
-        this->addChild(cardImageSprite);
+    this->cardImage = ui::ImageView::create();
+    if (cardImage) {
+        cardImage->loadTexture(cardImagePath);
+        //FIXME should use relative position according to background image
+        cardImage->setPosition(ResolutionUtil::getCorrespondPosition(0.12f, 0.15f));
+        this->addChild(cardImage);
     } else {
         log("[SmallCardLayer] Can't initialize card image.");
     }
@@ -59,7 +63,7 @@ void SmallCardLayer::setCardName(const std::string &cardName) {
 
 void SmallCardLayer::setCardImagePath(const std::string &cardImagePath) {
     this->cardImagePath = cardImagePath;
-    cardImageSprite->setTexture(cardImagePath);
+    cardImage->loadTexture(cardImagePath);
 }
 
 SmallCardLayer::~SmallCardLayer() {

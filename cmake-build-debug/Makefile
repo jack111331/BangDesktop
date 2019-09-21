@@ -360,6 +360,33 @@ Classes/ChooseCharacterLayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.s
 .PHONY : Classes/ChooseCharacterLayer.cpp.s
 
+Classes/DebugScene.o: Classes/DebugScene.cpp.o
+
+.PHONY : Classes/DebugScene.o
+
+# target to build an object file
+Classes/DebugScene.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o
+.PHONY : Classes/DebugScene.cpp.o
+
+Classes/DebugScene.i: Classes/DebugScene.cpp.i
+
+.PHONY : Classes/DebugScene.i
+
+# target to preprocess a source file
+Classes/DebugScene.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/DebugScene.cpp.i
+.PHONY : Classes/DebugScene.cpp.i
+
+Classes/DebugScene.s: Classes/DebugScene.cpp.s
+
+.PHONY : Classes/DebugScene.s
+
+# target to generate assembly for a file
+Classes/DebugScene.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/DebugScene.cpp.s
+.PHONY : Classes/DebugScene.cpp.s
+
 Classes/FriendScene.o: Classes/FriendScene.cpp.o
 
 .PHONY : Classes/FriendScene.o
@@ -441,32 +468,32 @@ Classes/GameScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.s
 .PHONY : Classes/GameScene.cpp.s
 
-Classes/HandCardLayer.o: Classes/HandCardLayer.cpp.o
+Classes/HandCard.o: Classes/HandCard.cpp.o
 
-.PHONY : Classes/HandCardLayer.o
+.PHONY : Classes/HandCard.o
 
 # target to build an object file
-Classes/HandCardLayer.cpp.o:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o
-.PHONY : Classes/HandCardLayer.cpp.o
+Classes/HandCard.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
+.PHONY : Classes/HandCard.cpp.o
 
-Classes/HandCardLayer.i: Classes/HandCardLayer.cpp.i
+Classes/HandCard.i: Classes/HandCard.cpp.i
 
-.PHONY : Classes/HandCardLayer.i
+.PHONY : Classes/HandCard.i
 
 # target to preprocess a source file
-Classes/HandCardLayer.cpp.i:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.i
-.PHONY : Classes/HandCardLayer.cpp.i
+Classes/HandCard.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCard.cpp.i
+.PHONY : Classes/HandCard.cpp.i
 
-Classes/HandCardLayer.s: Classes/HandCardLayer.cpp.s
+Classes/HandCard.s: Classes/HandCard.cpp.s
 
-.PHONY : Classes/HandCardLayer.s
+.PHONY : Classes/HandCard.s
 
 # target to generate assembly for a file
-Classes/HandCardLayer.cpp.s:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.s
-.PHONY : Classes/HandCardLayer.cpp.s
+Classes/HandCard.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/HandCard.cpp.s
+.PHONY : Classes/HandCard.cpp.s
 
 Classes/LargeCardLayer.o: Classes/LargeCardLayer.cpp.o
 
@@ -822,6 +849,9 @@ help:
 	@echo "... Classes/ChooseCharacterLayer.o"
 	@echo "... Classes/ChooseCharacterLayer.i"
 	@echo "... Classes/ChooseCharacterLayer.s"
+	@echo "... Classes/DebugScene.o"
+	@echo "... Classes/DebugScene.i"
+	@echo "... Classes/DebugScene.s"
 	@echo "... Classes/FriendScene.o"
 	@echo "... Classes/FriendScene.i"
 	@echo "... Classes/FriendScene.s"
@@ -831,9 +861,9 @@ help:
 	@echo "... Classes/GameScene.o"
 	@echo "... Classes/GameScene.i"
 	@echo "... Classes/GameScene.s"
-	@echo "... Classes/HandCardLayer.o"
-	@echo "... Classes/HandCardLayer.i"
-	@echo "... Classes/HandCardLayer.s"
+	@echo "... Classes/HandCard.o"
+	@echo "... Classes/HandCard.i"
+	@echo "... Classes/HandCard.s"
 	@echo "... Classes/LargeCardLayer.o"
 	@echo "... Classes/LargeCardLayer.i"
 	@echo "... Classes/LargeCardLayer.s"

@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o"
   "CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o"

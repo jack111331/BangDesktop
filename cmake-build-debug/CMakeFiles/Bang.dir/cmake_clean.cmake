@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/AppDelegate.cpp.o"
   "CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o"
   "CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o"
@@ -10,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o"
-  "CMakeFiles/Bang.dir/Classes/HandCardLayer.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/HandCard.cpp.o"
   "CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o"
   "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o"

@@ -36,6 +36,7 @@ public:
 
     // a selector callback
     void menuLoginCallback(cocos2d::Ref *pSender);
+    void menuDebugCallback(cocos2d::Ref *pSender);
 
     // implement the "static create()" method manually
     CREATE_FUNC(LoginScene);

@@ -29,8 +29,9 @@ bool GameScene::init() {
     handCardLayout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
     handCardLayout->setBackGroundColor(Color3B::RED);
     handCardLayout->setLayoutType(ui::Layout::Type::HORIZONTAL);
-    handCardLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.5f, 0.5f));
+    handCardLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.8f, 0.3f));
     handCardLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+    handCardLayout->setAnchorPoint(Vec2(0.5f, 0.5f));
 
     // 2. cover background image
     auto backgroundImage = ui::ImageView::create("background.png");
@@ -86,7 +87,6 @@ void GameScene::gameLoopUpdate(float delay) {
     if(!updated) {
         for(int i = 0;i < 1;i++) {
             auto cardLayer = HandCard::create();
-            cardLayer->setScale(0.2f, 0.2f);
             handCardLayout->addChild(cardLayer);
         }
         updated = true;
