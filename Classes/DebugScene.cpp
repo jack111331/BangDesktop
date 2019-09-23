@@ -26,7 +26,7 @@ bool DebugScene::init() {
     layout->setLayoutType(ui::Layout::Type::HORIZONTAL);
     layout->setContentSize(ResolutionUtil::getCorrespondSize(0.8f, 0.3f));
     layout->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
-    layout->setAnchorPoint(Vec2(0.5f, 0.5f));
+    layout->setAnchorPoint(Vec2(0.5f,0.5f));
     auto handCard = HandCard::create();
     layout->addChild(handCard);
     auto handCard1 = HandCard::create();

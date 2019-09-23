@@ -3,72 +3,71 @@
 //
 
 #include "HandCard.h"
-#include "SmallCardLayer.h"
 #include "ResolutionUtil.h"
 
 USING_NS_CC;
 
 HandCard::HandCard() {
-    auto eventDispatcher = Director::getInstance()->getEventDispatcher();
-    auto eventListener = EventListenerTouchOneByOne::create();
-    eventListener->onTouchBegan = CC_CALLBACK_2(HandCard::onTouchBegan, this);
-    eventListener->onTouchMoved = CC_CALLBACK_2(HandCard::onTouchMoved, this);
-    eventListener->onTouchEnded = CC_CALLBACK_2(HandCard::onTouchEnded, this);
-    eventListener->setSwallowTouches(false);
-    eventDispatcher->addEventListenerWithSceneGraphPriority(eventListener, this);
-
-
-    this->smallCardLayer = SmallCardLayer::create();
-
-//    this->addTouchEventListener(CC_CALLBACK_1(HandCard::onPlayCardCallback, this));
-    this->ignoreContentAdaptWithSize(true);
-    this->setContentSize(smallCardLayer->getBoundingBox().size);
-    log("smallCardLayer=(%f, %f)", smallCardLayer->getBoundingBox().size.width, smallCardLayer->getBoundingBox().size.height);
-    this->setAnchorPoint(Vec2(0.5f, 0.5f));
-    log("smallCardLayer=(%f, %f)", this->getAnchorPoint().x, this->getAnchorPoint().y);
-
-    this->addChild(smallCardLayer);
-}
-
-bool HandCard::onTouchBegan(Touch *touch, Event *event) {
-    auto target = event->getCurrentTarget();
-
-    //Get the position of the current point relative to the button
-    auto touchLocation = target->convertTouchToNodeSpace(touch);
-    log("touchLocation=(%f, %f)", touchLocation.x, touchLocation.y);
-
-    // Because of layer is middle aligned, so we need to adjust bounding box
-    auto boundingBoxSize = target->getBoundingBox().size;
-    auto rect = Rect(target->getPosition().x - boundingBoxSize.width / 2.0f,
-                     target->getPosition().y - boundingBoxSize.height / 2.0f, boundingBoxSize.width,
-                     boundingBoxSize.height);
-    log("targetPosition=(%f, %f)", target->getPosition().x, target->getPosition().y);
-    //Check the click area
-    if (rect.containsPoint(touchLocation)) {
-        log("touched layer began");
-        return true;
-    }
-    return false;
-}
-
-void HandCard::onTouchMoved(Touch *touch, Event *event) {
-    // FIXME move to correct position
-//    this->setPosition(touch->getLocation());
-}
-
-void HandCard::onTouchEnded(Touch *touch, Event *event) {
-    if (touch->getLocation().y >= Director::getInstance()->getVisibleSize().height * 0.25) {
-        this->onPlayCardCallback(event->getCurrentTarget());
+    // 2. cover background image
+    auto backgroundImage = Sprite::create("card-orange.png");
+    if (backgroundImage) {
+        backgroundImage->setAnchorPoint(Vec2(0.0f, 0.0f));
+        backgroundImage->setContentSize(ResolutionUtil::getCorrespondSize(0.24f, 0.4f));
+        this->addChild(backgroundImage);
     } else {
-        // back to its original position
-        // this->setPosition(touch->getLocation());
+        log("[SmallCardLayer] Can't initialize background image.");
     }
+
+    // 3. add card name text
+    this->cardNameText = ui::Text::create();
+    if (cardNameText) {
+        cardNameText->setString(cardName);
+        cardNameText->setFontName("fonts/arial.ttf");
+        cardNameText->setFontSize(40);
+        //FIXME should use relative position according to background image
+        cardNameText->setPosition(ResolutionUtil::getCorrespondPosition(0.12f, 0.33f));
+        this->addChild(cardNameText);
+    } else {
+        log("[SmallCardLayer] Can't initialize card name text.");
+    }
+
+    // 4. add card image sprite
+    this->cardImage = ui::ImageView::create();
+    if (cardImage) {
+        cardImage->loadTexture(cardImagePath);
+        //FIXME should use relative position according to background image
+        cardImage->setPosition(ResolutionUtil::getCorrespondPosition(0.12f, 0.15f));
+        this->addChild(cardImage);
+    } else {
+        log("[SmallCardLayer] Can't initialize card image.");
+    }
+
+    // 5. add button
+    auto fakeButton = ui::Button::create("", "");
+    fakeButton->addClickEventListener(CC_CALLBACK_1(HandCard::cardCallback, this));
+    fakeButton->setAnchorPoint(Vec2(0.0f, 0.0f));
+    fakeButton->ignoreContentAdaptWithSize(false);
+    fakeButton->setContentSize(backgroundImage->getBoundingBox().size);
+    this->addChild(fakeButton);
+
+    this->ignoreContentAdaptWithSize(false);
+    this->setContentSize(backgroundImage->getBoundingBox().size);
+
 }
 
-void HandCard::onPlayCardCallback(Ref *pSender) {
+void HandCard::cardCallback(Ref *pSender) {
     // inform parent scene to play card animation
-    log("Touched");
-    this->removeFromParent();
+    log("touched layer");
+}
+
+void HandCard::setCardName(const std::string &cardName) {
+    this->cardName = cardName;
+    cardNameText->setString(cardName);
+}
+
+void HandCard::setCardImagePath(const std::string &cardImagePath) {
+    this->cardImagePath = cardImagePath;
+    cardImage->loadTexture(cardImagePath);
 }
 
 HandCard::~HandCard() {

@@ -6,24 +6,26 @@
 #define BANG_HANDCARD_H
 
 #include "cocos2d.h"
-#include "SmallCardLayer.h"
+#include "ui/CocosGUI.h"
 
 class HandCard : public cocos2d::ui::Widget{
 public:
     HandCard();
 
-    virtual bool onTouchBegan(cocos2d::Touch *touch, cocos2d::Event *event);
-    virtual void onTouchMoved(cocos2d::Touch *touch, cocos2d::Event *event);
-    virtual void onTouchEnded(cocos2d::Touch *touch, cocos2d::Event *event);
+    void cardCallback(Ref *pSender);
 
-    void onPlayCardCallback(Ref *pSender);
+    void setCardName(const std::string &cardName);
+
+    void setCardImagePath(const std::string &cardImagePath);
 
     CREATE_FUNC(HandCard);
 
     ~HandCard();
 private:
-    SmallCardLayer * smallCardLayer;
-
+    std::string cardName = "Roda";
+    std::string cardImagePath = "green-dot.png";
+    cocos2d::ui::Text *cardNameText;
+    cocos2d::ui::ImageView *cardImage;
 };
 
 

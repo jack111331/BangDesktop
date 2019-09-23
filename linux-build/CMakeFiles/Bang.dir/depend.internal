@@ -1065,7 +1065,6 @@ CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
  /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
- /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2023,7 +2022,6 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/Player.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
- /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
@@ -2307,7 +2305,6 @@ CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp
  /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
- /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h

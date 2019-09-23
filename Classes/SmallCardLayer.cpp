@@ -18,12 +18,12 @@ bool SmallCardLayer::init() {
         return false;
     }
     // 2. cover background image
-    auto backgroundImage = ui::ImageView::create("card-orange.png");
+    auto backgroundImage = Sprite::create("card-orange.png");
     if (backgroundImage) {
-        backgroundImage->ignoreContentAdaptWithSize(false);
         backgroundImage->setContentSize(ResolutionUtil::getCorrespondSize(0.24f, 0.4f));
-        backgroundImage->ignoreAnchorPointForPosition(true);
+        backgroundImage->setAnchorPoint(Vec2(0.0f, 0.0f));
         this->setContentSize(backgroundImage->getBoundingBox().size);
+        this->setAnchorPoint(Vec2(0.5f, 0.5f));
         this->addChild(backgroundImage);
     } else {
         log("[SmallCardLayer] Can't initialize background image.");

@@ -1064,7 +1064,6 @@ CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o: ../Classes/DebugScene.cpp
 CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o: ../Classes/DebugScene.h
 CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o: ../Classes/HandCard.h
 CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o: ../Classes/ResolutionUtil.h
-CMakeFiles/Bang.dir/Classes/DebugScene.cpp.o: ../Classes/SmallCardLayer.h
 
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/FriendScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2022,7 +2021,6 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/HandCard.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/LargeCardLayer.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/Player.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/ResolutionUtil.h
-CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/SmallCardLayer.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../cocos2d/cocos/2d/CCAction.h
@@ -2306,7 +2304,6 @@ CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../cocos2d/external/glfw3/include/li
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../Classes/HandCard.cpp
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../Classes/HandCard.h
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../Classes/ResolutionUtil.h
-CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../Classes/SmallCardLayer.h
 
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
