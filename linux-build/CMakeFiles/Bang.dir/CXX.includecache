@@ -3809,8 +3809,8 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 DebugScene.h
 /home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
-HandCard.h
-/home/edge/BangDesktop/project/Bang/Classes/HandCard.h
+PlayerLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h
 ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 
@@ -3875,6 +3875,8 @@ HandCard.h
 /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
 Player.h
 /home/edge/BangDesktop/project/Bang/Classes/Player.h
+PlayerLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h
 
 /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
 ui/CocosGUI.h
@@ -3921,8 +3923,6 @@ ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 LobbyMemberTableView.h
 /home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.h
-string
--
 
 /home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h
 ui/CocosGUI.h
@@ -3999,6 +3999,22 @@ User.h
 /home/edge/BangDesktop/project/Bang/Classes/User.h
 string
 -
+
+/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.cpp
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+PlayerLayer.h
+/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h
+ResolutionUtil.h
+/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+LobbyMemberTableView.h
+/home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.h
+
+/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h
+ui/CocosGUI.h
+/home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
 
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 cocos2d.h

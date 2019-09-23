@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/LargeCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/SmallCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/ChooseCharacterLayer.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/HandCard.cpp.o"
   "CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o"
   "CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o"

@@ -117,9 +117,6 @@ bool MainMenuScene::init() {
         log("[mainMenuScene] Can't initialize exit button");
     }
 
-    menuButtonLayout->setBackGroundColorType(ui::LAYOUT_COLOR_SOLID);
-    menuButtonLayout->setBackGroundColor(Color3B::RED);
-
     menuButtonLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.4f, 0.6f));
     menuButtonLayout->setLayoutType(ui::Layout::Type::VERTICAL);
     menuButtonLayout->setAnchorPoint(Vec2(0.5f, 0.5f));

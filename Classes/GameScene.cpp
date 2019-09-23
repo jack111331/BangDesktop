@@ -10,6 +10,7 @@
 #include "HandCard.h"
 
 #include "Player.h"
+#include "PlayerLayer.h"
 
 USING_NS_CC;
 
@@ -26,12 +27,11 @@ bool GameScene::init() {
     }
     this->player = new Player();
     this->handCardLayout = ui::Layout::create();
-    handCardLayout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
-    handCardLayout->setBackGroundColor(Color3B::RED);
+    //    handCardLayout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
+    //    handCardLayout->setBackGroundColor(Color3B::RED);
     handCardLayout->setLayoutType(ui::Layout::Type::HORIZONTAL);
-    handCardLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.8f, 0.3f));
-    handCardLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
-    handCardLayout->setAnchorPoint(Vec2(0.5f, 0.5f));
+    handCardLayout->setContentSize(ResolutionUtil::getCorrespondSize(0.96f, 0.4f));
+    handCardLayout->setPosition(ResolutionUtil::getCorrespondPosition(0.02f, 0.0f));
 
     // 2. cover background image
     auto backgroundImage = ui::ImageView::create("background.png");
@@ -60,7 +60,6 @@ bool GameScene::init() {
     this->addChild(handCardLayout);
 
 
-
     Director::getInstance()->setNotificationNode(nullptr);
 
     return true;
@@ -82,13 +81,17 @@ void GameScene::chooseCharacterUpdate(float delay) {
         this->schedule(schedule_selector(GameScene::gameLoopUpdate), 2.0f);
     }
 }
+
 void GameScene::gameLoopUpdate(float delay) {
     static bool updated = false;
-    if(!updated) {
-        for(int i = 0;i < 1;i++) {
+    if (!updated) {
+        for (int i = 0; i < 3; i++) {
             auto cardLayer = HandCard::create();
             handCardLayout->addChild(cardLayer);
         }
+        auto playerLayer = PlayerLayer::create();
+        playerLayer->setPosition(ResolutionUtil::getCorrespondPosition(0.2f, 0.2f));
+        this->addChild(playerLayer);
         updated = true;
     }
 }

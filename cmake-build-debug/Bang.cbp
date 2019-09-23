@@ -1032,6 +1032,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Player.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h">
 			<Option target="Bang"/>
 		</Unit>

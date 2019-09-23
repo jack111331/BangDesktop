@@ -657,6 +657,33 @@ Classes/Player.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.s
 .PHONY : Classes/Player.cpp.s
 
+Classes/PlayerLayer.o: Classes/PlayerLayer.cpp.o
+
+.PHONY : Classes/PlayerLayer.o
+
+# target to build an object file
+Classes/PlayerLayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.o
+.PHONY : Classes/PlayerLayer.cpp.o
+
+Classes/PlayerLayer.i: Classes/PlayerLayer.cpp.i
+
+.PHONY : Classes/PlayerLayer.i
+
+# target to preprocess a source file
+Classes/PlayerLayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.i
+.PHONY : Classes/PlayerLayer.cpp.i
+
+Classes/PlayerLayer.s: Classes/PlayerLayer.cpp.s
+
+.PHONY : Classes/PlayerLayer.s
+
+# target to generate assembly for a file
+Classes/PlayerLayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.s
+.PHONY : Classes/PlayerLayer.cpp.s
+
 Classes/SettingScene.o: Classes/SettingScene.cpp.o
 
 .PHONY : Classes/SettingScene.o
@@ -882,6 +909,9 @@ help:
 	@echo "... Classes/Player.o"
 	@echo "... Classes/Player.i"
 	@echo "... Classes/Player.s"
+	@echo "... Classes/PlayerLayer.o"
+	@echo "... Classes/PlayerLayer.i"
+	@echo "... Classes/PlayerLayer.s"
 	@echo "... Classes/SettingScene.o"
 	@echo "... Classes/SettingScene.i"
 	@echo "... Classes/SettingScene.s"
