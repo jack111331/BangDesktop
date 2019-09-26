@@ -18,8 +18,8 @@ bool AddFriendLayer::init() {
     }
 
     // 2. cover background image
-    auto backgroundImage = ui::ImageView::create("background-layer.png");
-    if(backgroundImage) {
+    auto backgroundImage = ui::ImageView::create("notification-bg.png");
+    if (backgroundImage) {
         backgroundImage->ignoreContentAdaptWithSize(false);
         backgroundImage->setContentSize(ResolutionUtil::getCorrespondSize(0.5f, 0.5f));
         backgroundImage->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
@@ -30,24 +30,48 @@ bool AddFriendLayer::init() {
 
     // 3. add tip text
     auto tipText = ui::Text::create();
-    if(tipText) {
+    if (tipText) {
         tipText->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.7f));
         tipText->setFontName("fonts/arial.ttf");
-        tipText->setFontSize(40);
+        tipText->setFontSize(20);
         tipText->setTextColor(Color4B::BLACK);
-        tipText->setString("Please Enter User Id who you want to add as friend.");
+        tipText->setString("Please Enter User ID who you want to add as friend.");
         this->addChild(tipText);
     } else {
         log("[AddFriendLayer] Can't Initialize tip text");
     }
 
-    // 4. add user id text field
-    this->userIdTextField = ui::TextField::create("User Id", "fonts/arial.ttf", 60);
+    // 4.a add user id text field background
+    auto userIdTextFieldBackground = ui::ImageView::create("username-input.png");
+    if (userIdTextFieldBackground) {
+        userIdTextFieldBackground->ignoreContentAdaptWithSize(false);
+        userIdTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.30f, 0.05f));
+        userIdTextFieldBackground->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+        this->addChild(userIdTextFieldBackground);
+    } else {
+        log("[LoginScene] Can't initialize username textfield background");
+    }
+
+    // 4.b add user id text field
+    this->userIdTextField = TextFieldTTF::textFieldWithPlaceHolder("User ID", "fonts/arial.ttf", 40);
     if (userIdTextField) {
-        userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.0f, 0.1f));
+        userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
+        auto listener = EventListenerTouchOneByOne::create();
+        listener->onTouchBegan = [this](Touch *touch, Event *event) {
+            if (this->userIdTextField->getBoundingBox().containsPoint(touch->getLocation())) {
+                this->userIdTextField->attachWithIME();
+            } else {
+                this->userIdTextField->detachWithIME();
+            }
+            return false;
+        };
+        Director::getInstance()->getEventDispatcher()->
+                addEventListenerWithSceneGraphPriority(listener, userIdTextField);
+        userIdTextField->setCursorEnabled(true);
+        userIdTextField->setTextColor(Color4B::BLACK);
         this->addChild(userIdTextField);
     } else {
-        log("[AddFriendLayer] Can't initialize user id text field");
+        log("[AddFriendLayer] Can't initialize user id textfield");
     }
 
     // 5.a Add add button

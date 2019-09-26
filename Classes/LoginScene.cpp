@@ -54,7 +54,7 @@ bool LoginScene::init() {
     auto usernameTextFieldBackground = ui::ImageView::create("username-input.png");
     if (usernameTextFieldBackground) {
         usernameTextFieldBackground->ignoreContentAdaptWithSize(false);
-        usernameTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.25f, 0.05f));
+        usernameTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.30f, 0.05f));
         usernameTextFieldBackground->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.55f));
         this->addChild(usernameTextFieldBackground);
     } else {
@@ -89,7 +89,7 @@ bool LoginScene::init() {
     auto passwordTextFieldBackground = ui::ImageView::create("username-input.png");
     if (passwordTextFieldBackground) {
         passwordTextFieldBackground->ignoreContentAdaptWithSize(false);
-        passwordTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.25f, 0.05f));
+        passwordTextFieldBackground->setContentSize(ResolutionUtil::getCorrespondSize(0.30f, 0.05f));
         passwordTextFieldBackground->setPosition(ResolutionUtil::getCorrespondPosition(0.4f, 0.45f));
         this->addChild(passwordTextFieldBackground);
     } else {

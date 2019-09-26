@@ -18,7 +18,7 @@ const string stateIcon[2] = {
 };
 
 LobbyMemberTableView::LobbyMemberTableView() {
-    this->tableView = TableView::create(this, ResolutionUtil::getCorrespondSize(0.3f, 0.3f));
+    this->tableView = TableView::create(this, ResolutionUtil::getCorrespondSize(0.35f, 0.3f));
     tableView->setDirection(ScrollView::Direction::VERTICAL);
     tableView->setDelegate(this);
     tableView->setVerticalFillOrder(TableView::VerticalFillOrder::TOP_DOWN);
@@ -57,16 +57,16 @@ TableViewCell *LobbyMemberTableView::tableCellAtIndex(TableView *table, ssize_t 
     if (!cell) {
         cell = new TableViewCell();
         cell->autorelease();
-        cell->setContentSize(ResolutionUtil::getCorrespondSize(0.3f, 0.1f));
+        cell->setContentSize(ResolutionUtil::getCorrespondSize(0.35f, 0.1f));
 
         auto cellBackground = Sprite::create("background-layer.png");
         cellBackground->setAnchorPoint(Vec2::ZERO);
-        cellBackground->setContentSize(Size(cell->getBoundingBox().size.width, cell->getBoundingBox().size.height));
+        cellBackground->setContentSize(cell->getBoundingBox().size);
         cell->addChild(cellBackground);
 
         auto iconSprite = Sprite::create("user-icon.png");
         iconSprite->setPosition(ResolutionUtil::getCorrespondPosition(0.02f, 0.05f));
-        iconSprite->setScale(0.1f);
+        iconSprite->setContentSize(ResolutionUtil::getCorrespondSize(0.04f, 0.1f));
         cell->addChild(iconSprite);
 
         auto usernameText = ui::Text::create(std::to_string(loungeInfoList[idx].getId()), "fonts/arial.ttf", 20.0);

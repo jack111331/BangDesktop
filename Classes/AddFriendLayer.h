@@ -24,7 +24,7 @@ public:
     ~AddFriendLayer();
 
 private:
-    cocos2d::ui::TextField *userIdTextField;
+    cocos2d::TextFieldTTF *userIdTextField;
 };
 
 
