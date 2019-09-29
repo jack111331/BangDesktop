@@ -68,6 +68,7 @@ list(APPEND GAME_SOURCE
         Classes/User.cpp
         Classes/Player.cpp
         Classes/vo/LoungeInfo.cpp
+        Classes/Network.cpp
         )
 list(APPEND GAME_HEADER
         Classes/AppDelegate.h
@@ -93,6 +94,7 @@ list(APPEND GAME_HEADER
         Classes/ResolutionUtil.h
         Classes/vo
         Classes/nlohmann
+        Classes/Network.h
         )
 
 if (ANDROID)

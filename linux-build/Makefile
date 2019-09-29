@@ -630,6 +630,33 @@ Classes/MainMenuScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s
 .PHONY : Classes/MainMenuScene.cpp.s
 
+Classes/Network.o: Classes/Network.cpp.o
+
+.PHONY : Classes/Network.o
+
+# target to build an object file
+Classes/Network.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Network.cpp.o
+.PHONY : Classes/Network.cpp.o
+
+Classes/Network.i: Classes/Network.cpp.i
+
+.PHONY : Classes/Network.i
+
+# target to preprocess a source file
+Classes/Network.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Network.cpp.i
+.PHONY : Classes/Network.cpp.i
+
+Classes/Network.s: Classes/Network.cpp.s
+
+.PHONY : Classes/Network.s
+
+# target to generate assembly for a file
+Classes/Network.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Network.cpp.s
+.PHONY : Classes/Network.cpp.s
+
 Classes/Player.o: Classes/Player.cpp.o
 
 .PHONY : Classes/Player.o
@@ -906,6 +933,9 @@ help:
 	@echo "... Classes/MainMenuScene.o"
 	@echo "... Classes/MainMenuScene.i"
 	@echo "... Classes/MainMenuScene.s"
+	@echo "... Classes/Network.o"
+	@echo "... Classes/Network.i"
+	@echo "... Classes/Network.s"
 	@echo "... Classes/Player.o"
 	@echo "... Classes/Player.i"
 	@echo "... Classes/Player.s"

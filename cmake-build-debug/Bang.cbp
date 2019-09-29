@@ -1026,6 +1026,12 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Network.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Network.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Player.cpp">
 			<Option target="Bang"/>
 		</Unit>

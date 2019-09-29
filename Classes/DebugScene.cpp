@@ -4,8 +4,7 @@
 
 #include "ui/CocosGUI.h"
 #include "DebugScene.h"
-#include "PlayerLayer.h"
-#include "ResolutionUtil.h"
+#include "Network.h"
 
 USING_NS_CC;
 
@@ -20,6 +19,10 @@ bool DebugScene::init() {
     if (!Scene::init()) {
         return false;
     }
+    Network * userNetwork = Network::getInstance();
+    log("Hello kind echo server :D");
+    userNetwork->send("Hello kind echo server :D");
+
 
     return true;
 }

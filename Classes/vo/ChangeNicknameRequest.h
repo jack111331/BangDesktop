@@ -8,23 +8,20 @@
 #include <string>
 #include "nlohmann/json.hpp"
 
-namespace Request
-{
-    struct ChangeNicknameRequest
-    {
-        static constexpr int action = 1;
+namespace Request {
+    struct ChangeNicknameRequest {
+        std::string token;
         std::string nickname;
     };
 
-    void to_json(nlohmann::json &j, const ChangeNicknameRequest &p)
-    {
-        j = nlohmann::json{{"Nick Name", p.nickname},
-                           {"Action",  p.action}};
+    void to_json(nlohmann::json &j, const ChangeNicknameRequest &p) {
+        j = nlohmann::json{{"token",    p.token},
+                           {"nickname", p.nickname}};
     }
 
-    void from_json(const nlohmann::json &j, ChangeNicknameRequest &p)
-    {
-        j.at("Nick Name").get_to(p.nickname);
+    void from_json(const nlohmann::json &j, ChangeNicknameRequest &p) {
+        j.at("token").get_to(p.token);
+        j.at("nickname").get_to(p.nickname);
     }
 }
 

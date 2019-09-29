@@ -17,6 +17,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o"
+  "/home/edge/BangDesktop/project/Bang/Classes/Network.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/Network.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/Player.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/Player.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.o"
   "/home/edge/BangDesktop/project/Bang/Classes/SettingScene.cpp" "/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles/Bang.dir/Classes/SettingScene.cpp.o"

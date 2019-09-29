@@ -2058,6 +2058,24 @@ vector
 platform/CCPlatformMacros.h
 ../cocos2d/cocos/network/platform/CCPlatformMacros.h
 
+../cocos2d/cocos/network/WebSocket.h
+string
+-
+vector
+-
+mutex
+-
+memory
+-
+atomic
+-
+condition_variable
+-
+platform/CCPlatformMacros.h
+../cocos2d/cocos/network/platform/CCPlatformMacros.h
+platform/CCStdC.h
+../cocos2d/cocos/network/platform/CCStdC.h
+
 ../cocos2d/cocos/physics/CCPhysicsBody.h
 base/ccConfig.h
 ../cocos2d/cocos/physics/base/ccConfig.h
@@ -3809,10 +3827,8 @@ ui/CocosGUI.h
 /home/edge/BangDesktop/project/Bang/Classes/ui/CocosGUI.h
 DebugScene.h
 /home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
-PlayerLayer.h
-/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h
-ResolutionUtil.h
-/home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+Network.h
+/home/edge/BangDesktop/project/Bang/Classes/Network.h
 
 /home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
 cocos2d.h
@@ -3965,6 +3981,8 @@ ResolutionUtil.h
 /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
 SimpleAudioEngine.h
 /home/edge/BangDesktop/project/Bang/Classes/SimpleAudioEngine.h
+Network.h
+/home/edge/BangDesktop/project/Bang/Classes/Network.h
 
 /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
 cocos2d.h
@@ -3989,6 +4007,18 @@ LobbyLayer.h
 /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
 cocos2d.h
 /home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
+/home/edge/BangDesktop/project/Bang/Classes/Network.cpp
+Network.h
+/home/edge/BangDesktop/project/Bang/Classes/Network.h
+cocos2d.h
+/home/edge/BangDesktop/project/Bang/Classes/cocos2d.h
+
+/home/edge/BangDesktop/project/Bang/Classes/Network.h
+network/WebSocket.h
+/home/edge/BangDesktop/project/Bang/Classes/network/WebSocket.h
+string
+-
 
 /home/edge/BangDesktop/project/Bang/Classes/Player.cpp
 Player.h

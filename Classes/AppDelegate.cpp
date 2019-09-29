@@ -24,6 +24,7 @@
 
 #include "AppDelegate.h"
 #include "LoginScene.h"
+#include "Network.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -114,6 +115,9 @@ bool AppDelegate::applicationDidFinishLaunching() {
     }
 
     register_all_packages();
+
+    // init network
+    auto network = Network::getInstance();
 
     // create a scene. it's an autorelease object
     auto scene = LoginScene::createScene();
