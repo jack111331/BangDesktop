@@ -9,10 +9,11 @@
 #include "ResolutionUtil.h"
 #include "HandCard.h"
 
-#include "Player.h"
+#include "GamePlayer.h"
 #include "PlayerLayer.h"
 
 USING_NS_CC;
+using namespace Player;
 
 
 Scene *GameScene::createScene() {
@@ -25,7 +26,7 @@ bool GameScene::init() {
     if (!Scene::init()) {
         return false;
     }
-    this->player = new Player();
+    this->player = new GamePlayer();
     this->handCardLayout = ui::Layout::create();
     //    handCardLayout->setBackGroundColorType(ui::Layout::BackGroundColorType::SOLID);
     //    handCardLayout->setBackGroundColor(Color3B::RED);

@@ -387,7 +387,7 @@ uint32_t TMXLayer::getTileGIDAt(const Vec2& pos, TMXTileFlags* flags/* = nullptr
     CCASSERT(_tiles && _atlasIndexArray, "TMXLayer: the tiles map has been released");
 
     ssize_t idx = static_cast<int>(((int) pos.x + (int) pos.y * _layerSize.width));
-    // Bits on the far end of the 32-bit global tile ID are used for tile flags
+    // Bits on the far end of the 32-bit global tile id are used for tile flags
     uint32_t tile = _tiles[idx];
 
     // issue1264, flipped tiles can be changed dynamically

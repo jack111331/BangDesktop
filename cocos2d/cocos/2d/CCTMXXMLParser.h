@@ -83,7 +83,7 @@ typedef enum TMXTileFlags_ {
     kTMXFlippedMask         = ~(kTMXFlipedAll)
 } TMXTileFlags;
 
-// Bits on the far end of the 32-bit global tile ID (GID's) are used for tile flags
+// Bits on the far end of the 32-bit global tile id (GID's) are used for tile flags
 
 /** @brief TMXLayerInfo contains the information about the layers like:
 - Layer name

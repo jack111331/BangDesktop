@@ -484,7 +484,7 @@ void BMFontConfiguration::parseImageFileName(const char* line, const std::string
     // page id=0 file="bitmapFontTest.png"
     //////////////////////////////////////////////////////////////////////////
 
-    // page ID. Sanity check
+    // page id. Sanity check
     int pageId;
     sscanf(line, "page id=%d", &pageId);
     CCASSERT(pageId == 0, "LabelBMFont file could not be found");
@@ -549,7 +549,7 @@ unsigned int BMFontConfiguration::parseCharacterDefinition(const char* line)
     // char id=32   x=0     y=0     width=0     height=0     xoffset=0     yoffset=44    xadvance=14     page=0  chnl=0 
     //////////////////////////////////////////////////////////////////////////
 
-    // Character ID
+    // Character id
     auto tmp = strstr(line, "id=") + 3;
     sscanf(tmp, "%u", &charID);
     

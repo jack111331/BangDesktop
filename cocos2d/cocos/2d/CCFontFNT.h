@@ -67,7 +67,7 @@ private:
     
     BMFontConfiguration * _configuration;
     Vec2                   _imageOffset;
-    //User defined font size
+    //GameUser defined font size
     float  _fontSize;
 };
 

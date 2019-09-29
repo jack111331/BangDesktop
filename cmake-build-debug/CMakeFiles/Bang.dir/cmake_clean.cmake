@@ -18,6 +18,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o"
   "CMakeFiles/Bang.dir/Classes/User.cpp.o"
   "CMakeFiles/Bang.dir/Classes/Player.cpp.o"
+  "CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o"
   "CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o"
   "CMakeFiles/Bang.dir/Classes/Network.cpp.o"
   "CMakeFiles/Bang.dir/proj.linux/main.cpp.o"

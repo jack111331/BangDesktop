@@ -465,57 +465,81 @@ CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o.provides: CMakeFiles/Bang
 CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o
 
 
-CMakeFiles/Bang.dir/Classes/User.cpp.o: CMakeFiles/Bang.dir/flags.make
-CMakeFiles/Bang.dir/Classes/User.cpp.o: ../Classes/User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Bang.dir/Classes/User.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/User.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/User.cpp
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o: ../Classes/GameUser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Bang.dir/Classes/GameUser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/GameUser.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp
 
-CMakeFiles/Bang.dir/Classes/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/User.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/User.cpp > CMakeFiles/Bang.dir/Classes/User.cpp.i
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/GameUser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp > CMakeFiles/Bang.dir/Classes/GameUser.cpp.i
 
-CMakeFiles/Bang.dir/Classes/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/User.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/User.cpp -o CMakeFiles/Bang.dir/Classes/User.cpp.s
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/GameUser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp -o CMakeFiles/Bang.dir/Classes/GameUser.cpp.s
 
-CMakeFiles/Bang.dir/Classes/User.cpp.o.requires:
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.requires:
 
-.PHONY : CMakeFiles/Bang.dir/Classes/User.cpp.o.requires
+.PHONY : CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.requires
 
-CMakeFiles/Bang.dir/Classes/User.cpp.o.provides: CMakeFiles/Bang.dir/Classes/User.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.o.provides.build
-.PHONY : CMakeFiles/Bang.dir/Classes/User.cpp.o.provides
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.provides: CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.provides.build
+.PHONY : CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.provides
 
-CMakeFiles/Bang.dir/Classes/User.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/User.cpp.o
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/GameUser.cpp.o
 
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: CMakeFiles/Bang.dir/flags.make
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Bang.dir/Classes/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/Player.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/Player.cpp
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: ../Classes/GamePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/Player.cpp > CMakeFiles/Bang.dir/Classes/Player.cpp.i
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp > CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/Player.cpp -o CMakeFiles/Bang.dir/Classes/Player.cpp.s
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp -o CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.o.requires:
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/Bang.dir/Classes/Player.cpp.o.requires
+.PHONY : CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.requires
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.o.provides: CMakeFiles/Bang.dir/Classes/Player.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.o.provides.build
-.PHONY : CMakeFiles/Bang.dir/Classes/Player.cpp.o.provides
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.provides: CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.provides
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/Player.cpp.o
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o
+
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/MessageDelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp > CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp -o CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.requires:
+
+.PHONY : CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.requires
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.provides: CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.provides.build
+.PHONY : CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.provides
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.provides.build: CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
 
 
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o: ../Classes/vo/LoungeInfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.cpp
 
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.i: cmake_force
@@ -539,7 +563,7 @@ CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o.provides.build: CMakeFiles/Bang.
 
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../Classes/Network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Bang.dir/Classes/Network.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Bang.dir/Classes/Network.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/Network.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/Network.cpp
 
 CMakeFiles/Bang.dir/Classes/Network.cpp.i: cmake_force
@@ -563,7 +587,7 @@ CMakeFiles/Bang.dir/Classes/Network.cpp.o.provides.build: CMakeFiles/Bang.dir/Cl
 
 CMakeFiles/Bang.dir/proj.linux/main.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/proj.linux/main.cpp.o: ../proj.linux/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/proj.linux/main.cpp.o -c /home/edge/BangDesktop/project/Bang/proj.linux/main.cpp
 
 CMakeFiles/Bang.dir/proj.linux/main.cpp.i: cmake_force
@@ -604,8 +628,9 @@ Bang_OBJECTS = \
 "CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o" \
-"CMakeFiles/Bang.dir/Classes/User.cpp.o" \
-"CMakeFiles/Bang.dir/Classes/Player.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/GameUser.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/Network.cpp.o" \
 "CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
@@ -630,8 +655,9 @@ bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o
-bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/User.cpp.o
-bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/Player.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/GameUser.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/Network.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/proj.linux/main.cpp.o
@@ -676,7 +702,7 @@ bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libGL.so
 bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libcurl.so
 bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libsqlite3.so
 bin/Bang/Bang: CMakeFiles/Bang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable bin/Bang/Bang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edge/BangDesktop/project/Bang/linux-build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable bin/Bang/Bang"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bang.dir/link.txt --verbose=$(VERBOSE)
 	/opt/cmake-3.9.1/bin/cmake -E echo copy\ file\ into\ Resources:\ ButtonS1.png\ ...
 	/opt/cmake-3.9.1/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ButtonS1.png /home/edge/BangDesktop/project/Bang/linux-build/bin/Bang/Resources/ButtonS1.png
@@ -851,8 +877,9 @@ CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o.require
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o.requires
-CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/User.cpp.o.requires
-CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/Player.cpp.o.requires
+CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/GameUser.cpp.o.requires
+CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o.requires
+CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/Classes/Network.cpp.o.requires
 CMakeFiles/Bang.dir/requires: CMakeFiles/Bang.dir/proj.linux/main.cpp.o.requires

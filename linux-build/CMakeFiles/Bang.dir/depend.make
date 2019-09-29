@@ -1736,6 +1736,10 @@ CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o: ../Classes/FriendTableView.cp
 CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o: ../Classes/FriendTableView.h
 CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o: ../Classes/ResolutionUtil.h
 
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: ../Classes/GamePlayer.cpp
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: ../Classes/GamePlayer.h
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: ../Classes/GameUser.h
+
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -2015,14 +2019,17 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3native.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/ChooseCharacterLayer.h
+CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/GamePlayer.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/GameScene.cpp
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/GameScene.h
+CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/GameUser.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/HandCard.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/LargeCardLayer.h
-CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/Player.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/PlayerLayer.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/ResolutionUtil.h
-CMakeFiles/Bang.dir/Classes/GameScene.cpp.o: ../Classes/User.h
+
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o: ../Classes/GameUser.cpp
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o: ../Classes/GameUser.h
 
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2917,7 +2924,9 @@ CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../cocos2d/external/recast/../json
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../cocos2d/external/recast/../json/rapidjson.h
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../cocos2d/external/recast/../json/reader.h
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../cocos2d/external/recast/../json/stream.h
+CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../Classes/GamePlayer.h
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../Classes/GameScene.h
+CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../Classes/GameUser.h
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../Classes/LobbyLayer.cpp
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../Classes/LobbyLayer.h
 CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o: ../Classes/LobbyMemberTableView.h
@@ -3427,7 +3436,6 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/math/Vec3.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/math/Vec3.inl
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/math/Vec4.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/math/Vec4.inl
-CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/network/WebSocket.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/physics/CCPhysicsBody.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/physics/CCPhysicsContact.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/physics/CCPhysicsJoint.h
@@ -3540,12 +3548,11 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/cocos/vr/CCVRProtocol.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3native.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/DebugScene.h
+CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/GameUser.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/LoginScene.cpp
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/LoginScene.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/MainMenuScene.h
-CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/Network.h
 CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/ResolutionUtil.h
-CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
@@ -3834,6 +3841,47 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/MainMenuScene.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/ResolutionUtil.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o: ../Classes/SettingScene.h
 
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/adl_serializer.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/conversions/from_json.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/conversions/to_chars.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/conversions/to_json.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/exceptions.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/input/binary_reader.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/input/input_adapters.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/input/json_sax.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/input/lexer.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/input/parser.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/input/position_t.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/iterators/internal_iterator.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/iterators/iter_impl.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/iterators/iteration_proxy.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/iterators/iterator_traits.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/iterators/json_reverse_iterator.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/iterators/primitive_iterator.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/json_pointer.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/json_ref.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/macro_scope.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/macro_unscope.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/meta/cpp_future.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/meta/detected.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/meta/is_sax.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/meta/type_traits.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/meta/void_t.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/output/binary_writer.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/output/output_adapters.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/output/serializer.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/detail/value_t.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/json_fwd.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/thirdparty/hedley/hedley.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/thirdparty/hedley/hedley_undef.hpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/vo/ChangeNicknameReponse.h
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/vo/RegisterAndLoginResponse.h
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/GamePlayer.h
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/GameUser.h
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/MessageDelegate.cpp
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/MessageDelegate.h
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/nlohmann/json.hpp
+
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../cocos2d/cocos/2d/CCAction.h
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../cocos2d/cocos/2d/CCActionCamera.h
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../cocos2d/cocos/2d/CCActionCatmullRom.h
@@ -4081,10 +4129,6 @@ CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../cocos2d/external/glfw3/include/lin
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../cocos2d/external/glfw3/include/linux/glfw3native.h
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../Classes/Network.cpp
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../Classes/Network.h
-
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/Player.cpp
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/Player.h
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.o: ../Classes/vo/LoungeInfo.h
 CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.o: ../cocos2d/cocos/2d/CCAction.h
@@ -5268,9 +5312,6 @@ CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o: ../cocos2d/external/glfw3/incl
 CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o: ../Classes/SmallCardLayer.h
 CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o: ../Classes/TableCardLayer.cpp
 CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o: ../Classes/TableCardLayer.h
-
-CMakeFiles/Bang.dir/Classes/User.cpp.o: ../Classes/User.cpp
-CMakeFiles/Bang.dir/Classes/User.cpp.o: ../Classes/User.h
 
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o: ../Classes/vo/LoungeInfo.cpp
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o: ../Classes/vo/LoungeInfo.h

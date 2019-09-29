@@ -441,6 +441,33 @@ Classes/FriendTableView.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.s
 .PHONY : Classes/FriendTableView.cpp.s
 
+Classes/GamePlayer.o: Classes/GamePlayer.cpp.o
+
+.PHONY : Classes/GamePlayer.o
+
+# target to build an object file
+Classes/GamePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o
+.PHONY : Classes/GamePlayer.cpp.o
+
+Classes/GamePlayer.i: Classes/GamePlayer.cpp.i
+
+.PHONY : Classes/GamePlayer.i
+
+# target to preprocess a source file
+Classes/GamePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i
+.PHONY : Classes/GamePlayer.cpp.i
+
+Classes/GamePlayer.s: Classes/GamePlayer.cpp.s
+
+.PHONY : Classes/GamePlayer.s
+
+# target to generate assembly for a file
+Classes/GamePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s
+.PHONY : Classes/GamePlayer.cpp.s
+
 Classes/GameScene.o: Classes/GameScene.cpp.o
 
 .PHONY : Classes/GameScene.o
@@ -467,6 +494,33 @@ Classes/GameScene.s: Classes/GameScene.cpp.s
 Classes/GameScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameScene.cpp.s
 .PHONY : Classes/GameScene.cpp.s
+
+Classes/GameUser.o: Classes/GameUser.cpp.o
+
+.PHONY : Classes/GameUser.o
+
+# target to build an object file
+Classes/GameUser.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameUser.cpp.o
+.PHONY : Classes/GameUser.cpp.o
+
+Classes/GameUser.i: Classes/GameUser.cpp.i
+
+.PHONY : Classes/GameUser.i
+
+# target to preprocess a source file
+Classes/GameUser.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameUser.cpp.i
+.PHONY : Classes/GameUser.cpp.i
+
+Classes/GameUser.s: Classes/GameUser.cpp.s
+
+.PHONY : Classes/GameUser.s
+
+# target to generate assembly for a file
+Classes/GameUser.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/GameUser.cpp.s
+.PHONY : Classes/GameUser.cpp.s
 
 Classes/HandCard.o: Classes/HandCard.cpp.o
 
@@ -630,6 +684,33 @@ Classes/MainMenuScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s
 .PHONY : Classes/MainMenuScene.cpp.s
 
+Classes/MessageDelegate.o: Classes/MessageDelegate.cpp.o
+
+.PHONY : Classes/MessageDelegate.o
+
+# target to build an object file
+Classes/MessageDelegate.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
+.PHONY : Classes/MessageDelegate.cpp.o
+
+Classes/MessageDelegate.i: Classes/MessageDelegate.cpp.i
+
+.PHONY : Classes/MessageDelegate.i
+
+# target to preprocess a source file
+Classes/MessageDelegate.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i
+.PHONY : Classes/MessageDelegate.cpp.i
+
+Classes/MessageDelegate.s: Classes/MessageDelegate.cpp.s
+
+.PHONY : Classes/MessageDelegate.s
+
+# target to generate assembly for a file
+Classes/MessageDelegate.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s
+.PHONY : Classes/MessageDelegate.cpp.s
+
 Classes/Network.o: Classes/Network.cpp.o
 
 .PHONY : Classes/Network.o
@@ -656,33 +737,6 @@ Classes/Network.s: Classes/Network.cpp.s
 Classes/Network.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Network.cpp.s
 .PHONY : Classes/Network.cpp.s
-
-Classes/Player.o: Classes/Player.cpp.o
-
-.PHONY : Classes/Player.o
-
-# target to build an object file
-Classes/Player.cpp.o:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.o
-.PHONY : Classes/Player.cpp.o
-
-Classes/Player.i: Classes/Player.cpp.i
-
-.PHONY : Classes/Player.i
-
-# target to preprocess a source file
-Classes/Player.cpp.i:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.i
-.PHONY : Classes/Player.cpp.i
-
-Classes/Player.s: Classes/Player.cpp.s
-
-.PHONY : Classes/Player.s
-
-# target to generate assembly for a file
-Classes/Player.cpp.s:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/Player.cpp.s
-.PHONY : Classes/Player.cpp.s
 
 Classes/PlayerLayer.o: Classes/PlayerLayer.cpp.o
 
@@ -792,33 +846,6 @@ Classes/TableCardLayer.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.s
 .PHONY : Classes/TableCardLayer.cpp.s
 
-Classes/User.o: Classes/User.cpp.o
-
-.PHONY : Classes/User.o
-
-# target to build an object file
-Classes/User.cpp.o:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.o
-.PHONY : Classes/User.cpp.o
-
-Classes/User.i: Classes/User.cpp.i
-
-.PHONY : Classes/User.i
-
-# target to preprocess a source file
-Classes/User.cpp.i:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.i
-.PHONY : Classes/User.cpp.i
-
-Classes/User.s: Classes/User.cpp.s
-
-.PHONY : Classes/User.s
-
-# target to generate assembly for a file
-Classes/User.cpp.s:
-	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/User.cpp.s
-.PHONY : Classes/User.cpp.s
-
 Classes/vo/LoungeInfo.o: Classes/vo/LoungeInfo.cpp.o
 
 .PHONY : Classes/vo/LoungeInfo.o
@@ -912,9 +939,15 @@ help:
 	@echo "... Classes/FriendTableView.o"
 	@echo "... Classes/FriendTableView.i"
 	@echo "... Classes/FriendTableView.s"
+	@echo "... Classes/GamePlayer.o"
+	@echo "... Classes/GamePlayer.i"
+	@echo "... Classes/GamePlayer.s"
 	@echo "... Classes/GameScene.o"
 	@echo "... Classes/GameScene.i"
 	@echo "... Classes/GameScene.s"
+	@echo "... Classes/GameUser.o"
+	@echo "... Classes/GameUser.i"
+	@echo "... Classes/GameUser.s"
 	@echo "... Classes/HandCard.o"
 	@echo "... Classes/HandCard.i"
 	@echo "... Classes/HandCard.s"
@@ -933,12 +966,12 @@ help:
 	@echo "... Classes/MainMenuScene.o"
 	@echo "... Classes/MainMenuScene.i"
 	@echo "... Classes/MainMenuScene.s"
+	@echo "... Classes/MessageDelegate.o"
+	@echo "... Classes/MessageDelegate.i"
+	@echo "... Classes/MessageDelegate.s"
 	@echo "... Classes/Network.o"
 	@echo "... Classes/Network.i"
 	@echo "... Classes/Network.s"
-	@echo "... Classes/Player.o"
-	@echo "... Classes/Player.i"
-	@echo "... Classes/Player.s"
 	@echo "... Classes/PlayerLayer.o"
 	@echo "... Classes/PlayerLayer.i"
 	@echo "... Classes/PlayerLayer.s"
@@ -951,9 +984,6 @@ help:
 	@echo "... Classes/TableCardLayer.o"
 	@echo "... Classes/TableCardLayer.i"
 	@echo "... Classes/TableCardLayer.s"
-	@echo "... Classes/User.o"
-	@echo "... Classes/User.i"
-	@echo "... Classes/User.s"
 	@echo "... Classes/vo/LoungeInfo.o"
 	@echo "... Classes/vo/LoungeInfo.i"
 	@echo "... Classes/vo/LoungeInfo.s"

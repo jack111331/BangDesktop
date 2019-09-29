@@ -705,7 +705,7 @@ struct jpeg_error_mgr {
   /* Reset error state variables at start of a new image */
   JMETHOD(void, reset_error_mgr, (j_common_ptr cinfo));
   
-  /* The message ID code and any parameters are saved here.
+  /* The message id code and any parameters are saved here.
    * A message can have one string parameter or up to 8 int parameters.
    */
   int msg_code;

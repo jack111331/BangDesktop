@@ -65,8 +65,9 @@ list(APPEND GAME_SOURCE
         Classes/TableCardLayer.cpp
         Classes/FriendTableView.cpp
         Classes/LobbyMemberTableView.cpp
-        Classes/User.cpp
-        Classes/Player.cpp
+        Classes/GameUser.cpp
+        Classes/GamePlayer.cpp
+        Classes/MessageDelegate.cpp
         Classes/vo/LoungeInfo.cpp
         Classes/Network.cpp
         )
@@ -88,10 +89,11 @@ list(APPEND GAME_HEADER
         Classes/TableCardLayer.h
         Classes/FriendTableView.h
         Classes/LobbyMemberTableView.h
-        Classes/User.h
-        Classes/Player.h
+        Classes/GameUser.h
+        Classes/GamePlayer.h
         Classes/vo/LoungeInfo.h
         Classes/ResolutionUtil.h
+        Classes/MessageDelegate.h
         Classes/vo
         Classes/nlohmann
         Classes/Network.h

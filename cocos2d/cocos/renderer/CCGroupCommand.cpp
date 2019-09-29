@@ -58,7 +58,7 @@ int GroupCommandManager::getGroupID()
         return groupID;
     }
 
-    //Create new ID
+    //Create new id
 //    int newID = _groupMapping.size();
     int newID = Director::getInstance()->getRenderer()->createRenderQueue();
     _groupMapping[newID] = true;

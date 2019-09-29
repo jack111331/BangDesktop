@@ -2,12 +2,12 @@
 #include "LoginScene.h"
 #include "MainMenuScene.h"
 #include "DebugScene.h"
-#include "User.h"
+#include "GameUser.h"
 #include "ResolutionUtil.h"
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
-
+using namespace User;
 
 Scene *LoginScene::createScene() {
     return LoginScene::create();
@@ -151,8 +151,8 @@ bool LoginScene::init() {
 
 
 void LoginScene::menuLoginCallback(Ref *pSender) {
-    User::getInstance()->setName(usernameTextField->getString());
-    log("[LoginScene] Username=%s", User::getInstance()->getName().c_str());
+    GameUser::getInstance()->setName(usernameTextField->getString());
+    log("[LoginScene] Username=%s", GameUser::getInstance()->getName().c_str());
     Director::getInstance()->pushScene(MainMenuScene::createScene());
 
 }

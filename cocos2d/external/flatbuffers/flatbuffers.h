@@ -375,7 +375,7 @@ class vector_downward {
   const simple_allocator &allocator_;
 };
 
-// Converts a Field ID to a virtual table offset.
+// Converts a Field id to a virtual table offset.
 inline voffset_t FieldIndexToOffset(voffset_t field_id) {
   // Should correspond to what EndTable() below builds up.
   const int fixed_fields = 2;  // Vtable size and Object Size.

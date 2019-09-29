@@ -2219,7 +2219,7 @@ cocos2d-x-3.0beta Jan.7 2014
      [FIX]          XMLHttpRequest receives wrong binary array
      [FIX]          XMLHttpRequest.status needs to be assigned even when connection fails
      [FIX]          TextureCache::addImageAsync may load a image even it is loaded in GL thread
-     [FIX]          EventCustom shouldn't use std::hash to generate unique ID, because the result is not unique
+     [FIX]          EventCustom shouldn't use std::hash to generate unique id, because the result is not unique
      [FIX]          CC_USE_PHYSICS is actually impossible to turn it off
      [FIX]          Crash if connection breaks during download using AssetManager
      [FIX]          Project_creator supports creating project at any folder and supports UI

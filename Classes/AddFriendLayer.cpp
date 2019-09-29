@@ -35,7 +35,7 @@ bool AddFriendLayer::init() {
         tipText->setFontName("fonts/arial.ttf");
         tipText->setFontSize(20);
         tipText->setTextColor(Color4B::BLACK);
-        tipText->setString("Please Enter User ID who you want to add as friend.");
+        tipText->setString("Please Enter GameUser id who you want to add as friend.");
         this->addChild(tipText);
     } else {
         log("[AddFriendLayer] Can't Initialize tip text");
@@ -53,7 +53,7 @@ bool AddFriendLayer::init() {
     }
 
     // 4.b add user id text field
-    this->userIdTextField = TextFieldTTF::textFieldWithPlaceHolder("User ID", "fonts/arial.ttf", 40);
+    this->userIdTextField = TextFieldTTF::textFieldWithPlaceHolder("GameUser id", "fonts/arial.ttf", 40);
     if (userIdTextField) {
         userIdTextField->setPosition(ResolutionUtil::getCorrespondPosition(0.5f, 0.5f));
         auto listener = EventListenerTouchOneByOne::create();
@@ -102,7 +102,7 @@ bool AddFriendLayer::init() {
 }
 
 void AddFriendLayer::menuAddCallback(Ref *pSender) {
-    log("User id=%s", this->userIdTextField->getString().c_str());
+    log("GameUser id=%s", this->userIdTextField->getString().c_str());
 }
 
 void AddFriendLayer::menuCancelCallback(Ref *pSender) {

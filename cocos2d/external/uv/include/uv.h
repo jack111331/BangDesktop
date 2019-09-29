@@ -1567,7 +1567,7 @@ union uv_any_req {
 
 
 struct uv_loop_s {
-  /* User data - use this for whatever. */
+  /* GameUser data - use this for whatever. */
   void* data;
   /* Loop reference counting. */
   unsigned int active_handles;

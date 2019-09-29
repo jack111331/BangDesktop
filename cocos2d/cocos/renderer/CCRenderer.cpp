@@ -640,7 +640,7 @@ void Renderer::render()
     if (_glViewAssigned)
     {
         //Process render commands
-        //1. Sort render commands based on ID
+        //1. Sort render commands based on id
         for (auto &renderqueue : _renderGroups)
         {
             renderqueue.sort();

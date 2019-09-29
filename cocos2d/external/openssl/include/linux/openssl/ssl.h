@@ -559,7 +559,7 @@ __owur int SRP_Calc_A_param(SSL *s);
  * otherwise the SSL handshake will fail with an error - callbacks can do
  * this using the 'ssl' value they're passed by;
  * SSL_has_matching_session_id(ssl, id, *id_len) The length value passed in
- * is set at the maximum size the session ID can be. In SSLv3/TLSv1 it is 32
+ * is set at the maximum size the session id can be. In SSLv3/TLSv1 it is 32
  * bytes. The callback can alter this length to be less if desired. It is
  * also an error for the callback to set the size to zero.
  */

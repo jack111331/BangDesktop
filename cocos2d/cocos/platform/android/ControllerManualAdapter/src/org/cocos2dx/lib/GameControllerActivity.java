@@ -244,7 +244,7 @@ public abstract class GameControllerActivity extends Cocos2dxActivity implements
     }
     
     /*
-     * Remove any ship associated with the ID.
+     * Remove any ship associated with the id.
      * 
      * @see
      * com.example.inputmanagercompat.InputManagerCompat.InputDeviceListener

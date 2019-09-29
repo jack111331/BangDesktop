@@ -595,7 +595,7 @@ typedef enum
 */
 typedef enum
 {
-    FMOD_DSP_SEND_RETURNID,     /* (Type:int) - ID of the Return DSP this send is connected to (integer values only). -1 indicates no connected Return DSP. Default = -1. */
+    FMOD_DSP_SEND_RETURNID,     /* (Type:int) - id of the Return DSP this send is connected to (integer values only). -1 indicates no connected Return DSP. Default = -1. */
     FMOD_DSP_SEND_LEVEL,        /* (Type:float) - Send level. 0.0 to 1.0. Default = 1.0 */
 } FMOD_DSP_SEND;
 
@@ -616,7 +616,7 @@ typedef enum
 */
 typedef enum
 {
-    FMOD_DSP_RETURN_ID,                /* (Type:int) - [r]   ID of this Return DSP. Read-only.  Default = -1*/
+    FMOD_DSP_RETURN_ID,                /* (Type:int) - [r]   id of this Return DSP. Read-only.  Default = -1*/
     FMOD_DSP_RETURN_INPUT_SPEAKER_MODE /* (Type:int) - [r/w] Input speaker mode of this return.  Default = FMOD_SPEAKERMODE_DEFAULT.*/
 } FMOD_DSP_RETURN;
 

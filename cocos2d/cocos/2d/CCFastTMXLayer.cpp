@@ -620,7 +620,7 @@ int TMXLayer::getTileGIDAt(const Vec2& tileCoordinate, TMXTileFlags* flags/* = n
     
     int idx = static_cast<int>(((int) tileCoordinate.x + (int) tileCoordinate.y * _layerSize.width));
     
-    // Bits on the far end of the 32-bit global tile ID are used for tile flags
+    // Bits on the far end of the 32-bit global tile id are used for tile flags
     int tile = _tiles[idx];
     auto it = _spriteContainer.find(idx);
     

@@ -7,19 +7,21 @@
 
 #include <string>
 #include "nlohmann/json.hpp"
+namespace User {
+    namespace Response {
+        struct ChangeNicknameResponse {
+            bool success;
+        };
 
-namespace Response {
-    struct ChangeNicknameResponse {
-        bool success;
-    };
+        void to_json(nlohmann::json &j, const ChangeNicknameResponse &p) {
+            j = nlohmann::json{{"success", p.success}};
+        }
 
-    void to_json(nlohmann::json &j, const ChangeNicknameResponse &p) {
-        j = nlohmann::json{{"success", p.success}};
+        void from_json(const nlohmann::json &j, ChangeNicknameResponse &p) {
+            j.at("success").get_to(p.success);
+        }
     }
 
-    void from_json(const nlohmann::json &j, ChangeNicknameResponse &p) {
-        j.at("success").get_to(p.success);
-    }
 }
 
 

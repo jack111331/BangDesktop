@@ -250,7 +250,7 @@ dtStatus dtNavMesh::init(const dtNavMeshParams* params)
 		m_nextFree = &m_tiles[i];
 	}
 	
-	// Init ID generator values.
+	// Init id generator values.
 #ifndef DT_POLYREF64
 	m_tileBits = dtIlog2(dtNextPow2((unsigned int)params->maxTiles));
 	m_polyBits = dtIlog2(dtNextPow2((unsigned int)params->maxPolys));
@@ -1295,7 +1295,7 @@ struct dtTileState
 struct dtPolyState
 {
 	unsigned short flags;						// Flags (see dtPolyFlags).
-	unsigned char area;							// Area ID of the polygon.
+	unsigned char area;							// Area id of the polygon.
 };
 
 ///  @see #storeTileState

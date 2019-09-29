@@ -1225,7 +1225,7 @@ bool Bundle3D::loadMeshDataJson_0_2(MeshDatas& meshdatas)
     for (rapidjson::SizeType i = 0; i < mesh_submesh_array.Size(); ++i)
     {
         const rapidjson::Value& mesh_submesh_val = mesh_submesh_array[i];
-        //std::string id = mesh_submesh_val[ID].GetString();
+        //std::string id = mesh_submesh_val[id].GetString();
 
         // index_number
         unsigned int indexnum = mesh_submesh_val[INDEXNUM].GetUint();
@@ -1749,7 +1749,7 @@ NodeData* Bundle3D::parseNodesRecursivelyJson(const rapidjson::Value& jvalue, bo
                     // node
                     if (!bone.HasMember(NODE))
                     {
-                        CCLOG("warning: Bone node ID missing");
+                        CCLOG("warning: Bone node id missing");
                         CC_SAFE_DELETE(modelnodedata);
                         CC_SAFE_DELETE(nodedata);
                         return nullptr;

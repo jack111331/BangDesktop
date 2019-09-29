@@ -254,7 +254,7 @@ dtStatus dtBuildTileCacheRegions(dtTileCacheAlloc* alloc,
 			layer.regs[idx] = sid;
 		}
 		
-		// Create unique ID.
+		// Create unique id.
 		for (int i = 0; i < sweepId; ++i)
 		{
 			// If the neighbour is set and there is only one continuous connection to it,
@@ -267,7 +267,7 @@ dtStatus dtBuildTileCacheRegions(dtTileCacheAlloc* alloc,
 			{
 				if (regId == 255)
 				{
-					// Region ID's overflow.
+					// Region id's overflow.
 					return DT_FAILURE | DT_BUFFER_TOO_SMALL;
 				}
 				sweeps[i].id = regId++;

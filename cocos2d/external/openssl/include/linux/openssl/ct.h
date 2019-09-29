@@ -153,21 +153,21 @@ ct_log_entry_type_t SCT_get_log_entry_type(const SCT *sct);
 __owur int SCT_set_log_entry_type(SCT *sct, ct_log_entry_type_t entry_type);
 
 /*
- * Gets the ID of the log that an SCT came from.
- * Ownership of the log ID remains with the SCT.
- * Returns the length of the log ID.
+ * Gets the id of the log that an SCT came from.
+ * Ownership of the log id remains with the SCT.
+ * Returns the length of the log id.
  */
 size_t SCT_get0_log_id(const SCT *sct, unsigned char **log_id);
 
 /*
- * Set the log ID of an SCT to point directly to the *log_id specified.
+ * Set the log id of an SCT to point directly to the *log_id specified.
  * The SCT takes ownership of the specified pointer.
  * Returns 1 on success, 0 otherwise.
  */
 __owur int SCT_set0_log_id(SCT *sct, unsigned char *log_id, size_t log_id_len);
 
 /*
- * Set the log ID of an SCT.
+ * Set the log id of an SCT.
  * This makes a copy of the log_id.
  * Returns 1 on success, 0 otherwise.
  */
@@ -410,7 +410,7 @@ void CTLOG_free(CTLOG *log);
 
 /* Gets the name of the CT log */
 const char *CTLOG_get0_name(const CTLOG *log);
-/* Gets the ID of the CT log */
+/* Gets the id of the CT log */
 void CTLOG_get0_log_id(const CTLOG *log, const uint8_t **log_id,
                        size_t *log_id_len);
 /* Gets the public key of the CT log */
@@ -432,7 +432,7 @@ CTLOG_STORE *CTLOG_STORE_new(void);
 void CTLOG_STORE_free(CTLOG_STORE *store);
 
 /*
- * Finds a CT log in the store based on its log ID.
+ * Finds a CT log in the store based on its log id.
  * Returns the CT log, or NULL if no match is found.
  */
 const CTLOG *CTLOG_STORE_get0_log_by_id(const CTLOG_STORE *store,

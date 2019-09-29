@@ -815,7 +815,7 @@ Operator overloading can make code appear more intuitive because a class will be
 
 For some template functions to work correctly, you may need to define operators.
 
-User-defined literals are a very concise notation for creating objects of user-defined types.
+GameUser-defined literals are a very concise notation for creating objects of user-defined types.
 
 **Cons:**
 While operator overloading can make code more intuitive, it has several drawbacks:
@@ -823,7 +823,7 @@ While operator overloading can make code more intuitive, it has several drawback
 * It can fool our intuition into thinking that expensive operations are cheap, built-in operations.
 * It is much harder to find the call sites for overloaded operators. Searching for `equals()` is much easier than searching for relevant invocations of `==`.
 * Some operators work on pointers too, making it easy to introduce bugs. Foo + 4 may do one thing, while &Foo + 4 does something totally different. The compiler does not complain for either of these, making this very hard to debug.
-* User-defined literals allow creating new syntactic forms that are unfamiliar even to experienced C++ programmers. 
+* GameUser-defined literals allow creating new syntactic forms that are unfamiliar even to experienced C++ programmers.
 
 Overloading also has surprising ramifications. For instance, if a class overloads unary operator&, it cannot safely be forward-declared.
 
@@ -1534,7 +1534,7 @@ void testFunction2(vector<int> v) {}
 testFunction2({1, 2, 3});
 ```
 
-User data types can also define constructors that take initializer_list, which is automatically created from braced-init-list:
+GameUser data types can also define constructors that take initializer_list, which is automatically created from braced-init-list:
 
 ```cpp
 class MyType

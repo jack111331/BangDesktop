@@ -161,7 +161,7 @@ Node::~Node()
     }
 #endif
 
-    // User object has to be released before others, since userObject may have a weak reference of this node
+    // GameUser object has to be released before others, since userObject may have a weak reference of this node
     // It may invoke `node->stopAllActions();` while `_actionManager` is null if the next line is after `CC_SAFE_RELEASE_NULL(_actionManager)`.
     CC_SAFE_RELEASE_NULL(_userObject);
     
@@ -220,7 +220,7 @@ void Node::cleanup()
 
     // NOTE: Although it was correct that removing event listeners associated with current node in Node::cleanup.
     // But it broke the compatibility to the versions before v3.16 .
-    // User code may call `node->removeFromParent(true)` which will trigger node's cleanup method, when the node 
+    // GameUser code may call `node->removeFromParent(true)` which will trigger node's cleanup method, when the node
     // is added to scene again, event listeners like EventListenerTouchOneByOne will be lost. 
     // In fact, user's code should use `node->removeFromParent(false)` in order not to do a cleanup and just remove node
     // from its parent. For more discussion about why we revert this change is at https://github.com/cocos2d/cocos2d-x/issues/18104.

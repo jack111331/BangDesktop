@@ -1736,6 +1736,10 @@ CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/FriendTableView.cpp
  /home/edge/BangDesktop/project/Bang/Classes/FriendTableView.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o
+ /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.h
 CMakeFiles/Bang.dir/Classes/GameScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2016,14 +2020,17 @@ CMakeFiles/Bang.dir/Classes/GameScene.cpp.o
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
  /home/edge/BangDesktop/project/Bang/Classes/ChooseCharacterLayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.h
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.h
  /home/edge/BangDesktop/project/Bang/Classes/HandCard.h
  /home/edge/BangDesktop/project/Bang/Classes/LargeCardLayer.h
- /home/edge/BangDesktop/project/Bang/Classes/Player.h
  /home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
- /home/edge/BangDesktop/project/Bang/Classes/User.h
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.h
 CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -2918,7 +2925,9 @@ CMakeFiles/Bang.dir/Classes/LobbyLayer.cpp.o
  ../cocos2d/external/recast/../json/rapidjson.h
  ../cocos2d/external/recast/../json/reader.h
  ../cocos2d/external/recast/../json/stream.h
+ /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.h
  /home/edge/BangDesktop/project/Bang/Classes/GameScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.h
  /home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.cpp
  /home/edge/BangDesktop/project/Bang/Classes/LobbyLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.h
@@ -3428,7 +3437,6 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
  ../cocos2d/cocos/math/Vec3.inl
  ../cocos2d/cocos/math/Vec4.h
  ../cocos2d/cocos/math/Vec4.inl
- ../cocos2d/cocos/network/WebSocket.h
  ../cocos2d/cocos/physics/CCPhysicsBody.h
  ../cocos2d/cocos/physics/CCPhysicsContact.h
  ../cocos2d/cocos/physics/CCPhysicsJoint.h
@@ -3541,12 +3549,11 @@ CMakeFiles/Bang.dir/Classes/LoginScene.cpp.o
  ../cocos2d/external/glfw3/include/linux/glfw3.h
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
  /home/edge/BangDesktop/project/Bang/Classes/DebugScene.h
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.h
  /home/edge/BangDesktop/project/Bang/Classes/LoginScene.cpp
  /home/edge/BangDesktop/project/Bang/Classes/LoginScene.h
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
- /home/edge/BangDesktop/project/Bang/Classes/Network.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
- /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -3834,6 +3841,47 @@ CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/MainMenuScene.h
  /home/edge/BangDesktop/project/Bang/Classes/ResolutionUtil.h
  /home/edge/BangDesktop/project/Bang/Classes/SettingScene.h
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
+ ../Classes/nlohmann/adl_serializer.hpp
+ ../Classes/nlohmann/detail/conversions/from_json.hpp
+ ../Classes/nlohmann/detail/conversions/to_chars.hpp
+ ../Classes/nlohmann/detail/conversions/to_json.hpp
+ ../Classes/nlohmann/detail/exceptions.hpp
+ ../Classes/nlohmann/detail/input/binary_reader.hpp
+ ../Classes/nlohmann/detail/input/input_adapters.hpp
+ ../Classes/nlohmann/detail/input/json_sax.hpp
+ ../Classes/nlohmann/detail/input/lexer.hpp
+ ../Classes/nlohmann/detail/input/parser.hpp
+ ../Classes/nlohmann/detail/input/position_t.hpp
+ ../Classes/nlohmann/detail/iterators/internal_iterator.hpp
+ ../Classes/nlohmann/detail/iterators/iter_impl.hpp
+ ../Classes/nlohmann/detail/iterators/iteration_proxy.hpp
+ ../Classes/nlohmann/detail/iterators/iterator_traits.hpp
+ ../Classes/nlohmann/detail/iterators/json_reverse_iterator.hpp
+ ../Classes/nlohmann/detail/iterators/primitive_iterator.hpp
+ ../Classes/nlohmann/detail/json_pointer.hpp
+ ../Classes/nlohmann/detail/json_ref.hpp
+ ../Classes/nlohmann/detail/macro_scope.hpp
+ ../Classes/nlohmann/detail/macro_unscope.hpp
+ ../Classes/nlohmann/detail/meta/cpp_future.hpp
+ ../Classes/nlohmann/detail/meta/detected.hpp
+ ../Classes/nlohmann/detail/meta/is_sax.hpp
+ ../Classes/nlohmann/detail/meta/type_traits.hpp
+ ../Classes/nlohmann/detail/meta/void_t.hpp
+ ../Classes/nlohmann/detail/output/binary_writer.hpp
+ ../Classes/nlohmann/detail/output/output_adapters.hpp
+ ../Classes/nlohmann/detail/output/serializer.hpp
+ ../Classes/nlohmann/detail/value_t.hpp
+ ../Classes/nlohmann/json_fwd.hpp
+ ../Classes/nlohmann/thirdparty/hedley/hedley.hpp
+ ../Classes/nlohmann/thirdparty/hedley/hedley_undef.hpp
+ ../Classes/vo/ChangeNicknameReponse.h
+ ../Classes/vo/RegisterAndLoginResponse.h
+ /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.h
+ /home/edge/BangDesktop/project/Bang/Classes/GameUser.h
+ /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp
+ /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.h
+ /home/edge/BangDesktop/project/Bang/Classes/nlohmann/json.hpp
 CMakeFiles/Bang.dir/Classes/Network.cpp.o
  ../cocos2d/cocos/2d/CCAction.h
  ../cocos2d/cocos/2d/CCActionCamera.h
@@ -4082,10 +4130,6 @@ CMakeFiles/Bang.dir/Classes/Network.cpp.o
  ../cocos2d/external/glfw3/include/linux/glfw3native.h
  /home/edge/BangDesktop/project/Bang/Classes/Network.cpp
  /home/edge/BangDesktop/project/Bang/Classes/Network.h
-CMakeFiles/Bang.dir/Classes/Player.cpp.o
- /home/edge/BangDesktop/project/Bang/Classes/Player.cpp
- /home/edge/BangDesktop/project/Bang/Classes/Player.h
- /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/PlayerLayer.cpp.o
  ../Classes/vo/LoungeInfo.h
  ../cocos2d/cocos/2d/CCAction.h
@@ -5269,9 +5313,6 @@ CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/SmallCardLayer.h
  /home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.cpp
  /home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.h
-CMakeFiles/Bang.dir/Classes/User.cpp.o
- /home/edge/BangDesktop/project/Bang/Classes/User.cpp
- /home/edge/BangDesktop/project/Bang/Classes/User.h
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o
  /home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.cpp
  /home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.h

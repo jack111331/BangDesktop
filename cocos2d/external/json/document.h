@@ -1775,7 +1775,7 @@ public:
             if (RAPIDJSON_UNLIKELY(!handler.StartObject()))
                 return false;
             for (ConstMemberIterator m = MemberBegin(); m != MemberEnd(); ++m) {
-                RAPIDJSON_ASSERT(m->name.IsString()); // User may change the type of name by MemberIterator.
+                RAPIDJSON_ASSERT(m->name.IsString()); // GameUser may change the type of name by MemberIterator.
                 if (RAPIDJSON_UNLIKELY(!handler.Key(m->name.GetString(), m->name.GetStringLength(), (m->name.data_.f.flags & kCopyFlag) != 0)))
                     return false;
                 if (RAPIDJSON_UNLIKELY(!m->value.Accept(handler)))

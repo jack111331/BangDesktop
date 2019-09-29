@@ -271,11 +271,11 @@ void Properties::readProperties()
                     return;
                 }
 
-                // Get its ID if it has one.
+                // Get its id if it has one.
                 value = strtok(NULL, ":{");
                 value = trimWhiteSpace(value);
 
-                // Get its parent ID if it has one.
+                // Get its parent id if it has one.
                 if (rcc != NULL)
                 {
                     parentID = strtok(NULL, "{");
@@ -307,7 +307,7 @@ void Properties::readProperties()
                         }
                     }
 
-                    // New namespace without an ID.
+                    // New namespace without an id.
                     Properties* space = new (std::nothrow) Properties(_data, _dataIdx, name, NULL, parentID, this);
                     _namespaces.push_back(space);
 
@@ -520,7 +520,7 @@ void Properties::resolveInheritance(const char* id)
     }
     while (derived)
     {
-        // If the namespace has a parent ID, find the parent.
+        // If the namespace has a parent id, find the parent.
         if (!derived->_parentID.empty())
         {
             Properties* parent = getNamespace(derived->_parentID.c_str());

@@ -86,7 +86,7 @@ protected:
     const Vec4* _matrixPalette;
     int   _matrixPaletteSize;
     
-    uint32_t _materialID; //material ID
+    uint32_t _materialID; //material id
     
     GLuint   _vao; //use vao if possible
     

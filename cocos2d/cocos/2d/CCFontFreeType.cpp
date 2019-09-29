@@ -256,13 +256,13 @@ int * FontFreeType::getHorizontalKerningForTextUTF32(const std::u32string& text,
 
 int  FontFreeType::getHorizontalKerningForChars(uint64_t firstChar, uint64_t secondChar) const
 {
-    // get the ID to the char we need
+    // get the id to the char we need
     int glyphIndex1 = FT_Get_Char_Index(_fontRef, firstChar);
     
     if (!glyphIndex1)
         return 0;
     
-    // get the ID to the char we need
+    // get the id to the char we need
     int glyphIndex2 = FT_Get_Char_Index(_fontRef, secondChar);
     
     if (!glyphIndex2)

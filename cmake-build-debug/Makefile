@@ -630,6 +630,33 @@ Classes/MainMenuScene.cpp.s:
 	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MainMenuScene.cpp.s
 .PHONY : Classes/MainMenuScene.cpp.s
 
+Classes/MessageDelegate.o: Classes/MessageDelegate.cpp.o
+
+.PHONY : Classes/MessageDelegate.o
+
+# target to build an object file
+Classes/MessageDelegate.cpp.o:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
+.PHONY : Classes/MessageDelegate.cpp.o
+
+Classes/MessageDelegate.i: Classes/MessageDelegate.cpp.i
+
+.PHONY : Classes/MessageDelegate.i
+
+# target to preprocess a source file
+Classes/MessageDelegate.cpp.i:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i
+.PHONY : Classes/MessageDelegate.cpp.i
+
+Classes/MessageDelegate.s: Classes/MessageDelegate.cpp.s
+
+.PHONY : Classes/MessageDelegate.s
+
+# target to generate assembly for a file
+Classes/MessageDelegate.cpp.s:
+	$(MAKE) -f CMakeFiles/Bang.dir/build.make CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s
+.PHONY : Classes/MessageDelegate.cpp.s
+
 Classes/Network.o: Classes/Network.cpp.o
 
 .PHONY : Classes/Network.o
@@ -933,6 +960,9 @@ help:
 	@echo "... Classes/MainMenuScene.o"
 	@echo "... Classes/MainMenuScene.i"
 	@echo "... Classes/MainMenuScene.s"
+	@echo "... Classes/MessageDelegate.o"
+	@echo "... Classes/MessageDelegate.i"
+	@echo "... Classes/MessageDelegate.s"
 	@echo "... Classes/Network.o"
 	@echo "... Classes/Network.i"
 	@echo "... Classes/Network.s"

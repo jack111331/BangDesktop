@@ -8,9 +8,7 @@
 
 #include "ui/CocosGUI.h"
 #include "cocos2d.h"
-
-class Player;
-
+#include "GamePlayer.h"
 class ChooseCharacterLayer;
 
 class GameScene : public cocos2d::Scene {
@@ -25,7 +23,7 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);
 private:
-    Player *player;
+    Player::GamePlayer *player;
     ChooseCharacterLayer *leftCharacterLayer;
     ChooseCharacterLayer *rightCharacterLayer;
     cocos2d::ui::Layout * handCardLayout;

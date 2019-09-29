@@ -321,7 +321,7 @@ struct FMOD_ASYNCREADINFO
     unsigned int          sizebytes; /* [r] how many bytes requested for read. */
     int                   priority;  /* [r] 0 = low importance.  100 = extremely important (ie 'must read now or stuttering may occur') */
 
-    void                 *userdata;  /* [r/w] User data pointer specific to this request.  Initially 0, can be ignored or set by the user.  Not related to the file's main userdata member.  */
+    void                 *userdata;  /* [r/w] GameUser data pointer specific to this request.  Initially 0, can be ignored or set by the user.  Not related to the file's main userdata member.  */
 
     void                 *buffer;    /* [w] Buffer to read file data into. */
     unsigned int          bytesread; /* [w] Fill this in before setting result code to tell FMOD how many bytes were read. */
@@ -368,8 +368,8 @@ typedef enum
     FMOD_OUTPUTTYPE_UNKNOWN,         /* All - 3rd party plugin, unknown. This is for use with System::getOutput only. */
     FMOD_OUTPUTTYPE_NOSOUND,         /* All - Perform all mixing but discard the final output. */
     FMOD_OUTPUTTYPE_WAVWRITER,       /* All - Writes output to a .wav file. */
-    FMOD_OUTPUTTYPE_NOSOUND_NRT,     /* All - Non-realtime version of FMOD_OUTPUTTYPE_NOSOUND. User can drive mixer with System::update at whatever rate they want. */
-    FMOD_OUTPUTTYPE_WAVWRITER_NRT,   /* All - Non-realtime version of FMOD_OUTPUTTYPE_WAVWRITER. User can drive mixer with System::update at whatever rate they want. */
+    FMOD_OUTPUTTYPE_NOSOUND_NRT,     /* All - Non-realtime version of FMOD_OUTPUTTYPE_NOSOUND. GameUser can drive mixer with System::update at whatever rate they want. */
+    FMOD_OUTPUTTYPE_WAVWRITER_NRT,   /* All - Non-realtime version of FMOD_OUTPUTTYPE_WAVWRITER. GameUser can drive mixer with System::update at whatever rate they want. */
 
     FMOD_OUTPUTTYPE_DSOUND,          /* Win                  - Direct Sound.                        (Default on Windows XP and below) */
     FMOD_OUTPUTTYPE_WINMM,           /* Win                  - Windows Multimedia. */
@@ -813,7 +813,7 @@ typedef enum
     FMOD_SOUND_TYPE_PLAYLIST,        /* Information only from ASX/PLS/M3U/WAX playlists */
     FMOD_SOUND_TYPE_RAW,             /* Raw PCM data. */
     FMOD_SOUND_TYPE_S3M,             /* ScreamTracker 3. */
-    FMOD_SOUND_TYPE_USER,            /* User created sound. */
+    FMOD_SOUND_TYPE_USER,            /* GameUser created sound. */
     FMOD_SOUND_TYPE_WAV,             /* Microsoft WAV. */
     FMOD_SOUND_TYPE_XM,              /* FastTracker 2 XM. */
     FMOD_SOUND_TYPE_XMA,             /* Xbox360 XMA */
@@ -1506,7 +1506,7 @@ typedef struct FMOD_CREATESOUNDEXINFO
     FMOD_FILE_SEEK_CALLBACK        fileuserseek;       /* [w] Optional. Specify 0 to ignore. Callback for seeking within this file. */
     FMOD_FILE_ASYNCREAD_CALLBACK   fileuserasyncread;  /* [w] Optional. Specify 0 to ignore. Callback for seeking within this file. */
     FMOD_FILE_ASYNCCANCEL_CALLBACK fileuserasynccancel;/* [w] Optional. Specify 0 to ignore. Callback for seeking within this file. */
-    void                          *fileuserdata;       /* [w] Optional. Specify 0 to ignore. User data to be passed into the file callbacks. */
+    void                          *fileuserdata;       /* [w] Optional. Specify 0 to ignore. GameUser data to be passed into the file callbacks. */
     FMOD_CHANNELORDER              channelorder;       /* [w] Optional. Specify 0 to ignore. Use this to differ the way fmod maps multichannel sounds to speakers.  See FMOD_CHANNELORDER for more. */
     FMOD_CHANNELMASK               channelmask;        /* [w] Optional. Specify 0 to ignore. Use this to specify which channels map to which speakers.  See FMOD_CHANNELMASK for more. */
     FMOD_SOUNDGROUP               *initialsoundgroup;  /* [w] Optional. Specify 0 to ignore. Specify a sound group if required, to put sound in as it is created. */

@@ -311,7 +311,7 @@
 #  define LN_des_ede3_ofb64               "des-ede3-ofb"
 #  define NID_des_ede3_ofb64              63
 
-/* I'm not sure about the object ID */
+/* I'm not sure about the object id */
 #  define SN_sha1                         "SHA1"
 #  define LN_sha1                         "sha1"
 #  define NID_sha1                        64
@@ -558,7 +558,7 @@
 
 /*-
  * This is one sun will soon be using :-(
- * id-dsa-with-sha1 ID  ::= {
+ * id-dsa-with-sha1 id  ::= {
  *   iso(1) member-body(2) us(840) x9-57 (10040) x9cm(4) 3 }
  */
 #  define SN_dsaWithSHA1                  "DSA-SHA1"
@@ -720,7 +720,7 @@
 #  define OBJ_invalidity_date             OBJ_id_ce,24L
 
 #  define SN_sxnet                        "SXNetID"
-#  define LN_sxnet                        "Strong Extranet ID"
+#  define LN_sxnet                        "Strong Extranet id"
 #  define NID_sxnet                       143
 #  define OBJ_sxnet                       1L,3L,101L,1L,4L,1L
 

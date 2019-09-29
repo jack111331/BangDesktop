@@ -148,7 +148,7 @@
                     </menu>
                 </menuItem>
                 <menuItem title="File" id="83"/>
-                <menuItem title="Player" id="633">
+                <menuItem title="GamePlayer" id="633">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem title="Screen" id="295"/>

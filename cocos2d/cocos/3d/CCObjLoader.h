@@ -57,7 +57,7 @@ namespace tinyobj {
         std::vector<float> normals;
         std::vector<float> texcoords;
         std::vector<unsigned short> indices;
-        std::vector<int> material_ids; // per-mesh material ID
+        std::vector<int> material_ids; // per-mesh material id
     } mesh_t;
     
     typedef struct {

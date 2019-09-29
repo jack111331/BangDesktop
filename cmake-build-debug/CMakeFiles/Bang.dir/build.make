@@ -304,9 +304,22 @@ CMakeFiles/Bang.dir/Classes/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/Player.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/Player.cpp -o CMakeFiles/Bang.dir/Classes/Player.cpp.s
 
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/MessageDelegate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp > CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.i
+
+CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/MessageDelegate.cpp -o CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.s
+
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o: ../Classes/vo/LoungeInfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/vo/LoungeInfo.cpp
 
 CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.i: cmake_force
@@ -319,7 +332,7 @@ CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.s: cmake_force
 
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/Classes/Network.cpp.o: ../Classes/Network.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Bang.dir/Classes/Network.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Bang.dir/Classes/Network.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/Network.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/Network.cpp
 
 CMakeFiles/Bang.dir/Classes/Network.cpp.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/Bang.dir/Classes/Network.cpp.s: cmake_force
 
 CMakeFiles/Bang.dir/proj.linux/main.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/proj.linux/main.cpp.o: ../proj.linux/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/proj.linux/main.cpp.o -c /home/edge/BangDesktop/project/Bang/proj.linux/main.cpp
 
 CMakeFiles/Bang.dir/proj.linux/main.cpp.i: cmake_force
@@ -364,6 +377,7 @@ Bang_OBJECTS = \
 "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/User.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/Player.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/Network.cpp.o" \
 "CMakeFiles/Bang.dir/proj.linux/main.cpp.o"
@@ -390,6 +404,7 @@ bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/User.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/Player.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/Network.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/proj.linux/main.cpp.o
@@ -434,7 +449,7 @@ bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libGLU.so
 bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libcurl.so
 bin/Bang/Bang: /usr/lib/x86_64-linux-gnu/libsqlite3.so
 bin/Bang/Bang: CMakeFiles/Bang.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable bin/Bang/Bang"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable bin/Bang/Bang"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Bang.dir/link.txt --verbose=$(VERBOSE)
 	/home/edge/clion-2019.2.1/bin/cmake/linux/bin/cmake -E echo copy\ file\ into\ Resources:\ ButtonS1.png\ ...
 	/home/edge/clion-2019.2.1/bin/cmake/linux/bin/cmake -E copy_if_different /home/edge/BangDesktop/project/Bang/Resources/ButtonS1.png /home/edge/BangDesktop/project/Bang/cmake-build-debug/bin/Bang/Resources/ButtonS1.png
