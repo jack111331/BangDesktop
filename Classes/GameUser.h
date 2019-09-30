@@ -13,30 +13,33 @@ namespace User {
         //   CExclusiveCardInventory * getExclusiveCardInventory() const;
         std::string getName() const;
 
-        int getMoney();
-
-        int getWin();
-
-        int getLose();
+        void setToken(const std::string &token);
 
         //   void setPlayer(CPlayer * player);
         void setName(const std::string &name);
 
+        int getMoney() const;
+
         void setMoney(int money);
+
+        int getWin() const;
 
         void setWin(int win);
 
+        int getLose() const;
+
         void setLose(int lose);
 
-        void setID(uint32_t ID);
+        uint32_t getId() const;
 
-        uint32_t getID();
+        void setId(uint32_t id);
 
         ~GameUser();
 
     private:
         static GameUser *instance;
         std::string name;
+        std::string token;
         int money;
         int win;
         int lose;

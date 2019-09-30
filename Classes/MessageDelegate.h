@@ -25,7 +25,7 @@ namespace Player {
         void onMessage(nlohmann::json message);
         void setPlayer(Player::GamePlayer *gamePlayer);
     private:
-        Player::GamePlayer *gamePlayer;
+        GamePlayer *gamePlayer;
     };
 }
 

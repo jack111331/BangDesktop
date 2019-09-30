@@ -278,31 +278,31 @@ CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/LobbyMemberTableView.cpp -o CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.s
 
-CMakeFiles/Bang.dir/Classes/User.cpp.o: CMakeFiles/Bang.dir/flags.make
-CMakeFiles/Bang.dir/Classes/User.cpp.o: ../Classes/User.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Bang.dir/Classes/User.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/User.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/User.cpp
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.o: ../Classes/GameUser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Bang.dir/Classes/GameUser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/GameUser.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp
 
-CMakeFiles/Bang.dir/Classes/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/User.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/User.cpp > CMakeFiles/Bang.dir/Classes/User.cpp.i
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/GameUser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp > CMakeFiles/Bang.dir/Classes/GameUser.cpp.i
 
-CMakeFiles/Bang.dir/Classes/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/User.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/User.cpp -o CMakeFiles/Bang.dir/Classes/User.cpp.s
+CMakeFiles/Bang.dir/Classes/GameUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/GameUser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp -o CMakeFiles/Bang.dir/Classes/GameUser.cpp.s
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: CMakeFiles/Bang.dir/flags.make
-CMakeFiles/Bang.dir/Classes/Player.cpp.o: ../Classes/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Bang.dir/Classes/Player.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/Player.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/Player.cpp
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: CMakeFiles/Bang.dir/flags.make
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o: ../Classes/GamePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edge/BangDesktop/project/Bang/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o -c /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/Player.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/Player.cpp > CMakeFiles/Bang.dir/Classes/Player.cpp.i
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp > CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.i
 
-CMakeFiles/Bang.dir/Classes/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/Player.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/Player.cpp -o CMakeFiles/Bang.dir/Classes/Player.cpp.s
+CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp -o CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.s
 
 CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: CMakeFiles/Bang.dir/flags.make
 CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o: ../Classes/MessageDelegate.cpp
@@ -375,8 +375,8 @@ Bang_OBJECTS = \
 "CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o" \
-"CMakeFiles/Bang.dir/Classes/User.cpp.o" \
-"CMakeFiles/Bang.dir/Classes/Player.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/GameUser.cpp.o" \
+"CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o" \
 "CMakeFiles/Bang.dir/Classes/Network.cpp.o" \
@@ -402,8 +402,8 @@ bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/HandCard.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/TableCardLayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/FriendTableView.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/LobbyMemberTableView.cpp.o
-bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/User.cpp.o
-bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/Player.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/GameUser.cpp.o
+bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/GamePlayer.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/MessageDelegate.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/vo/LoungeInfo.cpp.o
 bin/Bang/Bang: CMakeFiles/Bang.dir/Classes/Network.cpp.o

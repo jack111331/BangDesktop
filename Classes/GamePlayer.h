@@ -15,6 +15,12 @@ enum class Team {
     BadAss = 2, //歹徒
     Traitor = 3 //叛徒
 };
+
+enum class ActionState {
+    Waiting,
+    MyTurn
+};
+
 namespace Player {
     class GamePlayer {
     public:

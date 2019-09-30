@@ -984,10 +984,22 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/FriendTableView.h">
 			<Option target="Bang"/>
 		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GamePlayer.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GamePlayer.h">
+			<Option target="Bang"/>
+		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameScene.cpp">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameScene.h">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameUser.cpp">
+			<Option target="Bang"/>
+		</Unit>
+		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/GameUser.h">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/HandCard.cpp">
@@ -1038,12 +1050,6 @@
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Network.h">
 			<Option target="Bang"/>
 		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Player.cpp">
-			<Option target="Bang"/>
-		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/Player.h">
-			<Option target="Bang"/>
-		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/PlayerLayer.cpp">
 			<Option target="Bang"/>
 		</Unit>
@@ -1069,12 +1075,6 @@
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/TableCardLayer.h">
-			<Option target="Bang"/>
-		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/User.cpp">
-			<Option target="Bang"/>
-		</Unit>
-		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/User.h">
 			<Option target="Bang"/>
 		</Unit>
 		<Unit filename="/home/edge/BangDesktop/project/Bang/Classes/nlohmann">
